@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    int height = get_int("number: ");
-    printf("");
+    int height = get_int("Enter height: ");
+    printf("%i\n", height);
 }
