@@ -20,7 +20,7 @@ int main(void)
         width=i+1;
         for (int j = 0; j < width ; j++)
         {
-            if 
+            if
             printf(".");
         }
 
