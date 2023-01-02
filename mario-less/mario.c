@@ -4,6 +4,7 @@
 int main(void)
 {
     int height;
+    int width;
     do
     {
         height = get_int("Enter height: ");
@@ -14,6 +15,10 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
-        for (int j = 0;j)
+        width=i+1;
+        for (int j = 0; j < width ; width++)
+        {
+            printf("#");
+        }
     }
 }
