@@ -18,11 +18,8 @@ int main(void)
     for (int i = 0; i < height; i++)
     {
         width=i+1;
-        for (int j = 0; j < width ; j++)
-        {
+        
 
-            printf("#");
-        }
-        printf("\n");
+        printf("%s\n", line);
     }
 }
