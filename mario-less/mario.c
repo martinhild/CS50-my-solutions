@@ -17,6 +17,7 @@ int main(void)
         width=i+1;
         for (int j = 0; j < 8 ; j++)
         {
+            if(j<)
             printf("#");
         }
         printf("\n");
