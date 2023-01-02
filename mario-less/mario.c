@@ -20,9 +20,13 @@ int main(void)
         width=i+1;
         for (int j = 0; j < width ; j++)
         {
-            
+            printf(".");
         }
+        for(int k = 0; k < width; k++)
+        {
 
+        }
+        print("\n");
 
     }
 }
