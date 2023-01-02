@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    int height
-    printf("asd\n");
+    int height = get_int("number: ");
+    printf(height);
 }
