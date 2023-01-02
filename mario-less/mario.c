@@ -15,7 +15,7 @@ int main(void)
     for (int i = 0; i < height; i++)
     {
         width=i+1;
-        for (int j = 0; j < width ; j++)
+        for (int j = 0; j < 8 ; j++)
         {
             printf("#");
         }
