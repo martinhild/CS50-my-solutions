@@ -3,5 +3,6 @@
 
 int main(void)
 {
+    int height
     printf("asd\n");
 }
