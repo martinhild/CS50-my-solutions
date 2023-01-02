@@ -3,6 +3,11 @@
 
 int main(void)
 {
-    int height = get_int("Enter height: ");
+    int height;
+    do
+    {
+        height = get_int("Enter height: ");
+    }
+    while (height < 1 || height > 8);
     printf("%i\n", height);
 }
