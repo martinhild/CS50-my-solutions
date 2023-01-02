@@ -4,5 +4,5 @@
 int main(void)
 {
     int height = get_int("number: ");
-    printf(height);
+    printf("");
 }
