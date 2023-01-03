@@ -20,9 +20,9 @@ int main(void)
         //Loop from column '0' till column 'height'
         for (int j = 0; j < height ; j++)
         {
-            //decide if printing '.' or '#'
+            //decide if printing ' ' or '#'
             if( j < height - i - 1 ){
-                printf(".");
+                printf(" ");
             }
             else
             {
