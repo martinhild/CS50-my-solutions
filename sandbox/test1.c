@@ -10,7 +10,7 @@ int main (void)
 
     printf("%i\n",cents);
     int quarters;
-    quarters =
+    //quarters =
 }
 
 
