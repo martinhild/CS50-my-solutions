@@ -6,5 +6,5 @@ int main(void)
 //User input (credit card number)
 long number = get_long("Number: ");
 
-int[] x = [2,3,4];
+int array = [2,3,4];
 }
