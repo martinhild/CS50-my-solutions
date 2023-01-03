@@ -8,7 +8,7 @@ int main (void)
 {
     int cents = get_cents();
 
-    printf("%i\n",cents());
+    printf("%i\n",cents);
     int quarters;
     quarters =
 }
