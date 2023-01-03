@@ -8,7 +8,7 @@ int main (void)
 {
     int cents = get_cents();
 
-    printf("%i\n",cents);
+    printf("cents: %i\n",cents);
     int quarters;
     //quarters =
 }
@@ -23,7 +23,7 @@ int get_cents(void)
     {
         cents = get_int("Change owed: ");
     }
-    while(cents < 0 || cents > 99);
+    while(cents < 1 || cents > 99);
 
     return cents;
 }
