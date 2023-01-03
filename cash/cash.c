@@ -40,6 +40,7 @@ int main(void)
 
     // Print total number of coins to give the customer
     printf("Coins: %i\n", coins);
+    printf("hey");
 }
 
 int get_cents(void)
