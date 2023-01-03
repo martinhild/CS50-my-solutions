@@ -58,7 +58,7 @@ int calculate_quarters(int cents)
 {
     // TODO
     int quarters;
-    
+
     return 0;
 }
 
