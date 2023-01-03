@@ -43,12 +43,9 @@ int get_cents(void)
     {
         cents = get_int("Change owed: ");
     }
-    while
-    {
+    while(cents> 0 && cents < 100);
 
-    }
-
-    return 0;
+    return cents;
 }
 
 int calculate_quarters(int cents)
