@@ -11,8 +11,8 @@ int main (void)
     printf("cents: %i\n",cents);
 
     int quarters;
-    quarters = cents%25;
-    printf("quarters: %i", quarters);
+    quarters = cents / 25;
+    printf("quarters: %i\n", quarters);
 }
 
 
