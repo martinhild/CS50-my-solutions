@@ -20,12 +20,12 @@ int main(void)
         width=i+1;
         for (int j = 0; j < height ; j++)
         {
-            if( j >io i ){
-                printf(".");
+            if( j <i ){
+                printf("#");
             }
             else
             {
-                printf("#");
+                printf(".");
             }
 
         }
