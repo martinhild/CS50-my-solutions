@@ -1,10 +1,19 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int get_cents(void);
+
+
 int main (void)
 {
-    printf("sasdasdd\n");
+    int cents = get_cents();
+
+    printf("%i\n",cents());
+    int quarters;
+    quarters =
 }
+
+
 
 int get_cents(void)
 {
