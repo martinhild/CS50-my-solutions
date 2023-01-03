@@ -49,7 +49,7 @@ int get_cents(void)
     {
         cents = get_int("Change owed: ");
     }
-    while(cents < 0 || cents > 100);
+    while(cents < 0 || cents > 99);
 
     return cents;
 }
