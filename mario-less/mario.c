@@ -27,13 +27,13 @@ int main(void)
             {
                 printf("#");
             }
-            printf(".");
+
         }
 
 
 
 
-        print("\n");
+        printf("\n");
 
     }
 }
