@@ -9,8 +9,10 @@ int main (void)
     int cents = get_cents();
 
     printf("cents: %i\n",cents);
+
     int quarters;
-    //quarters =
+    quarters = cents%25;
+    printf("quarters: %i", quarters);
 }
 
 
