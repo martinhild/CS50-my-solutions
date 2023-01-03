@@ -21,7 +21,8 @@ int main(void)
         for (int j = 0; j < height ; j++)
         {
             //decide if printing ' ' or '#'
-            if( j < height - i - 1 ){
+            if (j < height - i - 1)
+            {
                 printf(" ");
             }
             else
