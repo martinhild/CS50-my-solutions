@@ -15,7 +15,8 @@ int main(void)
     int cents = get_cents();
 
     //for testing
-    printf("%i", cents);
+    printf("cents: %i", cents);
+    printf("quarters: %i", calculate_quarters(cents));
 
 
     // Calculate the number of quarters to give the customer
@@ -38,7 +39,7 @@ int main(void)
     int coins = quarters + dimes + nickels + pennies;
 
     // Print total number of coins to give the customer
-    printf("%i\n", coins);
+    printf("Coins: %i\n", coins);
 }
 
 int get_cents(void)
