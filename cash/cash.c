@@ -18,6 +18,7 @@ int main(void)
     printf("cents: %i", cents);
     printf("quarters: %i", calculate_quarters(cents));
 
+    printf("hey?");
 
     // Calculate the number of quarters to give the customer
     int quarters = calculate_quarters(cents);
