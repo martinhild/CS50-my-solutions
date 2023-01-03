@@ -14,26 +14,20 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    //Loop
+    //Loop through lines
     for (int i = 0; i < height; i++)
     {
-        width=i+1;
+
         for (int j = 0; j < height ; j++)
         {
-            if( j >width-i ){
-                printf("#");
+            if( j < height - i - 1 ){
+                printf(".");
             }
             else
             {
-                printf(".");
+                printf("#");
             }
-
         }
-
-
-
-
         printf("\n");
-
     }
 }
