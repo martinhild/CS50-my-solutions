@@ -16,7 +16,12 @@ int main(void)
     //count length of the message
     int length = strlen(message);
 
-    int[] = decimal_Array[length];
+    int decimal_array[length];
+
+    for (int i=0 ,i < length ,i++)
+    {
+        decimal_array[i] = message[i];
+    }
 
     //get a ascii number
     int ascii_number = message[0];
