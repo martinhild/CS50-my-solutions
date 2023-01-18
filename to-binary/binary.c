@@ -9,5 +9,5 @@ int main(void)
 
     printf("%i\n", decimal);
 
-    int binary_array = 
+    int binary_array[7];
 }
