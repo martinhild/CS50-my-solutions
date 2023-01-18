@@ -8,13 +8,9 @@ int main(void)
 
     int binary_array[8];
 
-    int x;
-    for(int i = 0; i < 8; i++)
-    {
-      x = decimal % 2;
-      binary_array[i] = x;
-      x/=2;
-    }
+    int i = 0;
+
+    while()
 
     for(int j = 0; j < 8; j++)
     {
