@@ -17,6 +17,9 @@ int main(void)
     int length = strlen(message);
 
     
+    scanf
+
+
 }
 
 void print_bulb(int bit)
