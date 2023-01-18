@@ -12,6 +12,13 @@ int main(void)
     for(int i = 0; i < 8; i++)
     {
       x = decimal % 2;
+      binary_array[i] = x;
+      x/=2;
     }
-    decimal % 2;
+
+    for(int j = 0; j < 8; j++)
+    {
+        printf("%i ", binary_array[j]);
+    }
+
 }
