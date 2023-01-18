@@ -22,7 +22,7 @@ int main(void)
     printf("length: %i\n" , n);
 
     int length = strlen(message);
-    printf(%i);
+    printf("%i\n", length);
 }
 
 void print_bulb(int bit)
