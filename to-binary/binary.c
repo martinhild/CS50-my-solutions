@@ -11,7 +11,7 @@ int main(void)
     int x;
     for(int i = 0; i < 8; i++)
     {
-        decimal % 2;
+      x = decimal % 2;
     }
     decimal % 2;
 }
