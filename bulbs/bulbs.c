@@ -20,6 +20,9 @@ int main(void)
         n++;
     }
     printf("length: %i\n" , n);
+
+    int length = strlen(message);
+    printf(%i);
 }
 
 void print_bulb(int bit)
