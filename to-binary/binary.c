@@ -6,9 +6,7 @@ int main(void)
 {
     int decimal = get_int("Integer: ");
 
-
-    printf("%i\n", decimal);
-
     int binary_array[8];
+
     binary_array[0] = 2;
 }
