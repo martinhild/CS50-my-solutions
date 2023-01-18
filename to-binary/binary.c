@@ -10,7 +10,10 @@ int main(void)
 
     int i = 0;
 
-    while()
+    while(decimal > 0)
+    {
+        decimal[i]
+    }
 
     for(int j = 0; j < 8; j++)
     {
