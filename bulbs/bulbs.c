@@ -16,8 +16,9 @@ int main(void)
     //count length of the message
     int length = strlen(message);
 
-    
-    scanf
+    //get a ascii number
+    int ascii_number = message[0];
+    printf("ASCII number: %i\n", ascii_number);
 
 
 }
