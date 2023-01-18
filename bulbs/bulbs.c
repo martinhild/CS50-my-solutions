@@ -16,18 +16,19 @@ int main(void)
     //count length of the message
     int length = strlen(message);
 
+    //build decimal_array with ascii numbers
     int decimal_array[length];
-
     for (int i = 0; i < length; i++)
     {
         decimal_array[i] = message[i];
     }
 
-
+    //print elements of decimal_array
     for (int j = 0; j < length; j++)
     {
         printf("%i", decimal_array[j]);
     }
+
 
 
 
