@@ -29,9 +29,7 @@ int main(void)
         printf("%i", decimal_array[j]);
     }
 
-    //get a ascii number
-    int ascii_number = message[0];
-    printf("ASCII number: %i\n", ascii_number);
+
 
 
 }
