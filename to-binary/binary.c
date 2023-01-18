@@ -12,7 +12,9 @@ int main(void)
 
     while(decimal > 0)
     {
-        decimal[i]
+        decimal[i] = decimal % 2;
+        decimal = decimal / 2;
+        i++;
     }
 
     for(int j = 0; j < 8; j++)
