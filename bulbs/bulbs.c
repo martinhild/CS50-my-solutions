@@ -49,3 +49,5 @@ void print_bulb(int bit)
         printf("\U0001F7E1");
     }
 }
+
+
