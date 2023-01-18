@@ -33,6 +33,7 @@ int main(void)
 
 
 
+
 }
 
 void print_bulb(int bit)
