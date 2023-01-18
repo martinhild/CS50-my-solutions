@@ -18,9 +18,15 @@ int main(void)
 
     int decimal_array[length];
 
-    for (int i=0 ,i < length ,i++)
+    for (int i = 0; i < length; i++)
     {
         decimal_array[i] = message[i];
+    }
+
+
+    for (int j = 0; j < length; j++)
+    {
+        printf("%i", decimal_array[j]);
     }
 
     //get a ascii number
