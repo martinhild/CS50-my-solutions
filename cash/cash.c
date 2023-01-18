@@ -1,4 +1,5 @@
-di#include <cs50.h>
+di
+#include <cs50.h>
 #include <stdio.h>
 
 int get_cents(void);
