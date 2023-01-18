@@ -11,11 +11,11 @@ int main(void)
     // TODO
     string message = get_string("Message: ");
     int n= 0;
-    while (message[n] != "\0")
+    while (message[n] != '\0')
     {
         n++;
     }
-    printf("");
+    printf("%i/n" , n);
 }
 
 void print_bulb(int bit)
