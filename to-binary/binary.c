@@ -8,8 +8,7 @@ int main(void)
 
     int binary_array[8];
 
-    int i = 0;
-
+    int i;
     while(decimal > 0)
     {
         binary_array[i] = decimal % 2;
