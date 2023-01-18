@@ -14,15 +14,9 @@ int main(void)
     string message = get_string("Message: ");
 
     //count length of the message
-    int n= 0;
-    while (message[n] != '\0')
-    {
-        n++;
-    }
-    printf("length: %i\n" , n);
-
     int length = strlen(message);
-    printf("%i\n", length);
+
+    
 }
 
 void print_bulb(int bit)
