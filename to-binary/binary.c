@@ -10,4 +10,5 @@ int main(void)
     printf("%i\n", decimal);
 
     int binary_array[8];
+    binary_array[0] = 2;
 }
