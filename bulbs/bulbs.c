@@ -32,16 +32,22 @@ int main(void)
     for(int j = 0; j < length; j++){
         decimal = decimal_array[j];
 
+        int k = 0;
         while(decimal > 0)
         {
-            binary_array[j] = decimal % 2;
+            binary_array[j][k] = decimal % 2;
             decimal = decimal / 2;
             k++;
         }
 
     }
 
-
+for (int l = 0; l < length; l++){
+    for(int m = 0; m < 8; m++){
+        printf("%i", binary_array[l][m]);
+    }
+    printf("\n");
+}
 
 
 }
