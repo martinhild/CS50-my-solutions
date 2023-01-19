@@ -45,7 +45,10 @@ void decToBinary (int n)
         binary[i] = n % 2;
         n = n / 2;
         i++;
+        //?? füllt er die restlichen Nullen auf?
     }
+
+    for (int j = )
 }
 
 
