@@ -29,8 +29,14 @@ int main(void)
         printf("%i", decimal_array[j]);
     }
 
+    //replace decimals in array with binarys
+
+
 
 }
+
+//function to convert a decimal number to binary
+
 
 
 
