@@ -36,12 +36,12 @@ int main(void)
 
 
 
-    int i = 0;
+    int k = 0;
     while(decimal > 0)
     {
-        binary_array[i] = decimal % 2;
+        binary_array[k] = decimal % 2;
         decimal = decimal / 2;
-        i++;
+        k++;
     }
 
     for(int j = 7; j >= 0 ; j--)
