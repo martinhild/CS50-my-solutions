@@ -35,7 +35,6 @@ int main(void)
     //fill array with the binarys
 
 
-
     int k = 0;
     while(decimal > 0)
     {
@@ -48,6 +47,8 @@ int main(void)
     {
         printf("%i ", binary_array[j]);
     }
+
+
 
 
 }
