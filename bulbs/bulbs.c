@@ -30,20 +30,14 @@ int main(void)
 
 
     for(int j = 0; j < length; j++){
-        decimal_array[j]
 
-    }
+        while(decimal > 0)
+        {
+            binary_array[k] = decimal % 2;
+            decimal = decimal / 2;
+            k++;
+        }
 
-    while(decimal > 0)
-    {
-        binary_array[k] = decimal % 2;
-        decimal = decimal / 2;
-        k++;
-    }
-
-    for(int j = 7; j >= 0 ; j--)
-    {
-        printf("%i ", binary_array[j]);
     }
 
 
