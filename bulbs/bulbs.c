@@ -23,19 +23,19 @@ int main(void)
         decimal_array[i] = message[i];
     }
 
-    //print elements of decimal_array
-    for (int j = 0; j < length; j++)
-    {
-        printf("%i", decimal_array[j]);
-    }
-
     //create array for binarys
-    int binary_array[8];
+    int binary_array[length][8];
 
     //fill array with the binarys
 
 
     int k = 0;
+
+    for(int j = 0; j < length; j++){
+        decimal_array[j]
+
+    }
+
     while(decimal > 0)
     {
         binary_array[k] = decimal % 2;
