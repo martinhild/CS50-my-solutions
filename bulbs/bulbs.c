@@ -47,8 +47,6 @@ int main(void)
 
 }
 
-//function to convert a decimal number to binary
-
 
 void print_bulb(int bit)
 {
