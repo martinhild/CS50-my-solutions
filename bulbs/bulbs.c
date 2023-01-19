@@ -31,6 +31,9 @@ int main(void)
         printf("%i\n", decimal_array[i]);
     }
 
+    for(int k = 0; k < length; k++){
+    decToBinary (decimal_array_k);
+    }
 
 }
 
@@ -48,7 +51,9 @@ void decToBinary (int n)
         //?? füllt er die restlichen Nullen auf?
     }
 
-    for (int j = )
+    for (int j = i; j >= 0; j--){
+        printf("%i ", binary[j]);
+    }
 }
 
 
