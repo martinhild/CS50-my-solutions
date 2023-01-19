@@ -38,7 +38,8 @@ int main(void)
             k++;
         }
         for (int j = 7; j >= 0; j--){
-            printf("%i ", binary[j]);
+            //printf("%i ", binary[j]);
+            print_bulb( binary[j] );
         }
         printf("\n");
     }
