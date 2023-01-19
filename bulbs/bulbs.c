@@ -34,6 +34,19 @@ int main(void)
 
 }
 
+//function for..
+void decToBinary (int n)
+{
+    int binary[8];
+    int i = 0;
+    while(n > 0)
+    {
+        binary[i] = n%2;
+        
+    }
+}
+
+
 
 void print_bulb(int bit)
 {
