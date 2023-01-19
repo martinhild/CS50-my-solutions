@@ -23,8 +23,7 @@ int main(void)
         decimal_array[i] = message[i];
     }
 
-    //create array for binarys
-    
+    //loop through decimal_array, build an array 
 
 
 }
