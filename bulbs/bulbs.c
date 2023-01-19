@@ -26,7 +26,7 @@ int main(void)
     //loop through decimal_array,
     //every loop, build an array for the binary number (binary number is reverse)
     //print elements of this array in reverse order
-    int binary[8];
+    int binary[length][8];
     int k;
     int number;
     for (int i = 0; i < length; i++){
