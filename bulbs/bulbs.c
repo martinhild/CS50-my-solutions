@@ -28,12 +28,19 @@ int main(void)
     //print elements of this array in reverse order
     int binary[8];
     int k;
+    int number;
     for (int i = 0; i < length; i++){
         number = decimal_array[i];
         k = 0;
         while (number > 0){
-
+            binary[k] = number % 2;
+            number = number/2;
+            k++;
         }
+        for (int j = 7; j >= 0; j--){
+            printf("%i ", binary[j]);
+        }
+        printf("\n");
     }
 
 
