@@ -39,6 +39,7 @@ int main(void)
             decimal = decimal / 2;
             k++;
         }
+        
 
     }
 
