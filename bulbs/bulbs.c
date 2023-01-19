@@ -26,27 +26,8 @@ int main(void)
     //loop through decimal_array,
     //every loop, build an array for the binary number (binary number is reverse)
     //print elements of this array in reverse order
-    int binary[length][8];
 
-    int k =0;
-    int number;
-    for (int i = 0; i < length; i++){
-        k = 0;
-        number = decimal_array[i];
-        while ( number > 0){
-            binary[i][k] = number % 2;
-            number = number / 2;
-            k++;
-        }
-    }
-
-    for( int i = 0; i < length; i++ ){
-        for( int j = 7; j >= 0; j--){
-            printf("%i ", binary[i][j]);
-
-        }
-        printf("\n");
-    }
+  for(int i = 0; )
 
 
 }
