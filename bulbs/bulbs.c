@@ -35,6 +35,7 @@ int main(void)
     for(int k = 0; k < length; k++){
     decToBinary (decimal_array[k]);
     }
+    printf("\n");
 
 }
 
@@ -55,7 +56,7 @@ void decToBinary (int n)
     for (int j = i; j >= 0; j--){
         printf("%i ", binary[j]);
     }
-    
+    printf(" ");
 }
 
 
