@@ -29,9 +29,23 @@ int main(void)
     int binary[length][8];
 
     int k =0;
+    int number;
     for (int i = 0; i < length; i++){
         k = 0;
-        while ()
+        number = decimal_array[i];
+        while ( number > 0){
+            binary[i][k] = number % 2;
+            number = number / 2;
+            k++;
+        }
+    }
+
+    for( int i = 0; i < length; i++ ){
+        for( int j = 0; j < 8; j++){
+            printf("%i ", binary[i][j]);
+
+        }
+        printf("\n");
     }
 
 
