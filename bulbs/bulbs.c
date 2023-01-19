@@ -32,15 +32,24 @@ int main(void)
     //replace decimals in array with binarys
 
 
+    
+    int i = 0;
+    while(decimal > 0)
+    {
+        binary_array[i] = decimal % 2;
+        decimal = decimal / 2;
+        i++;
+    }
+
+    for(int j = 7; j >= 0 ; j--)
+    {
+        printf("%i ", binary_array[j]);
+    }
+
 
 }
 
 //function to convert a decimal number to binary
-
-int dec_to_bin(number)[]
-{
-
-}
 
 
 void print_bulb(int bit)
