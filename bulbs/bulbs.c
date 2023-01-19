@@ -26,12 +26,12 @@ int main(void)
     //loop through decimal_array,
     //every loop, build an array for the binary number (binary number is reverse)
     //print elements of this array in reverse order
-    int number;
+    int k;
     for (int i = 0; i < length; i++){
         number = decimal_array[i];
-        
+        k = 0;
         while (number > 0){
-
+            
         }
     }
 
