@@ -37,7 +37,10 @@ int main(void)
 
 //function to convert a decimal number to binary
 
+int[8] dec_to_bin(number)
+{
 
+}
 
 
 void print_bulb(int bit)
