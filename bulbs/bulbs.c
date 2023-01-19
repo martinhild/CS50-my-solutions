@@ -28,7 +28,7 @@ int main(void)
     //print elements of this array in reverse order
 
     for(int i = 0; i < length; i++){
-
+        printf("%i\n", );
     }
 
 
