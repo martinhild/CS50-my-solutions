@@ -28,9 +28,10 @@ int main(void)
 
     //fill array with the binarys
 
-
+    int decimal;
     for(int j = 0; j < length; j++){
-
+        decimal = decimal_array[j];
+        
         while(decimal > 0)
         {
             binary_array[k] = decimal % 2;
