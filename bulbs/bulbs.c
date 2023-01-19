@@ -29,10 +29,13 @@ int main(void)
         printf("%i", decimal_array[j]);
     }
 
-    //replace decimals in array with binarys
+    //create array for binarys
+    int binary_array[8];
+
+    //fill array with the binarys
 
 
-    
+
     int i = 0;
     while(decimal > 0)
     {
