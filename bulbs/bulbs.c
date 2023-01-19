@@ -5,6 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
+void decToBinary (int n);
 
 int main(void)
 {
@@ -32,7 +33,7 @@ int main(void)
     }
 
     for(int k = 0; k < length; k++){
-    decToBinary (decimal_array_k);
+    decToBinary (decimal_array[k]);
     }
 
 }
@@ -54,6 +55,7 @@ void decToBinary (int n)
     for (int j = i; j >= 0; j--){
         printf("%i ", binary[j]);
     }
+    
 }
 
 
