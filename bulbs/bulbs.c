@@ -28,9 +28,10 @@ int main(void)
     //print elements of this array in reverse order
     int binary[length][8];
 
-    
+    int k =0;
     for (int i = 0; i < length; i++){
-
+        k = 0;
+        while ()
     }
 
 
