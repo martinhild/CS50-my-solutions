@@ -37,7 +37,7 @@ int main(void)
 
 //function to convert a decimal number to binary
 
-int[8] dec_to_bin(number)
+int dec_to_bin(number)[]
 {
 
 }
