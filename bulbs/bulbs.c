@@ -53,8 +53,8 @@ void decToBinary (int n)
     }
 
     for (int j = i; j >= 0; j--){
-        //printf("%i ", binary[j]);
-        print_bulb(binary[j]);
+        printf("%i ", binary[j]);
+        //print_bulb(binary[j]);
     }
     printf("\n");
 }
