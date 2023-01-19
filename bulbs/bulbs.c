@@ -31,10 +31,10 @@ int main(void)
     int decimal;
     for(int j = 0; j < length; j++){
         decimal = decimal_array[j];
-        
+
         while(decimal > 0)
         {
-            binary_array[k] = decimal % 2;
+            binary_array[j] = decimal % 2;
             decimal = decimal / 2;
             k++;
         }
