@@ -29,8 +29,6 @@ int main(void)
     //fill array with the binarys
 
 
-    int k = 0;
-
     for(int j = 0; j < length; j++){
         decimal_array[j]
 
