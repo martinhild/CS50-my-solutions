@@ -1,31 +1,18 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_cents(void);
-
-
 int main (void)
 {
-    int cents = get_cents();
 
-    printf("cents: %i\n",cents);
+    int x = get_int( "Nummer: " );
 
-    int quarters;
-    quarters = cents / 25;
-    printf("quarters: %i\n", quarters);
-}
-
-
-
-int get_cents(void)
-{
-    // TODO
-    int cents;
-    do
+    if( x < 5 )
     {
-        cents = get_int("Change owed: ");
+        printf( "kleiner\n" );
     }
-    while(cents < 1 || cents > 99);
+    if( x > 5)
+    {
+        printf( "größer\n" );
 
-    return cents;
+    }
 }
