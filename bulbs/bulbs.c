@@ -43,12 +43,12 @@ int main(void)
 void decToBinary (int n)
 {
     int binary_array[8];
-    int i = 0;
+    int x = 0;
     while(n > 0)
     {
-        binary_array[i] = n % 2;
+        binary_array[x] = n % 2;
         n = n / 2;
-        i++;
+        x++;
     }
 
     for (int j = 7; j >= 0; j--){
