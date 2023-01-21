@@ -43,6 +43,13 @@ int main(void)
 void printBulbs (int n)
 {
     int binary_array[8];
+
+    // fill/reset binar_arrray with/to 0s
+    for(int i = 0; i < 8; i++)
+    {
+        binary_array[i] = 0;
+    }
+
     int x = 0;
     while(n > 0)
     {
@@ -52,8 +59,8 @@ void printBulbs (int n)
     }
 
     for (int j = 7; j >= 0; j--){
-        printf("%i ", binary_array[j]);
-        //print_bulb(binary[j]);
+        //printf("%i ", binary_array[j]);
+        print_bulb(binary_array[j]);
     }
     printf("\n");
 }
