@@ -4,15 +4,7 @@
 int main (void)
 {
 
-    int x = get_int( "Nummer: " );
+    int binary[8];
+    binary[9] = 0;
 
-    if( x < 5 )
-    {
-        printf( "kleiner\n" );
-    }
-    if( x > 5)
-    {
-        printf( "größer\n" );
-
-    }
 }
