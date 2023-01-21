@@ -63,7 +63,7 @@ void decToBinary (int n)
         //?? füllt er die restlichen Nullen auf?
     }
 
-    for (int j = i; j >= 0; j--){
+    for (int j = 7; j >= 0; j--){
         printf("%i ", binary[j]);
         //print_bulb(binary[j]);
     }
