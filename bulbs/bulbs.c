@@ -42,7 +42,7 @@ int main(void)
 void decToBinary (int n)
 {
     int binary[8];
-    for(int i = 0; i < 8; i++)
+    for(int i = 0; i < 11; i++)
     {
         binary[i] = 0;
     }
