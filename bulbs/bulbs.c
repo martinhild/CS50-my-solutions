@@ -43,6 +43,7 @@ void printBulbs (int n)
         binary_array[i] = 0;
     }
 
+    //build the binary number (it is reverse)
     int x = 0;
     while(n > 0)
     {
@@ -52,7 +53,6 @@ void printBulbs (int n)
     }
 
     for (int j = 7; j >= 0; j--){
-        //printf("%i ", binary_array[j]);
         print_bulb(binary_array[j]);
     }
     printf("\n");
