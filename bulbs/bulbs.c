@@ -42,29 +42,17 @@ int main(void)
 //function for building binary array and print out reverse
 void decToBinary (int n)
 {
-    int binary[8];
-    binary[0] = 0;
-    binary[1] = 0;
-    binary[2] = 0;
-    binary[3] = 0;
-    binary[4] = 0;
-    binary[5] = 0;
-    binary[6] = 0;
-    binary[7] = 0;
-
-
+    int binary_array[8];
     int i = 0;
     while(n > 0)
     {
-        binary[i] = n % 2;
+        binary_array[i] = n % 2;
         n = n / 2;
         i++;
-
-        //?? füllt er die restlichen Nullen auf?
     }
 
     for (int j = 7; j >= 0; j--){
-        printf("%i ", binary[j]);
+        printf("%i ", binary_array[j]);
         //print_bulb(binary[j]);
     }
     printf("\n");
