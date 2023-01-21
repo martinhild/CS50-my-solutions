@@ -25,10 +25,10 @@ int main(void)
     }
 
     //print decimal array for testing
-    for(int i = 0; i < length; i++)
-    {
-        printf("%i\n", decimal_array[i]);
-    }
+    //for(int i = 0; i < length; i++)
+    //{
+    //    printf("%i\n", decimal_array[i]);
+    //}
 
 
 
