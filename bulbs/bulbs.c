@@ -42,6 +42,10 @@ int main(void)
 void decToBinary (int n)
 {
     int binary[8];
+    for(int i = 0; i < 8; i++)
+    {
+        binary[i] = 0;
+    }
 
     int i = 0;
     while(n > 0)
@@ -49,7 +53,7 @@ void decToBinary (int n)
         binary[i] = n % 2;
         n = n / 2;
         i++;cd
-        
+
         //?? füllt er die restlichen Nullen auf?
     }
 
