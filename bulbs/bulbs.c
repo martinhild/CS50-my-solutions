@@ -52,6 +52,7 @@ void printBulbs (int n)
         x++;
     }
 
+    //print it in reverse with bulbs instead of 0s/1s
     for (int j = 7; j >= 0; j--){
         print_bulb(binary_array[j]);
     }
