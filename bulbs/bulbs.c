@@ -27,13 +27,13 @@ int main(void)
     //print bulbs
     for(int k = 0; k < length; k++)
     {
-        printBulbs (decimal_array[k]);
+        printBulbs(decimal_array[k]);
     }
 
 }
 
 //function for building binary array and printing it in reverse with bulbs
-void printBulbs (int n)
+void printBulbs(int n)
 {
     int binary_array[8];
 
