@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+
 int count_letters();
 
 int main(void)
@@ -8,8 +10,8 @@ int main(void)
 
 //get Text
 string text = get_string("Text: ");
-//print text
-printf("Text: %s\n", text);
+//print number ofletters
+printf("%i letters\n", count_letters(text));
 
 
 }
@@ -17,9 +19,8 @@ printf("Text: %s\n", text);
 
 int count_letters(string text)
 {
-    int length;
     int letters = 0;
-    for (int i = 0; i < length(); i++)
+    for (int i = 0; i < strlen(text); i++)
     {
         if (isalpha(text[i]))
         {
