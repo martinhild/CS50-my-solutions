@@ -24,14 +24,13 @@ int main(void)
         decimal_array[i] = message[i];
     }
 
-    //loop through decimal_array,
-    //every loop, build an array for the binary number (binary number is reverse)
-    //print elements of this array in reverse order
-
+    //print decimal array for testing
     for(int i = 0; i < length; i++)
     {
         printf("%i\n", decimal_array[i]);
     }
+
+
 
     for(int k = 0; k < length; k++)
     {
@@ -40,7 +39,7 @@ int main(void)
 
 }
 
-//function for..
+//function for building binary array and print out reverse
 void decToBinary (int n)
 {
     int binary[8];
