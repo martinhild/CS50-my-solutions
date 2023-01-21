@@ -14,7 +14,7 @@ int main(void)
     //get the message
     string message = get_string("Message: ");
 
-    //count length of the message
+    //get length of the message
     int length = strlen(message);
 
     //build decimal_array with ascii numbers
@@ -24,14 +24,7 @@ int main(void)
         decimal_array[i] = message[i];
     }
 
-    //print decimal array for testing
-    //for(int i = 0; i < length; i++)
-    //{
-    //    printf("%i\n", decimal_array[i]);
-    //}
-
-
-
+    //print bulbs
     for(int k = 0; k < length; k++)
     {
         printBulbs (decimal_array[k]);
@@ -39,7 +32,7 @@ int main(void)
 
 }
 
-//function for building binary array and printing it in reverse
+//function for building binary array and printing it in reverse with bulbs
 void printBulbs (int n)
 {
     int binary_array[8];
