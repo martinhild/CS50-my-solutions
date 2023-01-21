@@ -43,10 +43,15 @@ int main(void)
 void decToBinary (int n)
 {
     int binary[8];
-    for(int i = 0; i < 11; i++)
-    {
-        binary[i] = 0;
-    }
+    binary[0] = 0;
+    binary[1] = 0;
+    binary[2] = 0;
+    binary[3] = 0;
+    binary[4] = 0;
+    binary[5] = 0;
+    binary[6] = 0;
+    binary[7] = 0;
+
 
     int i = 0;
     while(n > 0)
