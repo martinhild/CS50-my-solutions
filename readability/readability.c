@@ -12,11 +12,13 @@ string text = get_string("Text: ");
 printf("Text: %s\n", text);
 
 
+}
+
 
 int count_letters(string text)
 {
     int letters = 0;
-    for (i = 0; i < text.getLength(); i++)
+    for (int i = 0; i < text.getLength(); i++)
     {
         if (isalpha(text[i]))
         {
@@ -24,6 +26,4 @@ int count_letters(string text)
         }
     }
     return letters;
-}
-
 }
