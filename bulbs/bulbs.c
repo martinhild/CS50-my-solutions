@@ -60,7 +60,6 @@ void printBulbs (int n)
 }
 
 
-
 void print_bulb(int bit)
 {
     if (bit == 0)
