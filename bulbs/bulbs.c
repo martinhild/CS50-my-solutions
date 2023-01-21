@@ -33,19 +33,19 @@ int main(void)
 }
 
 //function for building binary array and printing it in reverse with bulbs
-void printBulbs (int n)
+void printBulbs(int n)
 {
     int binary_array[8];
 
     // fill/reset binar_arrray with/to 0s
-    for(int i = 0; i < 8; i++)
+    for (int i = 0; i < 8; i++)
     {
         binary_array[i] = 0;
     }
 
     //build the binary number (it is reverse)
     int x = 0;
-    while(n > 0)
+    while (n > 0)
     {
         binary_array[x] = n % 2;
         n = n / 2;
@@ -53,7 +53,8 @@ void printBulbs (int n)
     }
 
     //print it in reverse with bulbs instead of 0s/1s
-    for (int j = 7; j >= 0; j--){
+    for (int j = 7; j >= 0; j--)
+    {
         print_bulb(binary_array[j]);
     }
     printf("\n");
