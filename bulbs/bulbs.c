@@ -39,7 +39,7 @@ int main(void)
 
 }
 
-//function for building binary array and print out reverse
+//function for building binary array and printing it in reverse
 void decToBinary (int n)
 {
     int binary_array[8];
