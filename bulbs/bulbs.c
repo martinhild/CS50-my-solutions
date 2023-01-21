@@ -52,7 +52,7 @@ void printBulbs (int n)
     }
 
     for (int j = 7; j >= 0; j--){
-        print_bulb(binary_array[j]);
+        printf("%i ", binary_array[j]);
         //print_bulb(binary[j]);
     }
     printf("\n");
