@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-void decToBinary (int n);
+void printBulbs(int n);
 
 int main(void)
 {
@@ -34,13 +34,13 @@ int main(void)
 
     for(int k = 0; k < length; k++)
     {
-        decToBinary (decimal_array[k]);
+        printBulbs (decimal_array[k]);
     }
 
 }
 
 //function for building binary array and printing it in reverse
-void decToBinary (int n)
+void printBulbs (int n)
 {
     int binary_array[8];
     int x = 0;
@@ -52,7 +52,7 @@ void decToBinary (int n)
     }
 
     for (int j = 7; j >= 0; j--){
-        printf("%i ", binary_array[j]);
+        print_bulb(binary_array[j]);
         //print_bulb(binary[j]);
     }
     printf("\n");
