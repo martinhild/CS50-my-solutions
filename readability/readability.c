@@ -15,10 +15,15 @@ printf("Text: %s\n", text);
 
 int count_letters(string text)
 {
+    int letters = 0;
     for (i = 0; i < text.getLength(); i++)
     {
-        if (text[i])
+        if (isalpha(text[i]))
+        {
+            letters++;
+        }
     }
+    return letters;
 }
 
 }
