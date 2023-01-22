@@ -16,6 +16,7 @@ string text = get_string("Text: ");
 //print number ofletters
 printf("%i letters\n", count_letters(text));
 printf("%i words\n", count_words(text));
+printf("%i sentences\n", count_sentences(text));
 
 
 }
@@ -52,7 +53,7 @@ int count_sentences(string text)
     int sentences = 0;
     for (int i = 0; i < strlen(text); i++)
     {
-        if (isspace(text[i]))
+        if (text[i] == '!')
         {
             sentences++;
         }
