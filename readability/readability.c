@@ -14,11 +14,11 @@ int main(void)
 
     //get Text
     string text = get_string("Text: ");
-
+    //count letters, words and sentences
     float letters = (float)count_letters(text);
     float words = (float)count_words(text);
     float sentences = (float)count_sentences(text);
-
+    //calculate index
     float l = letters / words * 100;
     float s = sentences / words * 100;
     float index = 0.0588 * l - 0.296 * s - 15.8;
