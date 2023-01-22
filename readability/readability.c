@@ -32,8 +32,13 @@ float index = 0.0588 * l - 0.296 * s - 15.8;
 // index auf nächsten integer runden
 int grade = rint(index);
 
-if grade 
-printf("%i\n", grade);
+if (grade > 16 )
+{
+    printf("Grade 16+\n");
+}else{
+    printf("Grade %i\n", grade);
+}
+//printf("%i\n", grade);
 
 }
 
