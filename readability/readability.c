@@ -27,7 +27,7 @@ float s = sentences / words * 100;
 
 float index = 0.0588 * l - 0.296 * s - 15.8;
 
-
+// index auf nächsten integer runden
 
 }
 
