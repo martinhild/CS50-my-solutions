@@ -13,16 +13,21 @@ int main(void)
 
 //get Text
 string text = get_string("Text: ");
-//print number ofletters
-printf("%i letters\n", count_letters(text));
-printf("%i words\n", count_words(text));
-printf("%i sentences\n", count_sentences(text));
+//print number of letters, words, sentences
+//printf("%i letters\n", count_letters(text));
+//printf("%i words\n", count_words(text));
+//printf("%i sentences\n", count_sentences(text));
 
 float letters = (float)count_letters(text);
 float words = (float)count_words(text);
 float sentences = (float)count_sentences(text);
 
-float L = letters / words * 100;
+float l = letters / words * 100;
+float s = sentences / words * 100;
+
+float index = 0.0588 * l - 0.296 * s - 15.8;
+
+
 
 }
 
