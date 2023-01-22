@@ -21,13 +21,12 @@ float sentences = (float)count_sentences(text);
 
 float l = letters / words * 100;
 float s = sentences / words * 100;
-
 float index = 0.0588 * l - 0.296 * s - 15.8;
 
-// index auf nächsten integer runden
+//round index to integer
 int grade = rint(index);
 
-
+//print grade
 if (grade >= 16 )
 {
     printf("Grade 16+\n");
@@ -41,11 +40,9 @@ else
     printf("Grade %i\n", grade);
 }
 
-//printf("%i\n", grade);
-
 }
 
-
+//count letters
 int count_letters(string text)
 {
     int letters = 0;
@@ -59,6 +56,7 @@ int count_letters(string text)
     return letters;
 }
 
+//count words
 int count_words(string text)
 {
     int words = 0;
@@ -72,6 +70,7 @@ int count_words(string text)
     return words + 1;
 }
 
+//count sentences
 int count_sentences(string text)
 {
     int sentences = 0;
