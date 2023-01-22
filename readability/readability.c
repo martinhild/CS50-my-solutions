@@ -18,7 +18,11 @@ printf("%i letters\n", count_letters(text));
 printf("%i words\n", count_words(text));
 printf("%i sentences\n", count_sentences(text));
 
-float letters = count_letters(text);
+float letters = (float)count_letters(text);
+float words = (float)count_words(text);
+float sentences = (float)count_sentences(text);
+
+float L = letters / words * 100;
 
 }
 
