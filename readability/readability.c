@@ -14,11 +14,6 @@ int main(void)
 
 //get Text
 string text = get_string("Text: ");
-//string text = "Would you like them here or there? I would not like them here or there. I would not like them anywhere.";
-//print number of letters, words, sentences
-//printf("%i letters\n", count_letters(text));
-//printf("%i words\n", count_words(text));
-//printf("%i sentences\n", count_sentences(text));
 
 float letters = (float)count_letters(text);
 float words = (float)count_words(text);
