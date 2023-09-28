@@ -15,7 +15,7 @@ Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
 
 After 10 000 simulations the results usually differed by less than one percentage point.
-I would call that “good enough”. (Depending on the fee and the number of times )
+I would call that “good enough”. (Depending on how much the fee would be and how often I will use the program)
 
 
 
