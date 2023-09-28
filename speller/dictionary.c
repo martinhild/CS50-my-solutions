@@ -12,7 +12,7 @@
 #include <stdlib.h>
 // Variables added by me
 int numberOfWords = 0;
-
+cod
 // Represents a node in a hash table
 typedef struct node
 {
