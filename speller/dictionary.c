@@ -34,31 +34,15 @@ bool check(const char *word)
     // TODO
     node* cursor = table[hash(word)];
 
-    while(1)
+    while(cursor != NULL)
     {
-        if (cursor == NULL)
-        {
-            return false;
-        }
         if (strcasecmp(word, cursor->word) == 0)
         {
             return true;
         }
-        else
-        {
         cursor = cursor->next;
-        }
     }
-
-    // while(cursor != NULL)
-    // {
-    //     if (strcasecmp(word, cursor->word) == 0)
-    //     {
-    //         return true;
-    //     }
-    //     cursor = cursor->next;
-    // }
-    // return false;
+    return false;
 }
 
 // Hashes word to a number
@@ -66,10 +50,6 @@ unsigned int hash(const char *word)
 {
     // TODO: Improve this hash function
     unsigned int x = toupper(word[0]) - 'A';
-/*     if (strlen(word) > 1)
-    {
-        x = x + toupper(word[1]) - 'A';
-    } */
     return x;
 }
 
