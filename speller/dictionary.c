@@ -10,6 +10,7 @@
 #include <string.h>
 #include <strings.h>
 #include <stdlib.h>
+
 // Variables added by me
 int numberOfWords = 0;
 
