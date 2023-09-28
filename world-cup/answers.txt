@@ -11,11 +11,13 @@ Questions:
 
 Which predictions, if any, proved incorrect as you increased the number of simulations?: TODO
 
-I didn't have any predictions that turned out to be wrong. I was curious how many simulations it takes so that each team is printed out.
+I didn't have any predictions that turned out to be wrong. I was curious how many simulations
+it takes so that each team is printed out.
 
 Suppose you're charged a fee for each second of compute time your program uses.
 After how many simulations would you call the predictions "good enough"?: TODO
 
-After 10 000 simulations the results for one country usually differed by less than one percentage point.
-I would call that “good enough”. (Depending on how high the fee would be and how often the program will be used in the future.)
+After 10 000 simulations the results for one country usually differed by less than one percentage
+point. I would call that “good enough”. (Depending on how high the fee would be and how often the
+program will be used in the future.)
 
