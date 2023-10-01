@@ -93,6 +93,8 @@ bool load(const char *dictionary)
         new->next = table[hashcode];
         table[hashcode] = new;
         numberOfWords++;
+
+        free(new);
     }
     fclose(file);
 }
