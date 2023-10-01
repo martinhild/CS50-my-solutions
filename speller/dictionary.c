@@ -73,6 +73,8 @@ bool load(const char *dictionary)
     }
     int scan;
     char new_word[LENGTH + 1];
+
+
     while (1)
     {
         // load a word and check for end of file
