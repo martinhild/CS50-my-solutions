@@ -79,6 +79,7 @@ bool load(const char *dictionary)
         scan = fscanf(file, "%s", new_word);
         if (scan == EOF)
         {
+            fclose(file);
             return true;
         }
 
@@ -87,6 +88,7 @@ bool load(const char *dictionary)
         if (new == NULL)
         {
             printf("Error: node *new = NULL");
+            fclose(file);
             return false;
         }
         strcpy(new->word, new_word);
