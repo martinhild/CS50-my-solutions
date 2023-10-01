@@ -104,9 +104,10 @@ bool load(const char *dictionary)
         table[hashcode] = new;
         numberOfWords++;
 
-        free(new);
+
     }
     fclose(file);
+    free(new);
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
