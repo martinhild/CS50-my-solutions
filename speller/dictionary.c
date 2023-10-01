@@ -68,46 +68,33 @@ bool load(const char *dictionary)
     if (file == NULL)
     {
         printf("Could not open file");
-        fclose(file);
         return false;
     }
-
-    char new_word[LENGTH + 1];
-
-    // create new node
-    node *new = malloc(sizeof(node));
-    if (new == NULL)
-    {
-        printf("Error: node *new = NULL");
-        fclose(file);
-        free(new);
-        return false;
-    }
-
     int scan;
-
+    char new_word[LENGTH + 1];
     while (1)
     {
         // load a word and check for end of file
         scan = fscanf(file, "%s", new_word);
         if (scan == EOF)
         {
-            fclose(file);
-            free(new);
             return true;
         }
 
-
+        // create new node
+        node *new = malloc(sizeof(node));
+        if (new == NULL)
+        {
+            printf("Error: node *new = NULL");
+            return false;
+        }
         strcpy(new->word, new_word);
         unsigned int hashcode = hash(new_word);
         new->next = table[hashcode];
         table[hashcode] = new;
         numberOfWords++;
-
-
     }
     fclose(file);
-    free(new);
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
