@@ -93,6 +93,7 @@ bool load(const char *dictionary)
         if (scan == EOF)
         {
             fclose(file);
+            free(new);
             return true;
         }
 
