@@ -89,6 +89,7 @@ bool load(const char *dictionary)
         {
             printf("Error: node *new = NULL");
             fclose(file);
+            free(new);
             return false;
         }
         strcpy(new->word, new_word);
