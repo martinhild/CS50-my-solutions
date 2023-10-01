@@ -26,7 +26,7 @@ node;
 const unsigned int N = 26;
 
 // Hash table
-node *table[N];
+node *table[N];  //malloc?????
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
