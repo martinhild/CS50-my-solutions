@@ -71,9 +71,8 @@ bool load(const char *dictionary)
         fclose(file);
         return false;
     }
-    int scan;
-    char new_word[LENGTH + 1];
 
+    char new_word[LENGTH + 1];
 
     // create new node
     node *new = malloc(sizeof(node));
@@ -83,7 +82,9 @@ bool load(const char *dictionary)
         fclose(file);
         free(new);
         return false;
-        }
+    }
+
+    int scan;
 
     while (1)
     {
