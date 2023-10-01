@@ -75,6 +75,16 @@ bool load(const char *dictionary)
     char new_word[LENGTH + 1];
 
 
+    // create new node
+    node *new = malloc(sizeof(node));
+    if (new == NULL)
+    {
+        printf("Error: node *new = NULL");
+        fclose(file);
+        free(new);
+        return false;
+        }
+
     while (1)
     {
         // load a word and check for end of file
@@ -85,15 +95,7 @@ bool load(const char *dictionary)
             return true;
         }
 
-        // create new node
-        node *new = malloc(sizeof(node));
-        if (new == NULL)
-        {
-            printf("Error: node *new = NULL");
-            fclose(file);
-            free(new);
-            return false;
-        }
+
         strcpy(new->word, new_word);
         unsigned int hashcode = hash(new_word);
         new->next = table[hashcode];
