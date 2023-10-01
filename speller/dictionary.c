@@ -68,6 +68,7 @@ bool load(const char *dictionary)
     if (file == NULL)
     {
         printf("Could not open file");
+        fclose(file);
         return false;
     }
     int scan;
