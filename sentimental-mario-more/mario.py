@@ -1,7 +1,7 @@
 # TODO
 def main():
-    height = get_height
-    print(height)
+
+    print(get_height)
 
 #get height from user input
 def get_height():
