@@ -10,7 +10,7 @@ def main():
         print("INVALID")
         return
 
-    
+
 
 
 
@@ -36,15 +36,17 @@ def LuhnsAlgorithm(number):
     else:
         return False
 
-
+# gets number from user
 def get_number():
     return get_string("Number: ")
 
+# checks the provider
+def provider(number):
+    # American Express numbers start with 34 or 37
 
-# def
-# American Express numbers start with 34 or 37
-# MasterCard numbers start with 51, 52, 53, 54, or 55
-# Visa numbers start with 4
+    # MasterCard numbers start with 51, 52, 53, 54, or 55
+
+    # Visa numbers start with 4
 
 main()
 
