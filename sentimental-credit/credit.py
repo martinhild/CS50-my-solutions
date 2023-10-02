@@ -5,13 +5,10 @@ from cs50 import get_string
 
 def main():
     number = get_number()
-    print(validate(number))
+    print(LuhnsAlgorithm(number))
 
 # check if a credit card number is valid
-def validate(number):
-    # get a number from user
-
-
+def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
     string_1 = ""
     for x in number[len(number)-2 :: -2]:
@@ -31,9 +28,6 @@ def validate(number):
         return True
     else:
         return False
-
-
-
 
 
 def get_number():
