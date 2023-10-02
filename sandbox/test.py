@@ -1,5 +1,5 @@
 def main():
-    LuhnsAlgorithm()
+    LuhnsAlgorithm("242342423")
 
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
