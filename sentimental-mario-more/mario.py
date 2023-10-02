@@ -13,7 +13,7 @@ def get_height():
             if 0 < height < 9:
                 return height
         except ValueError:
-            print("No number")
+            
 
 
 main()
