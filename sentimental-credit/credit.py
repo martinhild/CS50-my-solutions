@@ -7,7 +7,7 @@ def main():
 
     print(validate())
 
-# check if a credit card number is valid
+# checks if a credit card number is valid
 def validate():
     # get a number from user
     number = get_number()
