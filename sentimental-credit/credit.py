@@ -10,7 +10,7 @@ def main():
     # add every other digit multiplied by 2 to a list, starting with the number’s second-to-last digit,
     string1 = ""
     for x in number[len(number)-2 :: -2]:
-        string1 += (int(x) * 2)
+        string1 += str((int(x) * 2))
     print(string1)
     # add digits together
     # sum_1 = sum(list_1)
