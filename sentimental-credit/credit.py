@@ -10,6 +10,7 @@ def main():
         print("INVALID")
         return
 
+    provider(number)
 
 
 
@@ -49,14 +50,17 @@ def provider(number):
         print("VISA")
         return
     # American Express numbers start with 34 or 37
-    
-    if number[0] + number[1] == 34:
+    american_express = [34, 37]
+    if number[0] + number[1] in american_express:
         print("AMERICAN EXPRESS")
         return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
-    elif number[0] + number[1] == 34:
-        print("AMERICAN EXPRESS")
-
+    master_card = [51, 52, 53, 54, 55]
+    if number[0] + number[1] in master_card:
+        print("MASTERCARD")
+        return
+    print("INVALID")
+    return
 
 main()
 
