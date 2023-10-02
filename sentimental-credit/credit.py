@@ -20,9 +20,9 @@ def main():
     print(sum_1)
 
     # sum up the other digits of the user's number
-    for x in number[len(number)-2 :: -2]:
-        string_1 += str((int(x) * 2))
-    print(string_1)
+    for x in number[len(number)-1 :: -2]:
+        # string_1 += str((int(x) * 2))
+        print(x)
 
 
 
