@@ -5,23 +5,17 @@ from cs50 import get_string
 
 def main():
     number = get_number()
-
     if not LuhnsAlgorithm(number):
         print("INVALID")
         return
-
     check_provider(number)
-
-
-
-
 
 
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
     string_1 = ""
-    for x in number[len(number)-2 :: -2]:
+    for x in number[len(number) - 2 :: -2]:
         string_1 += str((int(x) * 2))
 
     # sum of string_1's digits
@@ -30,18 +24,20 @@ def LuhnsAlgorithm(number):
         sum += int(x)
 
     # add the other digits of the user's number to sum
-    for x in number[len(number)-1 :: -2]:
+    for x in number[len(number) - 1 :: -2]:
         sum += int(x)
 
     # check if sum's last digit is 0
-    if sum%10 == 0:
+    if sum % 10 == 0:
         return True
     else:
         return False
 
+
 # gets number from user
 def get_number():
     return get_string("Number: ")
+
 
 # checks the provider
 def check_provider(number):
@@ -61,5 +57,6 @@ def check_provider(number):
         return
     print("INVALID")
     return
+
 
 main()
