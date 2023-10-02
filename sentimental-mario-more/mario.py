@@ -8,9 +8,12 @@ def main():
 
 #get height from user input
 def get_height():
-
-    height = input("Height: ")
-    return height
+    while True:
+        try:
+            height = int(input("Height: "))
+            return height
+        except ValueError:
+            print("No number")
 
 
 main()
