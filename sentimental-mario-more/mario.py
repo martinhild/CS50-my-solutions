@@ -3,8 +3,9 @@ def main():
     height = get_height()
 
     # print #height lines
+
     for line in range(height):
-        print( (height+1 -line) * " " + line * "#")
+        print( (height-line + 1) * " " + (line + 1) * "#")
 
 # get height from user input
 def get_height():
