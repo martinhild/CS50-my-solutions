@@ -7,7 +7,7 @@ def main():
     number = get_number()
 
     for x in number:
-        print(number[x])
+        print(x)
 
 
 def get_number():
