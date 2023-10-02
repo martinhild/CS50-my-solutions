@@ -3,8 +3,8 @@ def main():
     print(getHeight())
 
 
- def getHeight():
-height = input("Height: ")
+def getHeight():
+    height = input("Height: ")
     return height
 
 
