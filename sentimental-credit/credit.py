@@ -6,8 +6,9 @@ from cs50 import get_string
 def main():
     number = get_number()
 
-    for x in number[len(number)-1 :: -1]:
+    for x in number[len(number)-2 :: -2]:
         print(x)
+
 
 
 def get_number():
