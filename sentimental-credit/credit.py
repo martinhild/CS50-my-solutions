@@ -49,7 +49,8 @@ def provider(number):
         print("AMERICAN EXPRESS")
         return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
-
+    elif number[0] + number[1] == 34:
+        print("AMERICAN EXPRESS")
     # Visa numbers start with 4
 
 main()
