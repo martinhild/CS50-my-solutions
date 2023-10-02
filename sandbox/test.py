@@ -14,6 +14,7 @@ def LuhnsAlgorithm(number):
     sum = 0
     for x in string_1:
         sum += int(x)
+    print(sum)
 
     # add the other digits of the user's number to sum
     for x in number[len(number) - 1 :: -2]:
