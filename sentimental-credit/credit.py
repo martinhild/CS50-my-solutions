@@ -44,14 +44,19 @@ def get_number():
 
 # checks the provider
 def provider(number):
+    # Visa numbers start with 4
+    if number[0] == 4:
+        print("VISA")
+        return
     # American Express numbers start with 34 or 37
+    
     if number[0] + number[1] == 34:
         print("AMERICAN EXPRESS")
         return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
     elif number[0] + number[1] == 34:
         print("AMERICAN EXPRESS")
-    # Visa numbers start with 4
+
 
 main()
 
