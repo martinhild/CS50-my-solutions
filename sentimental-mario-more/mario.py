@@ -1,9 +1,12 @@
 # TODO
 def main():
-    print(getHeight())
+
+    for row in range(height()):
+        print(row)
 
 
-def getHeight():
+
+def height():
     height = input("Height: ")
     return height
 
