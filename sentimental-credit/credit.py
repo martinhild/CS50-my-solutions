@@ -4,6 +4,11 @@ from cs50 import get_string
 
 
 def main():
+
+    print(validate())
+
+# check if a credit card number is valid
+def validate():
     # get a number from user
     number = get_number()
 
@@ -21,7 +26,11 @@ def main():
     for x in number[len(number)-1 :: -2]:
         sum += int(x)
 
-    print(sum)
+    # check if sum's last digit is 0
+    if sum%10 == 0:
+        return True
+    else:
+        return False
 
 
 
