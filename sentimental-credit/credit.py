@@ -11,6 +11,7 @@ def main():
     list_1 = []
     for x in number[len(number)-2 :: -2]:
         list_1.append(int(x) * 2)
+    print(list_1)
     # add digits together
     sum_1 = sum(list_1)
     print(sum_1)
