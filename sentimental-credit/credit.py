@@ -14,6 +14,8 @@ def main():
 
 
 
+
+
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
@@ -43,7 +45,9 @@ def get_number():
 # checks the provider
 def provider(number):
     # American Express numbers start with 34 or 37
-
+    if number[0] + number[1] == 34:
+        print("AMERICAN EXPRESS")
+        return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
 
     # Visa numbers start with 4
