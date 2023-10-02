@@ -20,6 +20,7 @@ def LuhnsAlgorithm(number):
     for x in number[len(number) - 1 :: -2]:
         sum += int(x)
 
+    print(sum)
     # check if sum's last digit is 0
     if sum % 10 == 0:
         return True
