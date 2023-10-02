@@ -4,7 +4,7 @@ def main():
 
     #print #height lines
     for line in range(height):
-        print(line)
+        print(line + 1)
 
 #get height from user input
 def get_height():
