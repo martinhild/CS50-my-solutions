@@ -2,13 +2,15 @@
 from cs50 import get_int
 from cs50 import get_string
 
+
 def main():
     number = get_number()
     print(number)
-    name = "Peter"
-    print name[1]
+    print(number[1])
+
 
 def get_number():
     return get_string("Number: ")
+
 
 main()
