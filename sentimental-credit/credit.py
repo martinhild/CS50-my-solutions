@@ -7,10 +7,13 @@ def main():
     # get number from user
     number = get_number()
 
-    # add every other digit, starting with the number’s second-to-last digit, to a list
-    
+    # add every other digit multiplied by 2 to a list, starting with the number’s second-to-last digit,
+    list_1 = []
     for x in number[len(number)-2 :: -2]:
-        print(x)
+        list_1.append(int(x) * 2)
+    # add digits together
+    sum_1 = sum(list_1)
+    print(sum_1)
 
 
 
