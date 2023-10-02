@@ -5,13 +5,12 @@ from cs50 import get_string
 
 def main():
     number = get_number()
-    print(number[0])
 
     if not LuhnsAlgorithm(number):
         print("INVALID")
         return
 
-    provider(number)
+    check_provider(number)
 
 
 
@@ -45,7 +44,7 @@ def get_number():
     return get_string("Number: ")
 
 # checks the provider
-def provider(number):
+def check_provider(number):
     # Visa numbers start with 4
     if number[0] == "4":
         print("VISA")
@@ -64,5 +63,3 @@ def provider(number):
     return
 
 main()
-
-# 4003600000000014
