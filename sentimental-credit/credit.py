@@ -5,8 +5,8 @@ from cs50 import get_string
 
 def main():
     number = get_number()
-
-    for x in number[0:3:1]:
+    number.reverse()
+    for x in number[::2]:
         print(x)
 
 
