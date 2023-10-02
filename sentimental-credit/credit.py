@@ -48,7 +48,7 @@ def check_provider(number):
     # American Express numbers start with 34 or 37
     american_express = ["34", "37"]
     if number[0] + number[1] in american_express:
-        print("AMERICAN EXPRESS")
+        print("AMEX")
         return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
     master_card = ["51", "52", "53", "54", "55"]
