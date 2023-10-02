@@ -5,6 +5,7 @@ from cs50 import get_string
 
 def main():
     number = get_number()
+    print(number[0])
 
     if not LuhnsAlgorithm(number):
         print("INVALID")
@@ -46,16 +47,16 @@ def get_number():
 # checks the provider
 def provider(number):
     # Visa numbers start with 4
-    if number[0] == 4:
+    if number[0] == "4":
         print("VISA")
         return
     # American Express numbers start with 34 or 37
-    american_express = [34, 37]
+    american_express = ["34", "37"]
     if number[0] + number[1] in american_express:
         print("AMERICAN EXPRESS")
         return
     # MasterCard numbers start with 51, 52, 53, 54, or 55
-    master_card = [51, 52, 53, 54, 55]
+    master_card = ["51", "52", "53", "54", "55"]
     if number[0] + number[1] in master_card:
         print("MASTERCARD")
         return
