@@ -4,10 +4,11 @@ def main():
     # for row in range(height()):
     #     print(row)
 
-    print(2 * height())
+    print(2 * get_height())
 
+#get height from user input
+def get_height():
 
-def height():
     height = input("Height: ")
     return height
 
