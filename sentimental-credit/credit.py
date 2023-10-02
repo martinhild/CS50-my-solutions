@@ -8,6 +8,8 @@ def main():
     if not LuhnsAlgorithm(number):
         print("INVALID")
 
+
+
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
@@ -34,5 +36,10 @@ def LuhnsAlgorithm(number):
 def get_number():
     return get_string("Number: ")
 
+
+def
+American Express numbers start with 34 or 37
+MasterCard numbers start with 51, 52, 53, 54, or 55
+Visa numbers start with 4
 
 main()
