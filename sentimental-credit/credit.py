@@ -4,13 +4,13 @@ from cs50 import get_string
 
 
 def main():
-
-    print(validate())
-
-# checks if a credit card number is valid
-def validate():
-    # get a number from user
     number = get_number()
+    print(validate(number))
+
+# check if a credit card number is valid
+def validate(number):
+    # get a number from user
+
 
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
     string_1 = ""
