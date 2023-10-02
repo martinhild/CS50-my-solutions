@@ -7,9 +7,9 @@
 
 // Libraries added by me
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <strings.h>
-#include <stdlib.h>
 
 // Variables added by me
 int numberOfWords = 0;
@@ -19,22 +19,21 @@ typedef struct node
 {
     char word[LENGTH + 1];
     struct node *next;
-}
-node;
+} node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
 
 // Hash table
-node *table[N];  //malloc?????
+node *table[N]; // malloc?????
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
     // TODO
-    node* cursor = table[hash(word)];
+    node *cursor = table[hash(word)];
 
-    while(cursor != NULL)
+    while (cursor != NULL)
     {
         if (strcasecmp(word, cursor->word) == 0)
         {
@@ -97,7 +96,6 @@ bool load(const char *dictionary)
         table[hashcode] = new;
         numberOfWords++;
     }
-
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
@@ -113,17 +111,18 @@ bool unload(void)
     // TODO
     for (int i = 0; i < N; i++)
     {
-        node* cursor = table[i];
+        node *cursor = table[i];
 
         if (cursor != NULL)
         {
             do
             {
-                node* tmp = cursor;
+                node *tmp = cursor;
                 cursor = cursor->next;
                 free(tmp);
-                } while(cursor != NULL);
             }
+            while (cursor != NULL);
+        }
     }
     return true;
 }
