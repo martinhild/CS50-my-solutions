@@ -17,12 +17,15 @@ def main():
     sum_1 = 0
     for x in string_1:
         sum_1 += int(x)
-    print(sum_1)
 
     # sum up the other digits of the user's number
+    sum_2 = 0
     for x in number[len(number)-1 :: -2]:
-        # string_1 += str((int(x) * 2))
-        print(x)
+        sum_2 += int(x)
+
+    # add sums together
+    sum = sum_1 + sum_2
+    print(sum)
 
 
 
