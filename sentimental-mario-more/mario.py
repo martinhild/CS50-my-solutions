@@ -1,14 +1,17 @@
 # TODO
 def main():
+    height = get_height()
+    print(height)
 
-    print(get_height)
+
 
 #get height from user input
 def get_height():
     while True:
         try:
             height = int(input("Height: "))
-            return height
+            if 0 < height < 9:
+                return height
         except ValueError:
             print("No number")
 
