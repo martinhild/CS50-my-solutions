@@ -1,5 +1,5 @@
 def main():
-    LuhnsAlgorithm("242342423")
+    LuhnsAlgorithm("4062901840")
 
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
@@ -7,6 +7,8 @@ def LuhnsAlgorithm(number):
     string_1 = ""
     for x in number[len(number) - 2 :: -2]:
         string_1 += str((int(x) * 2))
+
+    print(string_1)
 
     # sum of string_1's digits
     sum = 0
