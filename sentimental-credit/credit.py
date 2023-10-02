@@ -5,7 +5,8 @@ from cs50 import get_string
 
 def main():
     number = get_number()
-    print(LuhnsAlgorithm(number))
+    if not LuhnsAlgorithm(number):
+        print("INVALID")
 
 # check if a credit card number is valid
 def LuhnsAlgorithm(number):
