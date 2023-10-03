@@ -4,10 +4,7 @@ from cs50 import get_string
 
 def main():
 
-    text = get_text()
+    text = get_string("Text: ")
 
-
-def get_text():
-    return get_string("Text: ")
 
 main()
