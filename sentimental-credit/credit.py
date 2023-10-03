@@ -61,3 +61,4 @@ def check_provider(number):
 main()
 
 # 4062901840
+# American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers. 
