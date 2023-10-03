@@ -3,7 +3,6 @@ from cs50 import get_string
 
 
 def main():
-
     number = get_number()
 
     if not LuhnsAlgorithm(number):
@@ -12,7 +11,7 @@ def main():
     print_provider(number)
 
 
-# checks if a credit card number is legit according to LuhnsAlgorithm
+# checks if a credit card number is legit according to Luhn's Algorithm
 def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
     string_1 = ""
@@ -68,5 +67,3 @@ def print_provider(number):
 
 
 main()
-
-# 4062901840
