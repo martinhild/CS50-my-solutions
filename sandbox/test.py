@@ -1,6 +1,7 @@
 x = int(input("Number: "))
 
-if x == (3 or 4):
+if 3 <= x <= 5:
+
     print("yes")
 else:
     print("no")
