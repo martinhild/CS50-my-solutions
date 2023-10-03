@@ -40,6 +40,7 @@ def get_number():
 
 # checks the provider
 def check_provider(number):
+    # Visa uses 13- and 16-digit numbers.
     # Visa numbers start with 4
     if number[0] == "4":
         print("VISA")
@@ -61,4 +62,4 @@ def check_provider(number):
 main()
 
 # 4062901840
-# American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers. 
+# American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers.
