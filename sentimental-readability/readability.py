@@ -47,5 +47,4 @@ def print_grade(index):
         print(f"Grade {round(index)}")
 
 
-
 main()
