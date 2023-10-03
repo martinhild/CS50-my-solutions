@@ -3,14 +3,16 @@ from cs50 import get_string
 
 
 def main():
+
     number = get_number()
+
     if not LuhnsAlgorithm(number):
         print("INVALID")
         return
-    check_provider(number)
+    print_provider(number)
 
 
-# check if a credit card number is valid
+# checks if a credit card number is legit according to LuhnsAlgorithm
 def LuhnsAlgorithm(number):
     # add every other digit multiplied by 2 to a string, starting with the number’s second-to-last digit,
     string_1 = ""
@@ -39,7 +41,7 @@ def get_number():
 
 
 # checks the provider
-def check_provider(number):
+def print_provider(number):
     # Visa uses 13- and 16-digit numbers
     if len(number) == 13 or len(number) == 16:
         # Visa numbers start with 4
