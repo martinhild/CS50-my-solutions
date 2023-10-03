@@ -41,10 +41,11 @@ def get_number():
 # checks the provider
 def check_provider(number):
     # Visa uses 13- and 16-digit numbers.
-    # Visa numbers start with 4
-    if number[0] == "4":
-        print("VISA")
-        return
+    if len(number) == 13 or 16:
+        # Visa numbers start with 4
+        if number[0] == "4":
+            print("VISA")
+            return
     # American Express numbers start with 34 or 37
     american_express = ["34", "37"]
     if number[0] + number[1] in american_express:
