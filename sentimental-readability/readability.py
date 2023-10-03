@@ -12,6 +12,7 @@ def main():
 
     print(f"Letters: ", letters)
     print(f"Words: ", words)
+    print(f"l: ", l)
     print(f"Sentences: ", sentences)
 
     print (coleman_Liau_index)
