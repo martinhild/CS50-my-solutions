@@ -13,10 +13,12 @@ def main():
 
     print(f"Letters: ", letters)
     print(f"Words: ", words)
-    print(f"l: ", l)
     print(f"Sentences: ", sentences)
-
+    print(f"l: ", l)
     print (coleman_Liau_index)
+
+    print_grade(coleman_Liau_index):
+
 
 
 def count_letters(text):
@@ -43,5 +45,8 @@ def count_sentences(text):
             sentences += 1
     return sentences
 
+
+def print_grade():
+    
 
 main()
