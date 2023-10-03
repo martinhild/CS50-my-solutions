@@ -3,10 +3,15 @@ from cs50 import get_string
 
 
 def main():
-
     text = get_string("Text: ")
-    L = letters(text) # missing: L = letters per 100 words
-    print(L)
+    letters = letters(text)
+    words = words(text)
+    # sentences = sentences(text)
+
+    L = 100 * letters(text) / words(text)
+
+    print(letters)
+    print(words)
 
 def letters(text):
     letters = 0
@@ -23,3 +28,5 @@ def words(text):
     return words +1
 
 main()
+
+# 400 buchstaben / 200 wörter
