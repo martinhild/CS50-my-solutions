@@ -18,7 +18,8 @@ def letters(text):
 def words(text):
     words = 0
     for c in text:
-        if 
-    return words
+        if c == " ":
+            words += 1
+    return words +1
 
 main()
