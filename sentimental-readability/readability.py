@@ -6,12 +6,13 @@ def main():
     text = get_string("Text: ")
     letters = count_letters(text)
     words = count_words(text)
-    # sentences = sentences(text)
+    sentences = count_sentences(text)
 
     L = 100 * letters / words
 
     print(letters)
     print(words)
+    print(sentences)
 
 def count_letters(text):
     letters = 0
@@ -26,6 +27,16 @@ def count_words(text):
         if c == " ":
             words += 1
     return words +1
+
+def count_sentences(text):
+    sentences = 0
+
+    #period, exclamation point, or question mark indicates the end of a sentence
+    end = [".", "!", "?"]
+    for c in text:
+        if c in end:
+            sentences += 1
+    return sentences
 
 main()
 
