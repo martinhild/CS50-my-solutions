@@ -26,7 +26,7 @@ def count_words(text):
     for c in text:
         if c == " ":
             words += 1
-    return words +1
+    return words + 1
 
 
 def count_sentences(text):
