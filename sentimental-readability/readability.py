@@ -6,11 +6,12 @@ def main():
 
     text = get_string("Text: ")
     L = letters(text)
-    print(L)
+    # print(L)
 
 def letters(text):
-    
-    return 4
+
+    print("A" < "a")
+    # return 4
 
 
 main()
