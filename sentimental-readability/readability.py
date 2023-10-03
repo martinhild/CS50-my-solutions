@@ -7,8 +7,9 @@ def main():
     letters = count_letters(text)
     words = count_words(text)
     sentences = count_sentences(text)
-    l = 1.0 * letters / words * 100
-    coleman_Liau_index = 0.0588 * l - 0.296 * sentences - 15.8
+    l = letters / words * 100
+    s = sentences / words * 100
+    coleman_Liau_index = 0.0588 * l - 0.296 * s - 15.8
 
     print(f"Letters: ", letters)
     print(f"Words: ", words)
