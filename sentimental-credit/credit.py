@@ -48,22 +48,22 @@ def print_provider(number):
             print("VISA")
             return
     # American Express uses 15-digit numbers
-    elif len(number) == 15:
+    if len(number) == 15:
         # American Express numbers start with 34 or 37
         american_express = ["34", "37"]
         if number[0] + number[1] in american_express:
             print("AMEX")
             return
     # MasterCard uses 16-digit numbers
-    elif len(number) == 16:
+    if len(number) == 16:
         # MasterCard numbers start with 51, 52, 53, 54, or 55
         master_card = ["51", "52", "53", "54", "55"]
         if number[0] + number[1] in master_card:
             print("MASTERCARD")
             return
-    else:
-        print("INVALID")
-        return
+
+    print("INVALID")
+    return
 
 
 main()
