@@ -10,8 +10,8 @@ def main():
 
 def letters(text):
 
-    print("A" < "a")
-    # return 4
+    for c in text:
+        if c
 
 
 main()
