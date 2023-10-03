@@ -5,11 +5,12 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if not len(sys.argv) == 2:
-        print("incorrect number of command-line arguments")
+    if not len(sys.argv) == 3:
+        print("Usage: python dna.py data.csv sequence.txt")
         return 0
+
     # TODO: Read database file into a variable
-    # file = open(,"a")
+    file = open(sys.argv[1],"a")
     # TODO: Read DNA sequence file into a variable
 
     # TODO: Find longest match of each STR in DNA sequence
