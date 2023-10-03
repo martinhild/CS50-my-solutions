@@ -10,15 +10,7 @@ def main():
     l = letters / words * 100
     s = sentences / words * 100
     coleman_Liau_index = 0.0588 * l - 0.296 * s - 15.8
-
-    print(f"Letters: ", letters)
-    print(f"Words: ", words)
-    print(f"Sentences: ", sentences)
-    print(f"l: ", l)
-    print (coleman_Liau_index)
-
-    print_grade(coleman_Liau_index):
-
+    print_grade(coleman_Liau_index)
 
 
 def count_letters(text):
@@ -46,7 +38,14 @@ def count_sentences(text):
     return sentences
 
 
-def print_grade():
-    
+def print_grade(index):
+    if index < 1:
+        print("Before Grade 1")
+    elif index > 16:
+        print("Grade 16+")
+    else:
+        print(f"Grade {int(index)}")
+
+
 
 main()
