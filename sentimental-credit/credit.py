@@ -40,22 +40,26 @@ def get_number():
 
 # checks the provider
 def check_provider(number):
-    # Visa uses 13- and 16-digit numbers.
-    if len(number) == 13 or 16:
+    # Visa uses 13- and 16-digit numbers
+    if len(number) == 13 or len(number) == 16:
         # Visa numbers start with 4
         if number[0] == "4":
             print("VISA")
             return
-    # American Express numbers start with 34 or 37
-    american_express = ["34", "37"]
-    if number[0] + number[1] in american_express:
-        print("AMEX")
-        return
-    # MasterCard numbers start with 51, 52, 53, 54, or 55
-    master_card = ["51", "52", "53", "54", "55"]
-    if number[0] + number[1] in master_card:
-        print("MASTERCARD")
-        return
+    # American Express uses 15-digit numbers
+    if len(number) == 15:
+        # American Express numbers start with 34 or 37
+        american_express = ["34", "37"]
+        if number[0] + number[1] in american_express:
+            print("AMEX")
+            return
+    # MasterCard uses 16-digit numbers
+    if len(number) == 16:
+        # MasterCard numbers start with 51, 52, 53, 54, or 55
+        master_card = ["51", "52", "53", "54", "55"]
+        if number[0] + number[1] in master_card:
+            print("MASTERCARD")
+            return
     print("INVALID")
     return
 
