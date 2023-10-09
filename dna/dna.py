@@ -19,7 +19,7 @@ def main():
     #print(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
-
+    strs = []
     for i in range(len(reader.fieldnames))[1::]:
         str = reader.fieldnames[i]
         longest_match(sequence,str)
