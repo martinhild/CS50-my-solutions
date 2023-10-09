@@ -17,17 +17,15 @@ def main():
     with open(sys.argv[2],"r") as txtfile:
         sequence = txtfile.read()
 
-    #testing:
-
 
     # TODO: Find longest match of each STR in DNA sequence
-    strs_in_sequence = {}
+    xstrs_in_sequence = {}
     for i in range(len(reader.fieldnames))[1::]:
-        str = reader.fieldnames[i]
-        something = (longest_match(sequence,str))
-        strs_in_sequence[str] = something
+        xstr = reader.fieldnames[i]
+        something = (longest_match(sequence,xstr))
+        xstrs_in_sequence[xstr] = str(something)
 
-    print(strs_in_sequence)
+    print(xstrs_in_sequence)
 
     # TODO: Check database for matching profiles
     names = []
@@ -35,7 +33,7 @@ def main():
         current_name = row['name']
         del row['name']
         print(row)
-        if row == strs_in_sequence:
+        if row == xstrs_in_sequence:
             print(current_name)
 
 
