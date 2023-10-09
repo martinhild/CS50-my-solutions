@@ -34,8 +34,7 @@ def main():
 
     for row in reader:
         for values in row.values():
-            for value in values:
-                print(value)
+            print(values)
 
 
 
