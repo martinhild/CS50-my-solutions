@@ -32,8 +32,8 @@ def main():
         current_name = row['name']
         del row['name']
         print(row)
-
-    print(names)
+        if row == strs_in_sequence:
+            print(current_name)
 
 
 
