@@ -34,7 +34,7 @@ def main():
 
     for name in names:
         for row in reader:
-            print(row[name])
+            print("hi")
 
     return
 
