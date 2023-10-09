@@ -29,7 +29,9 @@ def main():
     # TODO: Check database for matching profiles
     names = []
     for row in reader:
-        
+        current_name = row['name']
+        del row['name']
+        print(row)
 
     print(names)
 
