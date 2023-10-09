@@ -19,14 +19,15 @@ def main():
 
 
     # TODO: Find longest match of each STR in DNA sequence
-    strs = []
+    strs_in_sequence = []
     for i in range(len(reader.fieldnames))[1::]:
         str = reader.fieldnames[i]
-        strs.append(longest_match(sequence,str))
+        strs_in_sequence.append(longest_match(sequence,str))
 
-    print(strs)
+    print(strs_in_sequence)
     # TODO: Check database for matching profiles
-    for 
+    for row in reader:
+        print(row[])
 
     return
 
