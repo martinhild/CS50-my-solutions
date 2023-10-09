@@ -33,7 +33,8 @@ def main():
     #print(names)
 
     for row in reader:
-        row[]
+        for str in strs_in_sequence:
+            print(row[str])
 
 
 
