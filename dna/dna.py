@@ -25,14 +25,13 @@ def main():
         something = (longest_match(sequence,xstr))
         xstrs_in_sequence[xstr] = str(something)
 
-    print(xstrs_in_sequence)
 
     # TODO: Check database for matching profiles
     names = []
     for row in reader:
         current_name = row['name']
         del row['name']
-        print(row)
+
         if row == xstrs_in_sequence:
             print(current_name)
 
