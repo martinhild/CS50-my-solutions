@@ -33,10 +33,6 @@ def main():
 
     print(names)
 
-    for row in reader:
-        print(row[name])
-
-
 
 
 
