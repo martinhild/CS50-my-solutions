@@ -9,30 +9,30 @@ def main():
         return 0
 
     # TODO: Read database file into a variable
-    with open(sys.argv[1], "r") as csvfile:
-        reader = csv.DictReader(csvfile)
+    csvfile = open(sys.argv[1], "r")
+    reader = csv.DictReader(csvfile)
 
-        # TODO: Read DNA sequence file into a variable
-        with open(sys.argv[2], "r") as txtfile:
+    # TODO: Read DNA sequence file into a variable
+    with open(sys.argv[2], "r") as txtfile:
         sequence = txtfile.read()
 
-        # TODO: Find longest match of each STR in DNA sequence
-        xstrs_in_sequence = {}
-        for i in range(len(reader.fieldnames))[1::]:
+    # TODO: Find longest match of each STR in DNA sequence
+    xstrs_in_sequence = {}
+    for i in range(len(reader.fieldnames))[1::]:
         xstr = reader.fieldnames[i]
         something = longest_match(sequence, xstr)
         xstrs_in_sequence[xstr] = str(something)
 
-        # TODO: Check database for matching profiles
-        for row in reader:
+    # TODO: Check database for matching profiles
+    for row in reader:
         current_name = row["name"]
         del row["name"]
 
         if row == xstrs_in_sequence:
             print(current_name)
             return
-        print("No Match")
-        return
+    print("No Match")
+    return
 
 
 def longest_match(sequence, subsequence):
