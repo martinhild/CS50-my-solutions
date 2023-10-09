@@ -30,10 +30,10 @@ def main():
     names = []
     for row in reader:
         names.append(row['name'])
-    #print(names)
+    print(names)
 
     for row in reader:
-        print("hi")
+        print(reader)
 
 
 
