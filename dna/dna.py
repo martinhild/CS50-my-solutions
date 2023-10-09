@@ -33,7 +33,7 @@ def main():
     #print(names)
 
     for row in reader:
-        if 
+        print(row.values())
 
 
 
