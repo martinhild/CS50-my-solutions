@@ -33,8 +33,8 @@ def main():
     #print(names)
 
     for row in reader:
-        #row is a dictionary
-        
+        row[]
+
 
 
 
