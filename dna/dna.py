@@ -26,8 +26,8 @@ def main():
 
     print(strs_in_sequence)
     # TODO: Check database for matching profiles
-    for name in reader.fieldnames:
-        print(reader.fieldnames(name))
+    for row in reader:
+        print(row.values())
     return
 
 
