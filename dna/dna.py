@@ -17,12 +17,17 @@ def main():
     with open(sys.argv[2],"r") as txtfile:
         sequence = txtfile.read()
 
+    #testing:
+    i = 3*3
+    j = str(i)
+    print(j)
 
     # TODO: Find longest match of each STR in DNA sequence
     strs_in_sequence = {}
     for i in range(len(reader.fieldnames))[1::]:
         str = reader.fieldnames[i]
-        strs_in_sequence[str] = str((longest_match(sequence,str)))
+        something = (longest_match(sequence,str))
+        strs_in_sequence[str] = something
 
     print(strs_in_sequence)
 
