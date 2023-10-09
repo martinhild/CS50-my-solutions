@@ -32,9 +32,8 @@ def main():
     #     names.append(row['name'])
     #print(names)
 
-    for row in reader:
-        for str in strs_in_sequence:
-            print(row[key])
+    for str in strs_in_sequence:
+            print(str)
 
 
 
