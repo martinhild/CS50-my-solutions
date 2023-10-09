@@ -27,9 +27,10 @@ def main():
     print(strs_in_sequence)
 
     # TODO: Check database for matching profiles
+    names = []
     for row in reader:
-        for x in row:
-            print(x)
+        for i in range(len(reader.fieldnames)):
+            print(reader.fieldnames[i])
 
 
     return
