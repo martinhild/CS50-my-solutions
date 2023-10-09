@@ -28,7 +28,8 @@ def main():
 
     # TODO: Check database for matching profiles
     for row in reader:
-        print(row)
+        for x in row:
+            print(x)
 
 
     return
