@@ -34,7 +34,7 @@ def main():
 
     for row in reader:
         for str in strs_in_sequence:
-            print(row[str])
+            print(row[key])
 
 
 
