@@ -1,7 +1,3 @@
-x = int(input("Number: "))
-
-if 3 <= x <= 5:
-
-    print("yes")
-else:
-    print("no")
+i = str(12)
+i = i * 2
+print(i)
