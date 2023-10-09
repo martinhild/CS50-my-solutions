@@ -24,16 +24,16 @@ def main():
         str = reader.fieldnames[i]
         strs_in_sequence.append(longest_match(sequence,str))
 
-    print(strs_in_sequence)
+    #print(strs_in_sequence)
 
     # TODO: Check database for matching profiles
     names = []
     for row in reader:
         names.append(row['name'])
-    print(names)
+    #print(names)
 
     for row in reader:
-        print(row['name'])
+        print(row.values())
 
 
 
