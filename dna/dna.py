@@ -22,6 +22,7 @@ def main():
     strs = []
     for i in range(len(reader.fieldnames))[1::]:
         str = reader.fieldnames[i]
+        strs.append(str)
         longest_match(sequence,str)
     # TODO: Check database for matching profiles
 
