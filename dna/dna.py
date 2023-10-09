@@ -19,8 +19,8 @@ def main():
     #print(sequence)
 
     # TODO: Find longest match of each STR in DNA sequence
-    for STR in reader.fieldnames:
-        print(STR)
+    for header in reader.fieldnames:
+        print(header)
     # TODO: Check database for matching profiles
 
     return
