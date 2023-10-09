@@ -29,7 +29,7 @@ def main():
     # TODO: Check database for matching profiles
     names = []
     for row in reader:
-        names.append(row['name'])
+        
 
     print(names)
 
