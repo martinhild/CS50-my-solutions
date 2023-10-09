@@ -20,7 +20,7 @@ def main():
     #testing:
     i = 3*3
     j = str(i)
-    print(j)
+    print(str(12))
 
     # TODO: Find longest match of each STR in DNA sequence
     strs_in_sequence = {}
