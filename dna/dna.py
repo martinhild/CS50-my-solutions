@@ -28,12 +28,12 @@ def main():
 
     # TODO: Check database for matching profiles
     names = []
-    for row in reader:
-        names.append(row['name'])
+    # for row in reader:
+    #     names.append(row['name'])
     #print(names)
 
     for row in reader:
-        print(row[name])
+        print(row)
 
 
 
