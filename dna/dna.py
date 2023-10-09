@@ -34,6 +34,7 @@ def main():
         print("No Match")
         return
 
+
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
 
