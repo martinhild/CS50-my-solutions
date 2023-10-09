@@ -33,8 +33,8 @@ def main():
     #print(names)
 
     for row in reader:
-        for value in row.values():
-            print(value)
+        for x in range(len(row.values())):
+            print(x)
 
 
 
