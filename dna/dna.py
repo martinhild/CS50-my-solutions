@@ -32,6 +32,9 @@ def main():
         names.append(row['name'])
     print(names)
 
+    for row in reader:
+        print(row['name'])
+
 
 
 def longest_match(sequence, subsequence):
