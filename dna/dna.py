@@ -3,42 +3,37 @@ import sys
 
 
 def main():
-
     # TODO: Check for command-line usage
     if not len(sys.argv) == 3:
         print("Usage: python dna.py data.csv sequence.txt")
         return 0
 
     # TODO: Read database file into a variable
-    csvfile = open(sys.argv[1],"r")
+    csvfile = open(sys.argv[1], "r")
     reader = csv.DictReader(csvfile)
 
     # TODO: Read DNA sequence file into a variable
-    with open(sys.argv[2],"r") as txtfile:
+    with open(sys.argv[2], "r") as txtfile:
         sequence = txtfile.read()
-
 
     # TODO: Find longest match of each STR in DNA sequence
     xstrs_in_sequence = {}
     for i in range(len(reader.fieldnames))[1::]:
         xstr = reader.fieldnames[i]
-        something = (longest_match(sequence,xstr))
+        something = longest_match(sequence, xstr)
         xstrs_in_sequence[xstr] = str(something)
-
 
     # TODO: Check database for matching profiles
     names = []
     for row in reader:
-        current_name = row['name']
-        del row['name']
+        current_name = row["name"]
+        del row["name"]
 
         if row == xstrs_in_sequence:
             print(current_name)
             return
     print("No Match")
     return
-
-
 
 
 def longest_match(sequence, subsequence):
@@ -51,7 +46,6 @@ def longest_match(sequence, subsequence):
 
     # Check each character in sequence for most consecutive runs of subsequence
     for i in range(sequence_length):
-
         # Initialize count of consecutive runs
         count = 0
 
@@ -59,7 +53,6 @@ def longest_match(sequence, subsequence):
         # If a match, move substring to next potential match in sequence
         # Continue moving substring and checking for matches until out of consecutive matches
         while True:
-
             # Adjust substring start and end
             start = i + count * subsequence_length
             end = start + subsequence_length
