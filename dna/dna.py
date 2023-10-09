@@ -18,9 +18,7 @@ def main():
         sequence = txtfile.read()
 
     #testing:
-    i = 3*3
-    j = str(i)
-    print(str(12))
+    
 
     # TODO: Find longest match of each STR in DNA sequence
     strs_in_sequence = {}
