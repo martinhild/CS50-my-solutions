@@ -25,9 +25,10 @@ def main():
         strs_in_sequence.append(longest_match(sequence,str))
 
     print(strs_in_sequence)
+
     # TODO: Check database for matching profiles
-    # for i in range(len(reader.fieldnames))[1::]:
-    #     print(reader.fieldnames(i))
+    for row in reader[1::]:
+        print(row)
 
 
     return
