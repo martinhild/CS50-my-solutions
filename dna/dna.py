@@ -17,23 +17,22 @@ def main():
             sequence = txtfile.read()
 
         # TODO: Find longest match of each STR in DNA sequence
-        xstrs_in_sequence = {}
+        subsequences_in_sequence = {}
         for i in range(len(reader.fieldnames))[1::]:
-            xstr = reader.fieldnames[i]
-            something = longest_match(sequence, xstr)
-            xstrs_in_sequence[xstr] = str(something)
+            subsequence = reader.fieldnames[i]
+            something = longest_match(sequence, subsequence)
+            subsequences_in_sequence[subsequence] = str(something)
 
         # TODO: Check database for matching profiles
         for row in reader:
             current_name = row["name"]
             del row["name"]
 
-            if row == xstrs_in_sequence:
+            if row == subsequences_in_sequence:
                 print(current_name)
                 return
         print("No Match")
         return
-
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
