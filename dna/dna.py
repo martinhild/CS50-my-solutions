@@ -10,8 +10,8 @@ def main():
         return 0
 
     # TODO: Read database file into a variable
-    database = open(sys.argv[1],"r")
-    reader = csv.DictReader(database)
+    #database = open(sys.argv[1],"r")
+    #reader = csv.DictReader(database)
 
     # TODO: Read DNA sequence file into a variable
     sequence = open(sys.argv[2],"r")
