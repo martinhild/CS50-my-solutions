@@ -22,7 +22,7 @@ def main():
     strs_in_sequence = {}
     for i in range(len(reader.fieldnames))[1::]:
         str = reader.fieldnames[i]
-        strs_in_sequence[str] = (longest_match(sequence,str))
+        strs_in_sequence[str] = str((longest_match(sequence,str)))
 
     print(strs_in_sequence)
 
