@@ -28,9 +28,13 @@ def main():
 
     # TODO: Check database for matching profiles
     names = []
-    for i in range(len(reader.fieldnames)):
-        print(reader.fieldnames[i])
+    for row in reader:
+        names.append(row['name'])
+    #print(names)
 
+    for name in names:
+        for row in reader:
+            print(row['name'])
 
     return
 
