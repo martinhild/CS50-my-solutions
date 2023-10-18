@@ -1,0 +1,1 @@
+SELECT avg(energy), avg(valence), avg(danceability) FROM songs;

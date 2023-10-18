@@ -1,1 +1,1 @@
-SELECT avg(energy), avg(valence), avg(danceability) FROM songs;
+SELECT name, energy FROM songs WHERE energy > "0.9";
