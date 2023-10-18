@@ -1,1 +1,1 @@
-SELECT energy FROM songs LIMIT 20;
+SELECT avg(energy FROM songs);
