@@ -1,1 +1,1 @@
-SELECT name FROM songs ORDER BY duration_ms LIMIT 10;
+SELECT name FROM songs ORDER BY duration_ms DC LIMIT 10;
