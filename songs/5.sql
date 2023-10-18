@@ -1,0 +1,1 @@
+SELECT energy FROM songs LIMIT 20;
