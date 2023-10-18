@@ -9,11 +9,15 @@ Audio Aura:
 +-------------+--------------+-------------------+
 
 This aura might not be very representative of the listener because:
-- it does not include speechiness and tempo
+
+- It does not include speechiness and tempo.
 
 - If a listener likes extremes, then they can balance each other out. Someone who
   generally likes to listen to very emotional music (very low or high valence), i.e.
   both very happy and very sad, receives a medium value and would probably find songs
   suggested to them based on this value boring.
 
-- Genres are missing. Maybe
+- Genres are missing. Maybe it would make sense to add a third table with song ID and
+  suitable genres. You could then count how often each genre appears among the 100
+  favorite songs and calculate a coefficient between 0 and 1 for each. But it would be
+  difficult to decide how many genres to display in the aura.
