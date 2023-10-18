@@ -1,1 +1,1 @@
-SELECT 
+SELECT name FROM songs JOIN artists WHERE songs.artist_id = artists.id AND 
