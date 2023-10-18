@@ -1,1 +1,0 @@
-SELECT name, valence, energy FROM songs WHERE valence > "0.9";
