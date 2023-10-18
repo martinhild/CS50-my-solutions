@@ -10,4 +10,10 @@ Audio Aura:
 
 This aura might not be very representative of the listener because:
 - it does not include speechiness and tempo
-- if a listener likes extreme
+
+- If a listener likes extremes, then they can balance each other out. Someone who
+  generally likes to listen to very emotional music (very low or high valence), i.e.
+  both very happy and very sad, receives a medium value and would probably find songs
+  suggested to them based on this value boring.
+
+- Genres are not 
