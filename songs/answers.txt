@@ -8,3 +8,4 @@ Audio Aura:
 | 0.65906     | 0.484443     | 0.71646           |
 +-------------+--------------+-------------------+
 
+I would characterize their audio aura 
