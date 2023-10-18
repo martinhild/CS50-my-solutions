@@ -1,1 +1,1 @@
-SELECT name, energy FROM songs WHERE energy > "0.9";
+SELECT name, valence, energy FROM songs WHERE valence > "0.9";
