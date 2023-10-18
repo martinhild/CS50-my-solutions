@@ -1,1 +1,1 @@
-SELECT name FROM songs WHERE name LIKE '%feat.%';
+SELECT avg(energy), avg(valence), avg(danceability) FROM songs;
