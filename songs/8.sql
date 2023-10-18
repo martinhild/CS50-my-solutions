@@ -1,1 +1,1 @@
-SELECT songs.name, artists.name FROM songs JOIN artists ON songs.artist_id = artists.id AND artists.name LIKE '%rak%';
+SELECT name FROM songs WHERE name LIKE '%feat.%';
