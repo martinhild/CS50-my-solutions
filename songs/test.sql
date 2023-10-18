@@ -1,0 +1,1 @@
+SELECT * FROM songs JOIN artists ON 
