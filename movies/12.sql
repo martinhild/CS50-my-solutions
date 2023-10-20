@@ -7,6 +7,8 @@ WHERE
     OR
     people.name = "Bradley Cooper"
     )
+    AND
+    COUNT
 GROUP BY movies.title
 HAVING COUNT(*) = 2
 ;
