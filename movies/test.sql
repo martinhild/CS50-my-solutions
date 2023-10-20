@@ -6,7 +6,7 @@ SELECT name FROM people WHERE id =
         )
     )
 
-ORDER BY people.birth
+ORDER BY name
 
 LIMIT 10
 ;
