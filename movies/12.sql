@@ -8,12 +8,7 @@ people.name = "Jennifer Lawrence"
 OR
 people.name = "Bradley Cooper"
 )
-AND
-    (SELECT COUNT(movies.title)
 
-    )=2
 GROUP BY movies.title
-
-ORDER BY movies.title
 
 ;
