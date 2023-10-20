@@ -5,6 +5,4 @@ SELECT name, birth FROM people WHERE id IN
             SELECT id from movies WHERE year = "2004"
         )
     )
-ORDER BY birth
-
-;
+ORDER BY birth;
