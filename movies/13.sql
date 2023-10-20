@@ -1,5 +1,5 @@
 SELECT *
-FROM people JOIN stars JOIN movies
-ON people.id = stars.person_id AND stars.movie_id = movies.id
+FROM stars WHERE person_id =
+SELECT 
 WHERE people.name = "Kevin Bacon"
 LIMIT 10;
