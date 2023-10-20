@@ -10,4 +10,6 @@ people.name = "Bradley Cooper"
 
 GROUP BY movies.title
 
-ORDER BY movies.title;
+ORDER BY movies.title
+
+;
