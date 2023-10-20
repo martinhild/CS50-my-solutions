@@ -4,10 +4,11 @@
 --         (
         SELECT movie_id FROM stars WHERE person_id =
             (
-            SELECT id FROM people
-            WHERE people.name = "Kevin Bacon"
+            SELECT id FROM people WHERE name = "Kevin Bacon"
             )
     --     )
 
     -- )
 LIMIT 10;
+
+SELECT title FROM movies WHERE id = "83833";
