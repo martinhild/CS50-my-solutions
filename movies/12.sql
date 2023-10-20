@@ -1,17 +1,12 @@
-SELECT movies.title
-FROM people JOIN stars JOIN movies
-ON people.id = stars.person_id AND stars.movie_id = movies.id
-WHERE
-
-(SELECT COUNT(movies.title)
+SELECT movies.title, COUNT(*)
 FROM people JOIN stars JOIN movies
 ON people.id = stars.person_id AND stars.movie_id = movies.id
 WHERE
 (
 people.name = "Jennifer Lawrence"
-OR
+AND
 people.name = "Bradley Cooper"
 )
 GROUP BY movies.title
-)=2
+
 ;
