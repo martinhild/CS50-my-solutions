@@ -1,4 +1,4 @@
-SELECT movies.title, COUNT(*) as cnt
+SELECT movies.title
 FROM people JOIN stars JOIN movies
 ON people.id = stars.person_id AND stars.movie_id = movies.id
 WHERE
@@ -8,5 +8,5 @@ WHERE
     people.name = "Bradley Cooper"
     )
 GROUP BY movies.title
-having cnt =2
+having COUNT(*) = 2
 ;
