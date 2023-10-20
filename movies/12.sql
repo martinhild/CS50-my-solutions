@@ -9,7 +9,9 @@ OR
 people.name = "Bradley Cooper"
 )
 AND
-(SELECT COUNT(*)=2)
+    (SELECT COUNT(movies.title)
+
+    )=2
 GROUP BY movies.title
 
 ORDER BY movies.title
