@@ -5,7 +5,7 @@ SELECT name FROM people WHERE id IN (
             )
         )
     )
-AND ID = (
+AND ID != (
     SELECT id FROM people WHERE name = "Kevin Bacon"
 )
     ;
