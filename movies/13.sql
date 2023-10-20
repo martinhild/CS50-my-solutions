@@ -1,0 +1,1 @@
+SELECT id from people WHERE name = "Kevin Bacon";
