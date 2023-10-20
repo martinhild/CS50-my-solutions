@@ -12,6 +12,10 @@ people.name = "Jennifer Lawrence"
 OR
 people.name = "Bradley Cooper"
 
+AND
+
+COUNT(*) = 2
+
 GROUP BY movies.title
 
 ;
