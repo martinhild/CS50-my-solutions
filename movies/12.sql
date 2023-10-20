@@ -1,4 +1,4 @@
-SELECT movies.title
+SELECT DISTINCT movies.title
 FROM people JOIN stars JOIN movies
 ON people.id = stars.person_id AND stars.movie_id = movies.id
 WHERE
@@ -7,8 +7,7 @@ WHERE
     OR
     people.name = "Bradley Cooper"
     )
-    AND
-    COUNT
-GROUP BY movies.title
-HAVING COUNT(*) = 2
+
+--GROUP BY movies.title
+--HAVING COUNT(*) = 2
 ;
