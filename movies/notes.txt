@@ -5,16 +5,14 @@ Number of rows:
 4.sql   correct
 5.sql   correct
 6.sql   correct
-7.sql
+7.sql   correct
 8.sql   correct
-9.sql
+9.sql   correct
 10.sql  correct
-11.sql
-12.sql
-13.sql
+11.sql  correct
+12.sql  correct
+13.sql  correct
 
-
-10.sql wrong number of rows
 
 Check:
 If your query returns a number of rows that is slightly different
