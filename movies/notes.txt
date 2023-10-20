@@ -8,7 +8,7 @@ Number of rows:
 7.sql
 8.sql   correct
 9.sql
-10.sql  3 names missing
+10.sql  
 11.sql
 12.sql
 13.sql
