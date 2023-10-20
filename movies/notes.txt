@@ -1,7 +1,7 @@
 Number of rows:
 1.sql   correct
-2.sql
-3.sql
+2.sql   correct
+3.sql   corrext
 4.sql
 5.sql
 6.sql
