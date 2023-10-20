@@ -1,4 +1,4 @@
-SELECT movies.title, COUNT(*)
+SELECT COUNT(*)
 FROM people JOIN stars JOIN movies
 ON people.id = stars.person_id AND stars.movie_id = movies.id
 
