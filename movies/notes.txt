@@ -1,3 +1,9 @@
 9.sql wrong number of rows
 10.sql wrong number of rows
 
+Check:
+If your query returns a number of rows that is slightly different
+from the expected output, be sure that you’re properly handling
+duplicates! For queries that ask for a list of names, no one person
+should be listed twice, but two different people who have the same
+name should each be listed.
