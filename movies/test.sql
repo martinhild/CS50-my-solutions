@@ -1,11 +1,12 @@
-SELECT peoplename
-FROM people JOIN stars JOIN movies
-ON people.id = stars.person_id AND stars.movie_id = movies.id
+SELECT name FROM people WHERE id =
+    (
+        SELECT person_id from stars WHERE movie_id =
+        (
+            SELECT id from movies WHERE year = "2004"
+        )
+    )
 
-SELECT moviesyear = "2004"
 ORDER BY people.birth
 
-
 LIMIT 10
-
 ;
