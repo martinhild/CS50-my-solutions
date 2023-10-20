@@ -2,9 +2,9 @@ Number of rows:
 1.sql   correct
 2.sql   correct
 3.sql   corrext
-4.sql
-5.sql
-6.sql
+4.sql   correct
+5.sql   correct
+6.sql   correct
 7.sql
 8.sql   correct
 9.sql
