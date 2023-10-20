@@ -1,9 +1,8 @@
-SELECT name FROM people WHERE id IN
-    (
-        SELECT person_id from stars WHERE movie_id IN
-        (
-            SELECT id from movies WHERE year = "2004"
-        )
-    )
+SELECT people.name
+FROM people JOIN directors JOIN movies JOIN ratings
+ON people.id = directors.person_id AND directors.movie_id = movies.id
+AND movies.id = ratings.movie_id
+WHERE ratings.rating >= "9.0"
+
 
 ;
