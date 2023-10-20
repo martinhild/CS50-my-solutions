@@ -6,7 +6,5 @@ SELECT name FROM people WHERE id =
         )
     )
 
-ORDER BY name
 
-LIMIT 10
 ;
