@@ -1,5 +1,5 @@
 Number of rows:
-1.sql
+1.sql   correct
 2.sql
 3.sql
 4.sql
@@ -8,7 +8,7 @@ Number of rows:
 7.sql
 8.sql   correct
 9.sql
-10.sql  
+10.sql  correct
 11.sql
 12.sql
 13.sql
