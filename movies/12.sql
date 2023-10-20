@@ -3,7 +3,7 @@ FROM people JOIN stars JOIN movies
 ON people.id = stars.person_id AND stars.movie_id = movies.id
 WHERE
 (
-    1=1
+    cnt
 )
 AND
 (
