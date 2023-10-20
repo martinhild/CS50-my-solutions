@@ -8,5 +8,5 @@ WHERE
     people.name = "Bradley Cooper"
     )
 GROUP BY movies.title
-having COUNT(*) = 2
+HAVING COUNT(*) = 2
 ;
