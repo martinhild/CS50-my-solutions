@@ -3,6 +3,4 @@
 
 SELECT *
   FROM crime_scene_reports
- WHERE description = 1
-  LIMIT 10
-  ;
+ WHERE description LIKE "%duck%";
