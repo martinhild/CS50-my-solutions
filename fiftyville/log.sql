@@ -125,3 +125,10 @@ SELECT *
      FROM people
     WHERE id IN (686048, 864400));
 -- only one flight: flight_id = 36
+
+--look at flight
+SELECT *
+  FROM flights
+ WHERE id = 36;
+
+--get airports:
