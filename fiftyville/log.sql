@@ -117,4 +117,11 @@ SELECT passport_number
   FROM people
  WHERE id IN (686048, 864400);
 
-
+-- look for a flight in passengers with one of those passport numbers:
+SELECT *
+  FROM passengers
+ WHERE passport_number IN
+  (SELECT passport_number
+     FROM people
+    WHERE id IN (686048, 864400));
+-- only one flight: flight_id = 36
