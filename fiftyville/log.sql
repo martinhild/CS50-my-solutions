@@ -58,12 +58,12 @@ SELECT *
 -- IDs of people: 221103 243696 398010 467400 686048
 
 
--- ATM activity of these people:
+-- bank account numbers of these people:
 SELECT account_number
   FROM bank_accounts
  WHERE person_id IN (221103, 243696, 398010, 467400, 686048);
 
---withdraw at ATM at Leggett
+-- their ATM activity
 SELECT *
   FROM atm_transactions
   WHERE atm_location = "Leggett Street"
