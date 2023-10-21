@@ -24,9 +24,14 @@ SELECT *
  WHERE description LIKE "%duck%";
  -- see that there is only this one report with "duck" in description
 
--- search for the interviews
+-- search for the interviews. We already know that "each of their
+-- interview transcripts mentions the bakery".
 SELECT *
   FROM interviews
  WHERE month = 7
    AND day = 28
    AND transcript LIKE "%bakery%";
+-- 
+--
+--
+--
