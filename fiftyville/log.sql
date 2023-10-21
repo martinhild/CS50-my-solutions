@@ -31,7 +31,8 @@ SELECT *
  WHERE month = 7
    AND day = 28
    AND transcript LIKE "%bakery%";
--- 
+-- get info:
+-- "look for cars that left the parking lot in that time frame"
 --
 --
 --
