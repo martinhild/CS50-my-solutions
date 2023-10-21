@@ -1,10 +1,6 @@
--- -- search for drivers and check ATM activity
--- SELECT *
---   FROM atm_transactions
---   LIMIT 10;
-
-  SELECT *
-  FROM interviews
- WHERE month = 7
-   AND day = 28
-   AND transcript LIKE "%bakery%";
+-- search for drivers and check ATM activity
+SELECT *
+  FROM atm_transactions
+  WHERE atm_location = "Leggett Street"
+    AND day = 28
+  LIMIT 10;

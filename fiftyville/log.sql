@@ -51,6 +51,6 @@ SELECT *
 -- license plates: 5P2BI95 94KL13X 6P58WS2 4328GD8 G412CB7
 
 
--- search for drivers and check ATM activity
+-- search for drivers and check Leggett Street's ATM activity
 SELECT *
   FROM bakery_security_logs
