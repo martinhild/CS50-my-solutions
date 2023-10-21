@@ -77,8 +77,20 @@ SELECT *
 -- get two account numbers: 28500762 and 49610011
 
 -- look for their personal id by looking at bank accounts:
-SELECT account_number
+SELECT person_id
   FROM bank_accounts
   WHERE account_number IN (28500762, 49610011);
 
-  
+--people:
+SELECT *
+  FROM people
+  WHERE id IN
+    (SELECT person_id
+       FROM bank_accounts
+      WHERE account_number IN (28500762, 49610011));
++--------+-------+----------------+-----------------+---------------+
+|   id   | name  |  phone_number  | passport_number | license_plate |
++--------+-------+----------------+-----------------+---------------+
+| 467400 | Luca  | (389) 555-5198 | 8496433585      | 4328GD8       |
+| 686048 | Bruce | (367) 555-5533 | 5773159633      | 94KL13X       |
++--------+-------+----------------+-----------------+---------------+
