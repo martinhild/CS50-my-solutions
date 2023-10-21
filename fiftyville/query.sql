@@ -3,5 +3,5 @@
 
 SELECT *
   FROM crime_scene_reports
- LIMIT 2
+ LIMIT 5
   ;
