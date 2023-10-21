@@ -22,4 +22,4 @@ SELECT *
 SELECT *
   FROM crime_scene_reports
  WHERE description LIKE "%duck%";
- -- see that there are is only this one crime_"duck" in description
+ -- see that there is only this one report with "duck" in description
