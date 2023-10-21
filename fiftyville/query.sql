@@ -1,4 +1,3 @@
 SELECT *
-  FROM phone_calls
- WHERE id = 233
-;
+  FROM people
+ WHERE phone_number = "(375) 555-8161";
