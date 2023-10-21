@@ -57,11 +57,15 @@ SELECT *
   WHERE license_plate IN ("5P2BI95", "94KL13X", "6P58WS2", "4328GD8", "G412CB7");
 -- IDs of people: 221103 243696 398010 467400 686048
 
--- check withdraw at ATM at Leggett
+
+-- ATM activity of these people:
+--need account_number of their bank accounts first:
+
+
+
+--withdraw at ATM at Leggett
 SELECT *
   FROM atm_transactions
   WHERE atm_location = "Leggett Street"
     AND transaction_type = "withdraw"
     AND day = 28;
-
--- search for people that own licence plates
