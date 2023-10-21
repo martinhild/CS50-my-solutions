@@ -126,6 +126,13 @@ SELECT *
     WHERE id IN (686048, 864400));
 -- only one flight: flight_id = 36
 
+
+SELECT *
+  FROM people
+ WHERE passport_number = 5773159633;
+ -- now we know that Bruce took the flight
+
+
 --look at flight
 SELECT *
   FROM flights
