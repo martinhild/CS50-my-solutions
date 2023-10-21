@@ -112,6 +112,9 @@ SELECT *
 
 -- caller/theft: Bruce, id=686048 and receiver/accomplice: Robin, id=864400
 
-
+--passport numbers:
+SELECT passport_number
+  FROM people
+ WHERE id IN (686048, 864400);
 
 

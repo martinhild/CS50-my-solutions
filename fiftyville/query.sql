@@ -1,3 +1,5 @@
-SELECT passport_number
-  FROM people
- WHERE id IN (686048, 864400);
+SELECT *
+  FROM interviews
+ WHERE month = 7
+   AND day = 28
+   AND transcript LIKE "%bakery%";
