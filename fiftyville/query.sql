@@ -1,3 +1,3 @@
-SELECT *
+SELECT passport_number
   FROM people
- WHERE phone_number = "(375) 555-8161";
+ WHERE id IN (686048, 864400);
