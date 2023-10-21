@@ -1,3 +1,4 @@
+-- Airports:
 SELECT *
   FROM airports
- WHERE id = 8;
+ WHERE id IN (8, 4);

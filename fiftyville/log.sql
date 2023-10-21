@@ -130,6 +130,7 @@ SELECT *
 SELECT *
   FROM flights
  WHERE id = 36;
+ --origin_airport_id = 8 and destination_airport_id = 4
 
 --get airport ids:
 SELECT origin_airport_id, destination_airport_id
@@ -137,3 +138,9 @@ SELECT origin_airport_id, destination_airport_id
  WHERE id = 36;
 
 -- Airports:
+SELECT *
+  FROM airports
+ WHERE id IN (8, 4);
+
+ -- Origin Airport: CSF, Fiftyville Regional Airport, Fiftyville
+ -- destination airport: LGA, LaGuardia Airport, New York City
