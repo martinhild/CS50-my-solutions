@@ -32,8 +32,8 @@ SELECT *
    AND day = 28
    AND transcript LIKE "%bakery%";
 -- get info:
--- - "look for cars that left the parking lot in that time frame"
--- "Earlier this morning, before I arrived at Emma's bakery, I was
+-- Ruth: "look for cars that left the parking lot in that time frame"
+-- Eugene: "before I arrived at Emma's bakery, I was
 -- walking by the ATM on Leggett Street and saw the thief there
 -- withdrawing some money."
 --
