@@ -12,7 +12,7 @@ SELECT *
    AND day = 28
    AND street = "Humphrey Street";
 -- get info:
--- Theft of the CS50 duck took place at 10:15am at the Humphrey Street
+-- Theft took place at 10:15am Humphrey Street
 -- bakery. Interviews were conducted today with three witnesses who
 -- were present at the time – each of their interview transcripts
 -- mentions the bakery.
@@ -33,10 +33,13 @@ SELECT *
    AND transcript LIKE "%bakery%";
 -- get info:
 -- Ruth:
--- look for cars that left the parking lot within ten minures of the thef
+-- look for cars that left the parking lot within ten minures of the theft
 -- Eugene:
 -- before he arrived at bakery, the thief withdrew money from ATM
 -- Raymond:
 -- when thief was leaving bakery he had a call for less than 1min
 -- "earliest flight out of Fiftyville tomorrow"
 -- asked person on the other end to purchase the flight ticket
+
+
+-- cars that left parking lot within 10min of the theft/10:15am

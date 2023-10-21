@@ -2,7 +2,11 @@
 --cat query.sql | sqlite3 fiftyville.db
 
 SELECT *
-  FROM interviews
- WHERE month = 7
-   AND day = 28
-   AND transcript LIKE "%bakery%";
+  FROM bakery_security_logs
+ WHERE hour = 10
+   AND minute >= 5
+   AND minute <= 20
+LIMIT 10;
+--  WHERE month = 7
+--    AND day = 28
+--    AND street = "Humphrey Street";
