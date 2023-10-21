@@ -11,7 +11,6 @@ SELECT *
  WHERE month = 7
    AND day = 28
    AND street = "Humphrey Street";
--- get info:
 -- Theft took place at 10:15am Humphrey Street
 -- bakery. Interviews were conducted today with three witnesses who
 -- were present at the time – each of their interview transcripts
@@ -31,7 +30,6 @@ SELECT *
  WHERE month = 7
    AND day = 28
    AND transcript LIKE "%bakery%";
--- get info:
 -- Ruth:
 -- look for cars that left the parking lot within ten minures of the theft
 -- Eugene:
@@ -42,4 +40,12 @@ SELECT *
 -- asked person on the other end to purchase the flight ticket
 
 
--- cars that left parking lot within 10min of the theft/10:15am
+--cars that left within 10min of 10:15am = 10:10 - 10:20
+SELECT *
+  FROM bakery_security_logs
+ WHERE day = 28
+   AND hour = 10
+   AND minute >= 10
+   AND minute <= 20
+   AND activity = "exit";
+-- license plates: 5P2BI95 94KL13X 6P58WS2 4328GD8 G412CB7
