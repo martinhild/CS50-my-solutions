@@ -131,4 +131,7 @@ SELECT *
   FROM flights
  WHERE id = 36;
 
---get airports:
+--get airport ids:
+SELECT origin_airport_id, destination_airport_id
+  FROM flights
+ WHERE id = 36;
