@@ -1,4 +1,3 @@
--- Airports:
 SELECT *
-  FROM airports
- WHERE id IN (8, 4);
+  FROM people
+ WHERE passport_number = 5773159633;
