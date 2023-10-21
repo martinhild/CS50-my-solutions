@@ -3,7 +3,9 @@
 
 SELECT *
   FROM bakery_security_logs
- WHERE hour = 10
+ WHERE day = 28
+   AND hour = 10
+   AND minute >= 5
    AND minute >= 5
    AND minute <= 20
 LIMIT 10;
