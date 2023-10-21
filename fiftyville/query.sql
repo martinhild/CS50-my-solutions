@@ -6,4 +6,4 @@ SELECT *
  WHERE month = 7
    AND day = 28
    AND street = "Humphrey Street"
- LIMIT 5;
+ LIMIT 10;
