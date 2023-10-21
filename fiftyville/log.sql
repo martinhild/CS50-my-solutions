@@ -64,3 +64,4 @@ SELECT *
     AND transaction_type = "withdraw"
     AND day = 28;
 
+-- search for people that own licence plates
