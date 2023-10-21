@@ -63,9 +63,22 @@ SELECT account_number
   FROM bank_accounts
  WHERE person_id IN (221103, 243696, 398010, 467400, 686048);
 
+
 -- their ATM activity
 SELECT *
   FROM atm_transactions
   WHERE atm_location = "Leggett Street"
     AND transaction_type = "withdraw"
-    AND day = 28;
+    AND day = 28
+    AND account_number IN
+    (SELECT account_number
+        FROM bank_accounts
+       WHERE person_id IN (221103, 243696, 398010, 467400, 686048));
+-- get two account numbers: 28500762 and 49610011
+
+-- look for their personal id by looking at bank accounts:
+SELECT account_number
+  FROM bank_accounts
+  WHERE account_number IN (28500762, 49610011);
+
+  
