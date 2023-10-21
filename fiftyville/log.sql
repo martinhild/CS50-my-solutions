@@ -51,6 +51,10 @@ SELECT *
 -- license plates: 5P2BI95 94KL13X 6P58WS2 4328GD8 G412CB7
 
 
--- search for drivers and check Leggett Street's ATM activity
+-- check withdraw at ATM at Leggett
 SELECT *
-  FROM bakery_security_logs
+  FROM atm_transactions
+  WHERE atm_location = "Leggett Street"
+    AND transaction_type = "withdraw"
+    AND day = 28
+  LIMIT 10;
