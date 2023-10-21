@@ -95,3 +95,13 @@ SELECT *
 -- | 686048 | Bruce | (367) 555-5533 | 5773159633      | 94KL13X       |
 -- +--------+-------+----------------+-----------------+---------------+
 
+-- phone calls of those numbers on that day less than 1 min:
+SELECT *
+  FROM phone_calls
+ WHERE caller IN ("(389) 555-5198" , "(367) 555-5533")
+   AND day = 28
+   AND duration < 60;
+-- only one RESULT: caller: (367) 555-5533 and receiver: (375) 555-8161
+
+--search receiver
+
