@@ -23,3 +23,10 @@ SELECT *
   FROM crime_scene_reports
  WHERE description LIKE "%duck%";
  -- see that there is only this one report with "duck" in description
+
+-- search for the interviews
+SELECT *
+  FROM interviews
+ WHERE month = 7
+   AND day = 28
+   AND transcript LIKE "%bakery%";
