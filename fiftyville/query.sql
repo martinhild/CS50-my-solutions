@@ -3,5 +3,6 @@
 
 SELECT *
   FROM crime_scene_reports
- LIMIT 5
-  ;
+ WHERE month = 7
+   AND day = 28
+ LIMIT 5;
