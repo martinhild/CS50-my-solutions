@@ -74,7 +74,7 @@ SELECT *
     (SELECT account_number
         FROM bank_accounts
        WHERE person_id IN (221103, 243696, 398010, 467400, 686048));
--- get two account numbers: 28500762 and 49610011
+-- RESULT: only two account numbers: 28500762 and 49610011
 
 -- look for their personal id by looking at bank accounts:
 SELECT person_id
