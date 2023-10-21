@@ -3,5 +3,5 @@
 
 SELECT *
   FROM crime_scene_reports
-WHERE
+ LIMIT 2
   ;
