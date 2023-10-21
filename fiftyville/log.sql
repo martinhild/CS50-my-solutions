@@ -149,5 +149,5 @@ SELECT *
   FROM airports
  WHERE id IN (8, 4);
 
- -- Origin Airport: CSF, Fiftyville Regional Airport, Fiftyville
+ -- origin airport: CSF, Fiftyville Regional Airport, Fiftyville
  -- destination airport: LGA, LaGuardia Airport, New York City
