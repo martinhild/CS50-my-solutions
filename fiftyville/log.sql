@@ -2,3 +2,6 @@
 
 SELECT (*)
   FROM crime_scene_reports
+
+  sqlite> SELECT (*)
+   ...>   FROM crime_scene_reports
