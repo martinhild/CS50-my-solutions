@@ -104,4 +104,9 @@ SELECT *
 -- only one RESULT: caller: (367) 555-5533 and receiver: (375) 555-8161
 
 --search receiver
+SELECT *
+  FROM people
+ WHERE phone_number = "(375) 555-8161";
+ -- result: id= 864400 name = Robin
 
+ 
