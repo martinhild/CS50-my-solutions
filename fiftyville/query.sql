@@ -1,4 +1,4 @@
 --search receiver
 SELECT *
-  FROM people
+  FROM flights
  WHERE phone_number = "(375) 555-8161";
