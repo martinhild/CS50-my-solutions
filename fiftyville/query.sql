@@ -3,4 +3,6 @@
 
 SELECT *
   FROM interviews
- WHERE description LIKE "%duck%";
+ WHERE month = 7
+   AND day = 28;
+ --WHERE transcript LIKE "%duck%";
