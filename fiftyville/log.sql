@@ -49,3 +49,4 @@ SELECT *
    AND minute <= 20
    AND activity = "exit";
 -- license plates: 5P2BI95 94KL13X 6P58WS2 4328GD8 G412CB7
+-- MISSING 
