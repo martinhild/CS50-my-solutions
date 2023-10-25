@@ -19,10 +19,16 @@
                     document.querySelector('#response1').innerHTML = "Incorrect";
                     });
                 }
-                document.querySelector('buttonQ2').addEventListener('click', function(){
-                    let input = document.querySelector('#response2')
-
-                })
+                document.querySelector('#buttonQ2').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value === 'four') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#response2').innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#response2').innerHTML = 'Incorrect';
+                    }
+                });
             });
         </script>
     </head>
