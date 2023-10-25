@@ -13,7 +13,7 @@
                     document.querySelector('#response1').innerHTML = "Correct!";
                 });
                 let wrong = document.querySelectorAll('.wrong');
-                for (let i = 0;i < wrong.length; i++) {
+                for (let i = 0; i < wrong.length; i++) {
                     wrong[i].addEventListener('click', function() {
                     wrong[i].style.backgroundColor = 'red';
                     document.querySelector('#response1').innerHTML = "Incorrect";
