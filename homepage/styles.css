@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(30, 38, 43);
+    background-color: rgb(33, 37, 41);
     color: white;
     font-size: 1rem;
     font-weight: 400;
@@ -14,4 +14,8 @@ body {
 
 .div2{
     background-color: #ff9933;
+}
+
+h1 {
+    text-align: center;
 }
