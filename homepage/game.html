@@ -15,18 +15,17 @@
             document.addEventListener('DOMContentLoaded',function(){
 
                 document.querySelector('#inputMax').addEventListener('submit',function(){
-
                     let max = document.querySelector('#N').value;
-                    document.querySelector('#inputGuess').addEventListener('submit',function(){
-                        let guess = document.querySelector('#guess').value;
-                    });
-
+                    // alert("N = " + max);
                 });
-                alert('abc');
-
-
-
+                document.querySelector('#inputGuess').addEventListener('submit',function(){
+                        let guess = document.querySelector('#guess').value;
+                        // alert("guess = " + guess);
+                });
             });
+            if(max){
+                alert('hi')
+            }
         </script>
 
     </head>
@@ -62,7 +61,7 @@
         </form>
 
         <form id="inputGuess">
-            <input type="number" id="guess" placeholder="N">
+            <input type="number" id="guess" placeholder="guess">
         </form>
       </div>
     </body>
