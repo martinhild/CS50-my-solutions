@@ -14,12 +14,14 @@
 
                 document.querySelector('#inputMax').addEventListener('submit',function(){
                     let max = document.querySelector('#N').value;
-                    alert(max);
+                    ;
                 });
 
-                document.querySelector('#inputMax').addEventListener('submit',function(){
+                document.querySelector('#inputGuess').addEventListener('submit',function(){
                     let guess = document.querySelector('#guess').value;
-                    alert(guess);
+                    if (guess === max) {
+                        alert('correct');
+                    }
                 });
 
             });
