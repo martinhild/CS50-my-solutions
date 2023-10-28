@@ -2,17 +2,18 @@
 
 <html lang="en">
     <head>
-
         <script>
+
             document.addEventListener('DOMContentLoaded', function() {
+
                 var c = document.getElementById("myCanvas");
                 var ctx = c.getContext("2d");
                 ctx.moveTo(0,0);
                 ctx.lineTo(200,100);
                 ctx.stroke();
-            }
-        </script>
+            };
 
+        </script>
     </head>
     <body>
         <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
