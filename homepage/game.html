@@ -13,8 +13,8 @@
             document.addEventListener('DOMContentLoaded',function(){
 
                 document.querySelector('#inputMax').addEventListener('submit',function(){
-                    // let max = document.querySelector('inputMax').value;
-                    alert('hi');
+                    let max = document.querySelector('#inputMax').value;
+                    alert(max);
                 });
 
             });
@@ -48,8 +48,8 @@
         <br>
         <h5>guess the random number</h5>
         <p>guess the number between 0 and x</p>
-        <form>
-            <input type="number" id="inputMax">
+        <form id="inputMax">
+            <input type="number">
 
         </form>
       </div>
