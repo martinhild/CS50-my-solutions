@@ -10,8 +10,8 @@
         <title>Game</title>
 
         <script>
-            let max=0;
-            let guess=0;
+            var max=0;
+            var guess=0;
             document.addEventListener('DOMContentLoaded',function(){
 
                 document.querySelector('#inputMax').addEventListener('submit',function(){
@@ -20,7 +20,7 @@
                 },true);
                 document.querySelector('#inputGuess').addEventListener('submit',function(){
                   let guess = document.querySelector('#guess').value;
-                  alert(max);
+                  alert("guess = " + guess);
                 },true);
             });
         </script>
