@@ -12,16 +12,16 @@
         <var guess>
         <script>
 
-            document.addEventListener('DOMContentLoaded',function(){
+            document.addEventListener('DOMContentLoaded',function(max,guess){
 
                 document.querySelector('#inputMax').addEventListener('submit',function(){
-                  let max = document.querySelector('#N').value;
+                  max = document.querySelector('#N').value;
                   alert("N = " + max + "\nguess = " + guess);
-                },true);
+                });
                 document.querySelector('#inputGuess').addEventListener('submit',function(){
-                  let guess = document.querySelector('#guess').value;
+                  guess = document.querySelector('#guess').value;
                   alert("N = " + max + "\nguess = " + guess);
-                },true);
+                });
             });
         </script>
 
