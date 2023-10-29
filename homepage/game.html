@@ -19,7 +19,12 @@
                 // });
                 document.querySelector('#inputGuess').addEventListener('submit',function(){
                 let guess = document.querySelector('#guess').value;
-                alert("N = " + max + "\nguess = " + guess);
+                // alert("N = " + max + "\nguess = " + guess);
+                if (guess < max) {
+                  document.querySelector('#hint').innerHTML = "guess lower";
+                } else {
+                  document.querySelector('#hint').innerHTML = "guess higher";
+                }
                 });
             });
         </script>
@@ -52,10 +57,10 @@
         <br>
         <h5>Find the number !</h5>
         <p>guess the number between 0 and x</p>
-        <form id="inputMax">
+        <!-- <form id="inputMax">
             <input type="number" id="N" placeholder="N">
-        </form>
-
+        </form> -->
+        <p id="hint"></p>
         <form id="inputGuess">
             <input type="number" id="guess" placeholder="guess">
         </form>
