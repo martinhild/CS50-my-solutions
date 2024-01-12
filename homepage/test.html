@@ -2,20 +2,30 @@
 
 <html lang="en">
     <head>
-        <script>
+        <meta charset="utf-8">
+        <title></title>
 
-            document.addEventListener('DOMContentLoaded', function() {
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.fillStyle = "rgba(0,0,0,0.4)";
-                ctx.fillRect(0, 0, myCanvas.width, myCanvas.height);
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                let max = Math.floor(Math.random() * 101);
+                // document.querySelector('#inputMax').addEventListener('submit',function(){
+                //   max = document.querySelector('#N').value;
+                //   alert("N = " + max + "\nguess = " + guess);
+                // });
+                document.querySelector('#inputGuess').addEventListener('submit',function(){
+                    let guess = document.querySelector('#guess').value;
+                    // alert("N = " + max + "\nguess = " + guess);
+                    if (guess < max) {
+                        document.querySelector('#hint').innerHTML = "guess lower";
+                    } else {
+                        document.querySelector('#hint').innerHTML = "guess higher";
+                    }
+                });
             });
 
         </script>
     </head>
     <body>
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-        </canvas>
-
 
     </body>
+</html>
