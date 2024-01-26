@@ -12,28 +12,40 @@
         <script>
 
             document.addEventListener('DOMContentLoaded',function(){
-                let max = Math.floor(Math.random() * 101);
-                // document.querySelector('#inputMax').addEventListener('submit',function(){
-                //   max = document.querySelector('#N').value;
-                //   alert("N = " + max + "\nguess = " + guess);
-                // });
+
+                let max = 100;
+                let ranNum = Math.floor(Math.random() * (max + 1));
+                document.querySelector('#max').innerHTML = max;
+
                 document.querySelector('#inputGuess').addEventListener('submit',function(){
+                  event.preventDefault();
                 let guess = document.querySelector('#guess').value;
-                // alert("N = " + max + "\nguess = " + guess);
-                if (guess < max) {
-                  document.querySelector('#hint').innerHTML = "guess lower";
+
+                let response;
+                let color;
+                if (guess < ranNum) {
+                   response = "guess higher";
+                   color = 'red';
+                } else if (guess > ranNum) {
+                  response = "guess lower";
+                  color = 'red';
                 } else {
-                  document.querySelector('#hint').innerHTML = "guess higher";
+                  response = "CORRECT!";
+                  color = 'green';
                 }
-                });
+
+                document.querySelector('#response').innerHTML = response;
+                document.querySelector('#response').style.color = color;
+
             });
+          });
         </script>
 
     </head>
     <body>
       <div class="header">
         <br>
-        <h1>Martin's homepage</h1>
+        <h1>my first homepage</h1>
         <hr>
       </div>
       <div class="links">
@@ -47,7 +59,7 @@
           <button class="button">hobbies</button>
         </a>
         <a href="game.html" style="text-decoration:none">
-          <button class="button">game</button>
+          <button class="button", style=background-color:white>game</button>
         </a>
       </div>
       <hr>
@@ -55,14 +67,14 @@
       <div class="game">
         <h4>Game</h4>
         <br>
-        <h5>Find the number !</h5>
-        <p>guess the number between 0 and x</p>
-        <!-- <form id="inputMax">
-            <input type="number" id="N" placeholder="N">
-        </form> -->
-        <p id="hint"></p>
+        <h5 style="display:inline">Find the random number between 0 and
+          <p id="max", style="display:inline"></p>
+        </h5>
+        <br>
+        <br>
         <form id="inputGuess">
             <input type="number" id="guess" placeholder="guess">
+            <p id="response"></p>
         </form>
       </div>
     </body>
