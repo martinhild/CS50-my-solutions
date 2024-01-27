@@ -9,18 +9,18 @@ body {
 }
 
 h1 {
-    color: black;
+    color: white;
     font: 800 40px Arial;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
 }
 
 h4 {
     text-align: center;
     color: black;
-    font: 800 35px Arial;
+    font: 800 30px Arial;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke: 3px;
+    -webkit-text-stroke: 2.5px;
 }
 
 .game {
