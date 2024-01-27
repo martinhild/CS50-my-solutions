@@ -9,7 +9,11 @@ body {
 }
 
 h1 {
-    
+    fill            : none;
+    stroke          : black;
+    stroke-width    : .5px;
+    stroke-linejoin : round;
+    animation       : 2s pulsate infinite;
 }
 
 h4 {
