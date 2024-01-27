@@ -23,6 +23,10 @@ h4 {
     -webkit-text-stroke: 2.5px;
 }
 
+
+
+
+
 .game {
     text-align: center;
 }
@@ -51,6 +55,20 @@ button {
     margin-right: 5px;
     font-weight: bold;
 }
+
+button.buttonOn {
+        border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+button.buttonOff {
+    background-color: #04AA6D;
+}
+
+
+
 
 
 .accordion-button {
