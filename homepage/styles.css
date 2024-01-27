@@ -9,10 +9,10 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
     font: 800 40px Arial;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 3px;
 }
 
 h4 {
