@@ -9,11 +9,9 @@ body {
 }
 
 h1 {
-    fill            : none;
-    stroke          : black;
-    stroke-width    : .5px;
-    stroke-linejoin : round;
-    animation       : 2s pulsate infinite;
+    font: 800 40px Arial;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px;
 }
 
 h4 {
