@@ -52,7 +52,7 @@ button {
     font-weight: bold;
 }
 
-button #buttonOn {
+#buttonOn {
     background-color: white;
     border-radius: 25px;
     margin-left: 5px;
