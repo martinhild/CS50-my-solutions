@@ -23,9 +23,25 @@ h4 {
     -webkit-text-stroke: 2.5px;
 }
 
+button.buttonOn {
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
 
+button.buttonOff {
+    background-color: #04AA6D;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+}
 
-
+form {
+    display: inline
+}
 
 .game {
     text-align: center;
@@ -47,32 +63,7 @@ h4 {
     font-size: 1rem;
 }
 
-
-
-
-button.buttonOn {
-    background-color: white;
-    border-radius: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-button.buttonOff {
-    background-color: #04AA6D;
-    border-radius: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-form {
-    display: inline
-}
-
-
 .accordion-button {
     font-weight: bold;
     font-size: 1.2rem;
 }
-
