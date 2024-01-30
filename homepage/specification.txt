@@ -38,7 +38,5 @@ CSS properties:
     text-align
 
 
-Brief (one-sentence) description of how i chose to use JavaScript and Bootstrap:
-
-
+Brief (one-sentence) description of how I chose to use JavaScript and Bootstrap:
 
