@@ -38,6 +38,7 @@ CSS properties:
     text-align
 
 
+Brief (one-sentence) description of how you chose to use JavaScript and Bootstrap:
 
 
 
