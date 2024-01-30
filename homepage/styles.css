@@ -66,8 +66,9 @@ button.buttonOff {
     font-weight: bold;
 }
 
-
-
+form {
+    display: inline
+}
 
 
 .accordion-button {
