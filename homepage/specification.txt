@@ -1,25 +1,25 @@
-html
-head
-body
-title
+
+HTML tags besides <html>, <head>, <body>, and <title>:
+
+<meta>
+<link>
+<script>
+<div>
+<br>
+<h1>
+<h2>
+<h4>
+<h5>
+<a>
+<hr>
+<p>
+<button>
+<strong>
+<input>
+<form>
+<var>
 
 
+CSS properties:
 
 
-
-meta
-link
-script
-div
-br
-h1
-h2
-h4
-h5
-a
-hr
-p
-button
-strong
-input
-form
