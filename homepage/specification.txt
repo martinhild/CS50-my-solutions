@@ -1,30 +1,44 @@
-
 HTML tags besides <html>, <head>, <body>, and <title>:
 
-<a>
-<br>
-<button>
-<div>
-<form>
-<h1>
-<h2>
-<h4>
-<h5>
-<hr>
-<input>
-<link>
-<meta>
-<p>
-<script>
-<strong>
-<var>
+    <a>
+    <br>
+    <button>
+    <div>
+    <form>
+    <h1>
+    <h2>
+    <h4>
+    <h5>
+    <hr>
+    <input>
+    <link>
+    <meta>
+    <p>
+    <script>
+    <strong>
+    <var>
+
 
 CSS properties:
 
     background-color
+    border-radius
     color
+    display
+    font
     font-size
     font-weight
     line-height
     margin
+    margin-left
+    margin-right
+    padding
     text-align
+    -webkit-text-fill-color
+    -webkit-text-stroke
+    -webkit-text-fill-color
+    -webkit-text-stroke
+
+
+
+
