@@ -21,6 +21,8 @@ HTML tags besides <html>, <head>, <body>, and <title>:
 
 CSS properties:
 
+    -webkit-text-fill-color
+    -webkit-text-stroke
     background-color
     border-radius
     color
@@ -34,10 +36,7 @@ CSS properties:
     margin-right
     padding
     text-align
-    -webkit-text-fill-color
-    -webkit-text-stroke
-    -webkit-text-fill-color
-    -webkit-text-stroke
+
 
 
 
