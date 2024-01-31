@@ -1,2 +1,0 @@
-Ideas:
-script: input name and search wikipedia for famous person

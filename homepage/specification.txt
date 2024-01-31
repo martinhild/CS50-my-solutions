@@ -42,4 +42,4 @@ Brief description of how I chose to use JavaScript and Bootstrap:
 
 I used the Bootstrap component 'Accordion' in hobbies.html. With 'Accordion' the viewer can click on a hobby to expand it and read more about it.
 In game.html I wrote a JavaScript that generates a hidden random number between one and one hundred. The user can enter a number and
-is told whether to guess higher or lower and find out the number through trial and error.
+is told whether to guess higher or lower and find out the random number through trial and error.
