@@ -43,3 +43,4 @@ Brief (one-sentence) description of how I chose to use JavaScript and Bootstrap:
 what you used bootstrap and JavaScript for. So where on your page did you use bootstrap, and what does your JavaScript do?
 
 I used the Bootstrap component 'Accordion' in hobbies.html. With 'Accordion' the viewer can click on a hobby and read more about it.
+In game.html i wrote a JavaScript that creates a hidden random number and lets the user guess 
