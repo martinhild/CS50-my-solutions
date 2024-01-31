@@ -40,3 +40,6 @@ CSS properties:
 
 Brief (one-sentence) description of how I chose to use JavaScript and Bootstrap:
 
+what you used bootstrap and JavaScript for. So where on your page did you use bootstrap, and what does your JavaScript do?
+
+I used a Bootstrap component
