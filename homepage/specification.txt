@@ -42,4 +42,4 @@ Brief (one-sentence) description of how I chose to use JavaScript and Bootstrap:
 
 what you used bootstrap and JavaScript for. So where on your page did you use bootstrap, and what does your JavaScript do?
 
-I used the Bootstrap component 'Accordion'
+I used the Bootstrap component 'Accordion' in hobbies.html. With 'Accordion' the viewer can expand and
