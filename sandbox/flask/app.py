@@ -1,5 +1,5 @@
-# import class:Flask from module:flask
-from flask import Flask
+# import from module:flask class:Flask, render_template
+from flask import Flask, render_template
 
 # initiate Flask application
 app = Flask(__name__) # __name__ refers to name of file (app.py)
