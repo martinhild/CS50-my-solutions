@@ -13,4 +13,4 @@ def index():
 
 @app.route("/greet")
 def sample():
-    return render_template("index.html")
+    return render_template("index.html", name=request.args.get(name))
