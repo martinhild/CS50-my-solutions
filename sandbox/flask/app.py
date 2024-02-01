@@ -10,3 +10,9 @@ def index():
     name = request.args.get("name", None)
     animal = request.args.get("animal", None)
     return render_template("index.html", name=name, animal=animal)
+
+@app.route("/greet")
+def greet():
+    name = request.args.get("name", None)
+    animal = request.args.get("animal", None)
+    return render_template("index.html", name=name, animal=animal)
