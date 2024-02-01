@@ -11,6 +11,6 @@ def index():
     animal = request.args.get("animal", None)
     return render_template("index.html", name=name, animal=animal)
 
-@app.route("/sample")
+@app.route("/greet")
 def sample():
-    return "You are at the sample page."
+    return render_template("index.html")
