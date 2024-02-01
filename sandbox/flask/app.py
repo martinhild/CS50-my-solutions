@@ -1,10 +1,10 @@
-#import class:Flask from module:flask
+# import class:Flask from module:flask
 from flask import Flask
 
-#initiate Flask application
-app = Flask(__name__)
+# initiate Flask application
+app = Flask(__name__) # __name__ refers to name of file (app.py)
 
-#decorator. Used in Flask to associate a particular function with a particular URL.
+# decorators. Used in Flask to associate a particular function with a particular URL.
 @app.route("/")
 def index():
     return "You are at the index page."
