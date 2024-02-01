@@ -7,3 +7,6 @@ app = Flask(__name__)
 #decorator
 
 @app.route("/")
+def index():
+    return "You are at the index page."
+
