@@ -8,7 +8,8 @@ app = Flask(__name__) # __name__ refers to name of file (app.py)
 @app.route("/")
 def index():
     name = request.args.get("name", None)
-    return render_template("index.html", name=name)
+    animal = request.args.get("animal", None)
+    return render_template("index.html", name=name, animal=animal)
 
 @app.route("/sample")
 def sample():
