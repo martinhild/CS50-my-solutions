@@ -7,7 +7,10 @@ app = Flask(__name__) # __name__ refers to name of file (app.py)
 # decorators. Used in Flask to associate a particular function with a particular URL.
 @app.route("/")
 def index():
-    name = request.args["name"]
+    if "name" in request.args:
+        name = request.args["name"]
+    else:
+        name ="world"
     return render_template("index.html", placeholder=name)
 
 @app.route("/sample")
