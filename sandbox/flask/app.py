@@ -3,3 +3,7 @@ from flask import Flask
 
 #initiate Flask application
 app = Flask(__name__)
+
+#decorator
+
+@app.route("/")
