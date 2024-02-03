@@ -7,6 +7,6 @@
         <title>index</title>
     </head>
     <body>
-        hello, {{ name }}
+        hello, {% if name %}{{ name }}{% else %}world{% endif %}
     </body>
 </html>
