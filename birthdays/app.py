@@ -42,6 +42,8 @@ def index():
         return render_template("index.html", birthdays=birthdays)
 
 
-@app.route("remove", mothods=["POST"])
+@app.route("remove", mothods=["GET", "POST"])
 def remove():
-    
+    if request.method == "POST":
+        id = request.form.get("id")
+        db.execute("DELETE FROM birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
