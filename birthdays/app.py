@@ -42,3 +42,6 @@ def index():
         return render_template("index.html", birthdays=birthdays)
 
 
+@app.route("remove", mothods=["POST"])
+def remove():
+    
