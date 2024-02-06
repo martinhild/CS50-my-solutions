@@ -46,4 +46,4 @@ def index():
 def remove():
     if request.method == "POST":
         id = request.form.get("id")
-        db.execute("DELETE FROM birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
+        db.execute("DELETE FROM birthdays WHERE (name, month, day) VALUES(?, ?, ?)", name, month, day)
