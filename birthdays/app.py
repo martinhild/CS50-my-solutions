@@ -42,7 +42,7 @@ def index():
         return render_template("index.html", birthdays=birthdays)
 
 
-@app.route("remove", methods=["GET", "POST"])
+@app.route("/remove", methods=["GET", "POST"])
 def remove():
     if request.method == "POST":
         id = request.form.get("id")
