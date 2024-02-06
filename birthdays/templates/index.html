@@ -39,6 +39,9 @@
                             <tr>
                                 <td>{{ birthday.name }}</td>
                                 <td>{{ birthday.month }}/{{ birthday.day }}</td>
+                                <form action="/remove", method="post">
+                                    <button type="submit">Remove</button>
+                                </form>
                             </tr>
                         {% endfor %}
                     </tbody>
