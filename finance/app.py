@@ -131,7 +131,7 @@ def register():
         sql = "INSERT INTO users (username, hash) VALUES (%s, %s)"
         val = ("John", "Highway 21")
         db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password))
-
+        return render_template("login.html")
     # If request.method was "POST"
     else:
         return render_template("register.html")
