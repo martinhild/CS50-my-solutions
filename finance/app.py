@@ -117,7 +117,7 @@ def register():
         username = request.form.get("username")
         if username == "":
             return apology("Enter a username")
-        if len(db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))) != 0:
+        if len(db.execute("SELECT * FROM users WHERE username = ?", username)) != 0:
             return apology("Username already exists")
         # Check if user entered two identical passwords (password and confirmation)
         password = request.form.get("password")
