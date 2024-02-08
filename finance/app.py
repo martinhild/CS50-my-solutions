@@ -130,7 +130,8 @@ def register():
         # HIER HAB ICH AUFGEHÖRT. ALS NÄCHSTES DEN INSERT ANSCHAUEN
         sql = "INSERT INTO users (username, hash) VALUES (%s, %s)"
         val = ("John", "Highway 21")
-        db.execute("INSERT INTO users (username,hash) VALUES (username = ?,hash = ?);",username,generate_password_hash(password))
+        db.execute("INSERT INTO users (username, hash) VALUES (?, ?);", username, generate_password_hash(password))
+        db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
 
     # If request.method was "POST"
     else:
