@@ -115,7 +115,7 @@ def register():
     if request.method == "POST":
 
         username = request.form.get("username")
-        print(username)
+
         if username == "":
             return apology("enter a username")
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
