@@ -1,6 +1,8 @@
-def main():
-    mydict = {}
-    mydict["animal_1"] = "cow"
+from cs50 import SQL
 
-    print(mydict["animal_1"])
-main()
+db = SQL("sqlite:///finance.db")
+
+rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
+
+print(rows)
+
