@@ -112,8 +112,9 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    if request.form.get("username"):
-        
+    username = request.form.get("username"):
+        db.execute(
+            "SELECT * FROM users WHERE username = ?", request.form.get("username")
     else:
         return apology("TODO")
 
