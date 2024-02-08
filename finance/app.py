@@ -127,7 +127,7 @@ def register():
         if password != confirmation:
             return apology("You entered two different passwords")
         # Insert the new user into users, storing a hash of the user’s password, not the password itself
-        db.execute("INSERT INTO users VALUES (7, 'James', 24, 'Houston', 10000.00 );"))
+        db.execute("INSERT INTO users (username,hash)VALUES (username = ?,hash=?);",username,generate_password_hash(password))
 
     # If request.method was "POST"
     else:
