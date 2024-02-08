@@ -113,12 +113,15 @@ def quote():
 def register():
     """Register user"""
     if request.method == "POST":
+
         username = request.form.get("username")
+        print(username)
         if username == "":
             return apology("enter a username")
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
         if rows == 2:
             return apology("username already exists")
+
     else:
         return render_template("register.html")
 
