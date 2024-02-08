@@ -113,19 +113,23 @@ def quote():
 def register():
     """Register user"""
     if request.method == "POST":
-        # check if user entered a username and if the username already exists
+        # Check if user entered a username and if the username already exists
         username = request.form.get("username")
         if username == "":
             return apology("Enter a username")
         if len(db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))) != 0:
             return apology("Username already exists")
-        # check if user entered two identical passwords (password and confirmation)
+        # Check if user entered two identical passwords (password and confirmation)
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
         if password == "" or confirmation == "":
             return apology("Enter a password and confirm it")
         if password != confirmation:
             return apology("You entered two different passwords")
+        # Insert the new user into users, storing a hash of the user’s password, not the password itself
+        db.execute("INSERT FROM users WHERE username = ?", request.form.get("username"))
+
+    # If request.method was "POST"
     else:
         return render_template("register.html")
 
