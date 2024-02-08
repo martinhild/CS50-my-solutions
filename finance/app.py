@@ -113,7 +113,7 @@ def quote():
 def register():
     """Register user"""
     username = request.form.get("username"):
-    db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
+    rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
     else:
         return apology("TODO")
 
