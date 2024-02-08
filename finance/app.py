@@ -125,7 +125,7 @@ def register():
         if password == "" or confirmation == "":
             return apology("enter a password and confirm it")
         if password != confirmation:
-            return apology("enter a password and confirm it")
+            return apology("password and confirmation did not match")
     else:
         return render_template("register.html")
 
