@@ -114,8 +114,10 @@ def register():
     """Register user"""
     username = request.form.get("username"):
     rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
-    else:
+    if username == "" or rows != 0
         return apology("TODO")
+    else:
+
 
 
 @app.route("/sell", methods=["GET", "POST"])
