@@ -119,7 +119,7 @@ def register():
         if username == "":
             return apology("enter a username")
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
-        if rows == 2:
+        if len(rows) !=0:
             return apology("username already exists")
 
     else:
