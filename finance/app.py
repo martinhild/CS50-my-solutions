@@ -124,7 +124,8 @@ def register():
         confirmation = request.form.get("confirmation")
         if password == "" or confirmation == "":
             return apology("enter a password and confirm it")
-
+        if password != confirmation:
+            return apology("enter a password and confirm it")
     else:
         return render_template("register.html")
 
