@@ -117,9 +117,9 @@ def register():
         username = request.form.get("username")
         if username == "":
             return apology("enter a username")
-        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
-        if len(rows) != 0:
+        if len(db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))) != 0:
             return apology("username already exists")
+        # check if user entered entered
 
 
     else:
