@@ -112,16 +112,15 @@ def quote():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
-    if request.method == "GET":
-        render_template("register.html")
-    username = request.form.get("username")
-    if username == "":
-        return apology("enter a username")
-
-    rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
-    if rows != 0:
-        return apology("username already exists")
-
+    if request.method == "POST":
+        username = request.form.get("username")
+        if username == "":
+            return apology("enter a username")
+        rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
+        if rows != 0:
+            return apology("username already exists")
+    else:
+        return render_template("register.html")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
