@@ -117,7 +117,7 @@ def register():
         if username == "":
             return apology("enter a username")
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get(username))
-        if rows != 0:
+        if rows == 2:
             return apology("username already exists")
     else:
         return render_template("register.html")
