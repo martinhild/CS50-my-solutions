@@ -128,6 +128,8 @@ def register():
             return apology("You entered two different passwords")
         # Insert the new user into users, storing a hash of the user’s password, not the password itself
         # HIER HAB ICH AUFGEHÖRT. ALS NÄCHSTES DEN INSERT ANSCHAUEN
+        sql = "INSERT INTO users (username, hash) VALUES (%s, %s)"
+        val = ("John", "Highway 21")
         db.execute("INSERT INTO users (username,hash) VALUES (username = ?,hash = ?);",username,generate_password_hash(password))
 
     # If request.method was "POST"
