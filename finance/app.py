@@ -63,8 +63,10 @@ def buy():
             if(cost > cash):
                 return apology("Can't afford")
             else:
-
-                db.execute("INSERT INTO transactions (id, username, action, symbol, price, amount, datetime) VALUES (133, 'Peter', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37')")
+                username = "Peter"
+                action = "buy"
+                
+                db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES ('Peter', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37');")
                 return apology("Not implemented yet.")
 
     # If request method is "GET"
