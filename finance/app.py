@@ -43,7 +43,7 @@ def index():
 def buy():
     """Buy shares of stock"""
 
-    if request.method == "GET":
+    if request.method == "POST":
         # Get user inputs
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
@@ -53,13 +53,13 @@ def buy():
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
-        
-        # Submit the user’s input via POST to /buy. Upon completion, redirect the user to the home page.
+
+        # Upon completion, redirect the user to the home page.
         else:
 
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
 
-    # If request method is "POST"
+    # If request method is "GET"
     else:
         return render_template("buy.html")
 
