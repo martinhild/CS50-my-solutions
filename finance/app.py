@@ -44,7 +44,7 @@ def index():
         db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
     stocks = []
     for symbol in symbols:
-        stocks.append({symbol: shares(username, symbol)})
+        stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
 
     return render_template("index.html", stocks = stocks)
 
