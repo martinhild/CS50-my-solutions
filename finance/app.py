@@ -53,8 +53,9 @@ def buy():
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
-        # if inputs are valid 
+        # if inputs are valid check if user can afford transaction
         else:
+            cost = int(shares) * 
 
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
 
