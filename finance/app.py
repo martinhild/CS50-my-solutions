@@ -64,7 +64,7 @@ def buy():
             if(cost > cash):
                 return apology("Can't afford")
             else:
-                username = db.execute(SELECT username FROM users WHERE id = ?)
+                username = db.execute("SELECT username FROM users WHERE id = ?", userid)
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
