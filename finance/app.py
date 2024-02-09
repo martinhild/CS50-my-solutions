@@ -73,6 +73,11 @@ def buy():
                 db.execute(
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, x
                 )
+
+                ###################################################
+                #####################################################
+                ######################################################
+
                 return apology("Not implemented yet.")
 
     # If request method is "GET"
