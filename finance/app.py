@@ -58,7 +58,9 @@ def buy():
         else:
             cost = int(shares) * quote["price"]
             userid = session["user_id"]
-            return apology("Not implemented yet. User: ")
+            cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+
+            return apology("Not implemented yet. User: " + str(cash))
 
     # If request method is "GET"
     else:
