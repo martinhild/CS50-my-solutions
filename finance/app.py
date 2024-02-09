@@ -52,6 +52,7 @@ def buy():
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
         else:
+            # Submit the user’s input via POST to /buy. Upon completion, redirect the user to the home page.
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
 
 
