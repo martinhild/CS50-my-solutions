@@ -110,8 +110,8 @@ def quote():
         return render_template("quote.html")
     else:
         quote = lookup(request.form.get("symbol"))
-        
-        return render_template("quoted.html", quote=quote)
+        price = usd(quote["price"])
+        return render_template("quoted.html", quote=price)
 
 
     return apology("TODO")
