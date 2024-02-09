@@ -58,7 +58,7 @@ def buy():
         else:
             cost = int(shares) * quote["price"]
             userid = session["user_id"]
-            rows = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+            rows = db.execute("SELECT cash FROM users WHERE id = ?", userid)
             cash = rows[0]["cash"]
 
             return apology("Not implemented yet. User: " + str(cash))
