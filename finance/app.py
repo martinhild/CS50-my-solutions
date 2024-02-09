@@ -41,7 +41,7 @@ def index():
     #list of distinct symbols/stocks of user
     symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
 
-    stocks = []{}
+    stocks = []
     for symbol in symbols:
         stocks
 
