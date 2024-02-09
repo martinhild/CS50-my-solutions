@@ -46,9 +46,10 @@ def buy():
         return render_template("buy.html")
     else:
         symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
         if not lookup(symbol):
             return apology("No valid symbol")
-        elif request.form.get("shares") < 1:
+        elif shares < 1:
             return apology("Enter a positive number of shares")
         else:
 
