@@ -69,9 +69,9 @@ def buy():
                 symbol = quote["symbol"]
                 price = quote["price"]
                 amount = int(shares)
-                datetime = datetime.datetime.now()
+                x = datetime.datetime.now()
                 db.execute(
-                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, datetime
+                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, x
                 )
                 return apology("Not implemented yet.")
 
