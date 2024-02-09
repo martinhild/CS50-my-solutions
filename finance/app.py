@@ -45,7 +45,7 @@ def buy():
     if request.method == "GET":
         return render_template("buy.html")
     else:
-        quote = request.form.get("symbol")
+        symbol = request.form.get("symbol")
         if not lookup(symbol):
             return apology("No valid symbol")
         #elif request.form.get("shares")
