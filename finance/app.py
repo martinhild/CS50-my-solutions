@@ -40,12 +40,13 @@ def index():
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
     #list of distinct symbols/stocks of user
     symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
-
+    def shares(username, symbol):
+        db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
     stocks = []
     for symbol in symbols:
-        stocks
+        stocks.append({symbol: shares(username, symbol)})
 
-    return render_template("index.html", symbols = symbols)
+    return render_template("index.html", stocks = stocks)
 
 
 @app.route("/buy", methods=["GET", "POST"])
