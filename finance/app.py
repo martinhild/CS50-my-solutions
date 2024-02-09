@@ -79,8 +79,8 @@ def buy():
                 cash = cash - cost
                 db.execute("UPDATE users SET cash = ? WHERE id = ?",cash ,userid)
 
-                return apology("Not implemented yet. Cash: " + str(cash))
-
+                return render_template("index.html")
+            
     # If request method is "GET"
     else:
         return render_template("buy.html")
