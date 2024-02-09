@@ -42,20 +42,25 @@ def index():
 @login_required
 def buy():
     """Buy shares of stock"""
+
     if request.method == "GET":
-        return render_template("buy.html")
-    else:
+        # Get user inputs
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
+
+        # Check if inputs are valid
         if not lookup(symbol):
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
+        # Submit the user’s input via POST to /buy. Upon completion, redirect the user to the home page.
         else:
-            # Submit the user’s input via POST to /buy. Upon completion, redirect the user to the home page.
+
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
 
-
+    # If request method is "POST"
+    else:
+        return render_template("buy.html")
 
 @app.route("/history")
 @login_required
