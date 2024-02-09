@@ -53,6 +53,7 @@ def buy():
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
+        
         # Submit the user’s input via POST to /buy. Upon completion, redirect the user to the home page.
         else:
 
