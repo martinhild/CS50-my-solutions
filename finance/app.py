@@ -49,10 +49,10 @@ def buy():
         shares = request.form.get("shares")
         if not lookup(symbol):
             return apology("No valid symbol")
-        elif shares < 1:
+        elif int(shares) < 1:
             return apology("Enter a positive number of shares")
         else:
-            return apology("Not implemented yet. You entered: ?, ?", )
+            return apology(("Not implemented yet. You entered: ?, ?)", symbol, shares))
 
 
     return apology("TODO")
