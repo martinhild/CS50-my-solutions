@@ -84,6 +84,7 @@ def buy():
     else:
         return render_template("buy.html")
 
+
 @app.route("/history")
 @login_required
 def history():
@@ -157,9 +158,6 @@ def quote():
             return render_template("quoted.html", symbol=symbol, price=price)
 
 
-
-
-
 @app.route("/register", methods=["GET", "POST"])
 def register():
     """Register user"""
@@ -178,14 +176,12 @@ def register():
         if password != confirmation:
             return apology("You entered two different passwords")
         # Insert the new user into users, storing a hash of the user’s password, not the password itself
-        # HIER HAB ICH AUFGEHÖRT. ALS NÄCHSTES DEN INSERT ANSCHAUEN
-        sql = "INSERT INTO users (username, hash) VALUES (%s, %s)"
-        val = ("John", "Highway 21")
         db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password))
         return render_template("login.html")
     # If request.method was "POST"
     else:
         return render_template("register.html")
+
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
