@@ -70,7 +70,7 @@ def buy():
                 price = quote["price"]
                 amount = shares
                 datetime = datetime.datetime.now()
-                db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES ('?', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37');")
+                db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?);")
                 return apology("Not implemented yet.")
 
     # If request method is "GET"
