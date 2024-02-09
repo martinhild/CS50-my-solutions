@@ -47,7 +47,7 @@ def buy():
         # Get user inputs
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
-        quote 
+        quote = lookup(symbol)
 
         # Check if inputs are valid
         if not lookup(symbol):
