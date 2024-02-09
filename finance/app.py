@@ -64,7 +64,7 @@ def buy():
                 return apology("Can't afford")
             else:
 
-                return apology("Not implemented yet.)
+                return apology("Not implemented yet.")
 
     # If request method is "GET"
     else:
