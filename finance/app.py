@@ -52,8 +52,7 @@ def buy():
         elif shares < 1:
             return apology("Enter a positive number of shares")
         else:
-
-            shares = request.form.get("shares")
+            return apology("Not implemented yet. You entered: ?, ?", )
 
 
     return apology("TODO")
