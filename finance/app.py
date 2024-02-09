@@ -38,6 +38,8 @@ def index():
     """Show portfolio of stocks"""
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
+
+    
     return render_template("index.html")
 
 
