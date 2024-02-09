@@ -1,4 +1,5 @@
 import os
+import datetime
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -68,8 +69,8 @@ def buy():
                 symbol = quote["symbol"]
                 price = quote["price"]
                 amount = shares
-                datetime = 
-                db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES ('Peter', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37');")
+                datetime = datetime.datetime.now()
+                db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES ('?', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37');")
                 return apology("Not implemented yet.")
 
     # If request method is "GET"
