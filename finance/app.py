@@ -76,12 +76,14 @@ def buy():
                 )
                 # Subtract the cost of the transaction from user's cash in users table
                 cash = db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["cash"]
+                cash = cash - cost
+                db.execute("UPDATE users cash FROM users WHERE id = ?", userid)[0]["cash"]
 
                 ###################################################
                 #####################################################
                 ######################################################
 
-                return apology("Not implemented yet. Cash: " + cash)
+                return apology("Not implemented yet. Cash: " + str(cash))
 
     # If request method is "GET"
     else:
