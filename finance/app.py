@@ -60,8 +60,10 @@ def buy():
             userid = session["user_id"]
             rows = db.execute("SELECT cash FROM users WHERE id = ?", userid)
             cash = rows[0]["cash"]
-
-            return apology("Not implemented yet. User: " + str(cash))
+            if(cost > cash):
+                return apology("Can't afford")
+            else:
+                return apology("Not implemented yet.)
 
     # If request method is "GET"
     else:
