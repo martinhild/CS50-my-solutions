@@ -63,6 +63,7 @@ def buy():
             if(cost > cash):
                 return apology("Can't afford")
             else:
+
                 return apology("Not implemented yet.)
 
     # If request method is "GET"
