@@ -52,10 +52,8 @@ def buy():
         elif int(shares) < 1:
             return apology("Enter a positive number of shares")
         else:
-            return apology(("Not implemented yet. You entered: ?, ?)", symbol, shares))
+            return apology("INSERT INTO users (username, hash) VALUES(?, ?)", symbol, shares)
 
-
-    return apology("TODO")
 
 
 @app.route("/history")
