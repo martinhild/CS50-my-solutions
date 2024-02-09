@@ -79,10 +79,6 @@ def buy():
                 cash = cash - cost
                 db.execute("UPDATE users SET cash = ? WHERE id = ?",cash ,userid)
 
-                ###################################################
-                #####################################################
-                ######################################################
-
                 return apology("Not implemented yet. Cash: " + str(cash))
 
     # If request method is "GET"
