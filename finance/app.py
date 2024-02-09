@@ -53,8 +53,7 @@ def buy():
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
-
-        # Upon completion, redirect the user to the home page.
+        # if inputs are valid 
         else:
 
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
