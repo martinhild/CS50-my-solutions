@@ -57,8 +57,8 @@ def buy():
         # if inputs are valid check if user can afford transaction
         else:
             cost = int(shares) * quote["price"]
-            budget = 
-            return apology("Not implemented yet. Cost: " + str(cost))
+            userid = session["user_id"]
+            return apology("Not implemented yet. User: ")
 
     # If request method is "GET"
     else:
