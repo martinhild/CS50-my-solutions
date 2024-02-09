@@ -50,14 +50,14 @@ def buy():
         quote = lookup(symbol)
 
         # Check if inputs are valid
-        if not lookup(symbol):
+        if not quote:
             return apology("No valid symbol")
         elif shares == "" or int(shares) < 1:
             return apology("Enter a positive number of shares")
         # if inputs are valid check if user can afford transaction
         else:
-            cost = int(shares) * lookup(symbol)["price"]
-
+            cost = int(shares) * quote["price"]
+            budget = 
             return apology("Not implemented yet. Cost: " + str(cost))
 
     # If request method is "GET"
