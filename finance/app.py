@@ -68,7 +68,7 @@ def buy():
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
-                amount = shares
+                amount = int(shares)
                 datetime = datetime.datetime.now()
                 db.execute(
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, datetime
