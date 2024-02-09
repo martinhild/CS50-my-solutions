@@ -70,6 +70,12 @@ def buy():
                 price = quote["price"]
                 amount = int(shares)
                 t = datetime.datetime.now()
+                # save the transaction into transactions table
+                db.execute(
+                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
+                )
+                # Subtract the cost of the transaction from user's cash in users table
+                
                 db.execute(
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
                 )
