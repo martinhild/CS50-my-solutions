@@ -47,7 +47,7 @@ def buy():
     else:
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
-        if 
+
     return apology("TODO")
 
 
