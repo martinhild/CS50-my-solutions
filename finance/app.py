@@ -65,7 +65,8 @@ def buy():
             else:
                 username = "Peter"
                 action = "buy"
-                symbol = lookup(symbol)
+                symbol = quote["symbol"]
+                
                 db.execute("INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES ('Peter', 'buy', 'NFLX', 100, 2, '09-02-2024 15:37');")
                 return apology("Not implemented yet.")
 
