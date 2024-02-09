@@ -39,7 +39,7 @@ def index():
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
 
-    
+    symbols = 
     return render_template("index.html")
 
 
