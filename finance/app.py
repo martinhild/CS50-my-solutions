@@ -39,8 +39,8 @@ def index():
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
 
-    symbols = 
-    return render_template("index.html")
+    symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
+    return render_template("index.html", symbols = symbols)
 
 
 @app.route("/buy", methods=["GET", "POST"])
