@@ -36,6 +36,7 @@ def after_request(response):
 @login_required
 def index():
     """Show portfolio of stocks"""
+    
     return apology("TODO")
 
 
@@ -80,7 +81,7 @@ def buy():
                 db.execute("UPDATE users SET cash = ? WHERE id = ?",cash ,userid)
 
                 return render_template("index.html")
-            
+
     # If request method is "GET"
     else:
         return render_template("buy.html")
