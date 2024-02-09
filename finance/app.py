@@ -38,8 +38,13 @@ def index():
     """Show portfolio of stocks"""
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
-
+    #list of distinct symbols/stocks of user
     symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
+
+    stocks = []{}
+    for symbol in symbols:
+        stocks
+
     return render_template("index.html", symbols = symbols)
 
 
