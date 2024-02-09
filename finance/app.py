@@ -55,7 +55,7 @@ def buy():
             return apology("Enter a positive number of shares")
         # if inputs are valid check if user can afford transaction
         else:
-            cost = int(shares) * 
+            cost = int(shares) * lookup(symbol)
 
             return apology("Not implemented yet. You entered: " + symbol + ": " + shares)
 
