@@ -75,7 +75,7 @@ def buy():
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
                 )
                 # Subtract the cost of the transaction from user's cash in users table
-                
+                cash = db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["username"]
                 db.execute(
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
                 )
