@@ -47,7 +47,7 @@ def buy():
     else:
         if not lookup(request.form.get("symbol")):
             return apology("No valid symbol")
-        elif
+        elif request.form.get("shares")
         else:
             symbol = request.form.get("symbol")
             shares = request.form.get("shares")
