@@ -57,7 +57,7 @@ def buy():
         else:
             cost = int(shares) * lookup(symbol)["price"]
 
-            return apology("Not implemented yet. Cost: " + strcost)
+            return apology("Not implemented yet. Cost: " + str(cost))
 
     # If request method is "GET"
     else:
