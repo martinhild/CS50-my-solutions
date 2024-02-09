@@ -64,7 +64,7 @@ def buy():
             if(cost > cash):
                 return apology("Can't afford")
             else:
-                username = "Peter"
+                username = session["user_id"]
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
