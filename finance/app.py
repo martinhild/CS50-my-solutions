@@ -64,11 +64,11 @@ def buy():
         # Check if inputs are valid
         if not quote:
             return apology("No valid symbol")
-        elif shares == "" or int(shares) < 1:
+        elif shares == "" or shares < 1:
             return apology("Enter a positive number of shares")
         # if inputs are valid check if user can afford transaction
         else:
-            cost = int(shares) * quote["price"]
+            cost = shares * quote["price"]
             userid = session["user_id"]
             rows = db.execute("SELECT cash FROM users WHERE id = ?", userid)
             cash = rows[0]["cash"]
@@ -79,7 +79,7 @@ def buy():
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
-                amount = int(shares)
+                shares
                 t = datetime.datetime.now()
 
                 # Upate user's cash in table 'users'
@@ -94,7 +94,7 @@ def buy():
                 # Save the transaction into 'stocks' table
                 shares = db.execute("SELECT amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)[0]["amount"]
                 if shares: #If user already owns a share of this stock
-                    shares = shares + int(amount)
+                    shares = shares + amount
                     db.execute("UPDATE stocks SET amount = ? WHERE username = ? AND symbol = ?", shares, username, symbol)
                 else:
                     db.execute("INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
