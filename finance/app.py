@@ -220,6 +220,7 @@ def sell():
         stocks = db.execute("SELECT symbol FROM stocks WHERE  username = ?", username)
         return render_template("sell.html", stocks=stocks)
 
+    # If request.method was "POST"
     else:
         symbol = request.form.get("symbol")
         if symbol == "":
