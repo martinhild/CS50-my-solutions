@@ -47,6 +47,8 @@ def index():
     for symbol in symbols:
         stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
 
+    stocks = db.execute("SELECT * FROM stocks WHERE username = ?", username)
+
     return render_template("index.html", stocks=stocks)
 
 
