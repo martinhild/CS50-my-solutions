@@ -38,7 +38,7 @@ def index():
     """Show portfolio of stocks"""
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
-    #list of distinct symbols/stocks of user
+    # list of distinct symbols/stocks of user
     symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
     def shares(username, symbol):
         db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
@@ -46,7 +46,7 @@ def index():
     for symbol in symbols:
         stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
 
-    return render_template("index.html", stocks = stocks)
+    return render_template("index.html", stocks=stocks)
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -84,20 +84,18 @@ def buy():
                 # Upate user's cash in table 'users'
                 cash = db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["cash"]
                 cash = cash - cost
-                db.execute("UPDATE users SET cash = ? WHERE id = ?",cash ,userid)
+                db.execute("UPDATE users SET cash = ? WHERE id = ?", cash, userid)
 
                 # Save the transaction into 'transactions' table
                 db.execute(
                     "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
                 )
 
-                 # Save the transaction into 'stocks' table
+                # Save the transaction into 'stocks' table
                 if db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
 
                 db.execute(
                     "INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
-
-
 
                 return redirect("/")
 
