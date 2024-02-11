@@ -38,14 +38,15 @@ def index():
     """Show portfolio of stocks"""
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
+
     # list of distinct symbols/stocks of user
     symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
 
-    def shares(username, symbol):
-        db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
-    stocks = []
-    for symbol in symbols:
-        stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
+    # def shares(username, symbol):
+    #     db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
+    # stocks = []
+    # for symbol in symbols:
+    #     stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
 
     stocks = db.execute("SELECT * FROM stocks WHERE username = ?", username)
 
