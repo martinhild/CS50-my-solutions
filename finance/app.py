@@ -223,9 +223,10 @@ def sell():
     else:
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
-        price_per_share = lookup(symbol)["price"]
+
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)
-        if 
+        if symbol == "":
+            return apology("You didn't select a stock")
 
 
         if owned - shares < 0:
