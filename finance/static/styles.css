@@ -21,3 +21,7 @@ nav .navbar-brand .green
 {
     color: #2e944b;
 }
+
+
+tr:nth-child(odd)   { background-color:#eee; }
+tr:nth-child(even)    { background-color:#fff; }
