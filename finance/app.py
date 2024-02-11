@@ -224,4 +224,6 @@ def sell():
         symbol = request.form.get("symbol")
         shares = request.form.get("shares")
         price_per_share = lookup(symbol)["price"]
+
+        owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)
         return apology("TODO")
