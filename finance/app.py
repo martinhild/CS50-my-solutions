@@ -62,7 +62,8 @@ def index():
 
     for stock in stocks:
         price = usd(lookup(stock["symbol"])["price"])
-        list.insert({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"price" : price}, {"total" : stock["amount"] * price})
+        dic = {"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"price" : price}, {"total" : stock["amount"] * price}
+        list.append(dict(dic))
 
 
     return render_template("index.html", list=list)
