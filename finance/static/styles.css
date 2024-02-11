@@ -35,4 +35,5 @@ table tr:nth-child(even){
 
 table tr.bottom {
     background-color:#fff;
+    font-size: large;
 }
