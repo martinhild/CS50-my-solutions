@@ -206,7 +206,7 @@ def register():
         # Insert the new user into users, storing a hash of the user’s password, not the password itself
         db.execute("INSERT INTO users (username, hash) VALUES(?, ?)", username, generate_password_hash(password))
         return render_template("login.html")
-    # If request.method was "POST"
+    # If request method was "POST"
     else:
         return render_template("register.html")
 
@@ -220,22 +220,23 @@ def sell():
         stocks = db.execute("SELECT symbol FROM stocks WHERE  username = ?", username)
         return render_template("sell.html", stocks=stocks)
 
-    # If request.method was "POST"
+    # If request method was "POST"
     else:
         symbol = request.form.get("symbol")
+        # No symbol
         if symbol == "":
             return apology("You didn't select a stock")
 
         username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)[0]["amount"]
+        # If user does not own shares of this stock
         if not owned:
             return apology("You don't own any shares of this stock")
 
         shares_to_sell = int(request.form.get("shares"))
         if owned < shares_to_sell:
-            return apology("You don't own enough shares")
-        
+         return apology("You don't own enough shares")
+
         else:
-                #
-                return apology("You can sell these shares")
+            return apology("You can sell these shares")
 
