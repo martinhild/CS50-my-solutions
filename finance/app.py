@@ -51,15 +51,15 @@ def index():
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
     [
-        {"symbol" : "nflx"}, {"shares" : "3"}, {"Price" : "100"}, {"Total" : "300"}
-        {"symbol" : "nvda"}, {"shares" : "2"}, {"Price" : "20"}, {"Total" : "40"}
+        {"symbol" : "nflx"}, {"shares" : "3"}, {"Price" : "100"}, {"Total" : "300"},
+        {"symbol" : "nvda"}, {"shares" : "2"}, {"Price" : "20"}, {"Total" : "40"},
         {"symbol" : "sbux"}, {"shares" : "3"}, {"Price" : "200"}, {"Total" : "600"}
     ]
 
     list = []
 
     for stock in stocks:
-        list.append()
+        list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"Price" : usd(lookup(request.form.get(stock["symbol"]))["price"])}, {"Total" : "300"})
 
 
     return render_template("index.html", stocks=stocks)
@@ -192,7 +192,6 @@ def quote():
             price = usd(quote["price"])
             symbol = (quote["symbol"])
             return render_template("quoted.html", symbol=symbol, price=price)
-
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
