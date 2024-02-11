@@ -7,13 +7,14 @@
 {% block main %}
     <form action="/sell" method="post">
         <select name="pets" id="pet-select">
-            <option value="">--Please choose an option--</option>
+            <option value="">--Please choose a stock--</option>
             {% for stock in stocks %}
 
 
             <option value=stock.symbol>{{stock.symbol}}</option>
             {% endfor %}
           </select>
+          <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
         <button class="btn btn-primary" type="submit">Log In</button>
     </form>
 {% endblock %}
