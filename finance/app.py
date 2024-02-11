@@ -229,7 +229,7 @@ def sell():
         if not owned:
             return apology("You don't own any shares of this stock")
         else:
-            shares_to_sell = request.form.get("shares")
+            shares_to_sell = int(request.form.get("shares"))
             if owned < shares_to_sell:
                 return apology("You don't own enough shares")
             else:
