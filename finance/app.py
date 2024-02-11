@@ -92,7 +92,7 @@ def buy():
                 )
 
                  # Save the transaction into 'stocks' table
-                db.execute()
+                db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", ?, ?)
                 db.execute(
                     "INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
 
