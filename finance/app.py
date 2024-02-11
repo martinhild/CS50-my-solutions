@@ -95,7 +95,7 @@ def buy():
                 shares = db.execute("SELECT amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
                 if shares: #If user already owns a share of this stock
                     shares += amount
-                    db.execute("UPDATE amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
+                    db.execute("UPDATE stocks SET amount = ? WHERE username = ? AND symbol = ?", shares, username, symbol)
                 else:
                     db.execute("INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
 
