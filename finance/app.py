@@ -217,7 +217,7 @@ def sell():
     """Sell shares of stock"""
     if request.method == "GET":
         username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
-        stocks = db.execute("SELECT symbol FROM stocks WHERE  username = ?)", username)
+        stocks = db.execute("SELECT symbol FROM stocks WHERE  username = ?", username)
         return render_template("sell.html", stocks=stocks)
 
     else:
