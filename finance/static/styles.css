@@ -25,5 +25,5 @@ nav .navbar-brand .green
 table {
     style="width:100%"
 }
-tr:nth-child(odd)   { background-color:#eee; }
-tr:nth-child(even)    { background-color:#fff; }
+table > tr:nth-child(odd)   { background-color:#eee; }
+table > tr:nth-child(even)    { background-color:#fff; }
