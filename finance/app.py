@@ -42,14 +42,15 @@ def index():
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
     list = []
-
+    total = 0
     for stock in stocks:
-        price = usd(lookup(stock["symbol"])["price"])
+        price_per_share = lookup(stock["symbol"])["price"]
         dic = {"symbol": stock["symbol"],
                "shares": stock["amount"],
                "price": price,
-               "total": stock["amount"] * price}
+               "total": usd(stock["amount"] * price_per_share)}
         list.append(dic)
+        total += price
 
     return render_template("index.html", list=list)
 
