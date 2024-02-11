@@ -75,7 +75,6 @@ def buy():
                 return apology("Can't afford")
             else:
                 username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
-                action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
                 amount = int(shares)
@@ -88,7 +87,7 @@ def buy():
 
                 # Save the transaction into 'transactions' table
                 db.execute(
-                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
+                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, "buy", symbol, price, amount, t
                 )
 
 
