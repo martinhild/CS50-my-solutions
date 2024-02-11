@@ -46,7 +46,7 @@ def index():
         total = stock["amount"] * price_per_share
         dic = {"symbol": stock["symbol"],
                "shares": stock["amount"],
-               "price": price_per_share,
+               "price": usd(price_per_share),
                "total": usd(total)}
         list.append(dic)
         whole_total += total
