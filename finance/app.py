@@ -89,7 +89,8 @@ def buy():
 
                 # Save the transaction into 'transactions' table
                 db.execute(
-                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime) VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
+                    "INSERT INTO transactions (username, action, symbol, price, amount, datetime)
+                    VALUES (?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t
                 )
 
                 # Save the transaction into 'stocks' table
