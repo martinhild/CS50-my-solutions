@@ -5,6 +5,11 @@
 {% endblock %}
 
 {% block main %}
-    this is INDEX
-    {{ stocks }}
+    {% for stock in stocks %}
+    <tr>
+        <td>{{ stock.symbol }}</td>
+        <td>{{ stock.amount }}</td>
+
+    </tr>
+{% endfor %}
 {% endblock %}
