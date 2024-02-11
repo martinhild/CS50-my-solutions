@@ -33,6 +33,7 @@ table tr:nth-child(odd)
 }
 table tr:nth-child(even){
     background-color:#fff;
+    border: 1px solid black;
 }
 
 table tr.cash {
@@ -45,8 +46,4 @@ table tr.total {
     background-color:#fff;
     font-size: large;
     font-weight: bold;
-}
-
-table td {
-    border: 1px solid black;
 }
