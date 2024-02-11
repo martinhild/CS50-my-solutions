@@ -71,7 +71,7 @@ def buy():
             userid = session["user_id"]
             rows = db.execute("SELECT cash FROM users WHERE id = ?", userid)
             cash = rows[0]["cash"]
-            if(cost > cash):
+            if cost > cash:
                 return apology("Can't afford")
             else:
                 username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
@@ -92,7 +92,7 @@ def buy():
                 )
 
                  # Save the transaction into 'stocks' table
-                exists: db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
+                if db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
 
                 db.execute(
                     "INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
