@@ -42,17 +42,18 @@ def index():
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
     list = []
-    total = 0
+    whole_total = 0
     for stock in stocks:
         price_per_share = lookup(stock["symbol"])["price"]
+        total = stock["amount"] * price_per_share
         dic = {"symbol": stock["symbol"],
                "shares": stock["amount"],
                "price": price_per_share,
-               "total": usd(stock["amount"] * price_per_share)}
+               "total": usd(total)}
         list.append(dic)
-        total += price_per_share
+        whole_total += total
 
-    return render_template("index.html", list=list, total=total)
+    return render_template("index.html", list=list, whole_total=whole_total)
 
 
 @app.route("/buy", methods=["GET", "POST"])
