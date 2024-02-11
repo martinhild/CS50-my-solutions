@@ -11,7 +11,7 @@
                 <select name="symbol">
                     <option value="">--Please choose a stock--</option>
                     {% for stock in stocks %}
-                    <option value=stock.symbol>{{stock.symbol}}</option>
+                    <option value={{stock.symbol}}>{{stock.symbol}}</option>
                     {% endfor %}
                 </select>
                 <div class="mb-3">
