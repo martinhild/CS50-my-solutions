@@ -224,6 +224,7 @@ def sell():
         symbol = request.form.get("symbol")
         if symbol == "":
             return apology("You didn't select a stock")
+        username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)
         if owned <= 500:
             return apology("You don't own any shares of that stock")
