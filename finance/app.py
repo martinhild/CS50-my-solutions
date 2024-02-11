@@ -79,7 +79,7 @@ def buy():
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
-                shares
+                amount = shares
                 t = datetime.datetime.now()
 
                 # Upate user's cash in table 'users'
@@ -89,7 +89,7 @@ def buy():
 
                 # Save the transaction into 'transactions' table
                 db.execute("INSERT INTO transactions(username, action, symbol, price, amount, datetime) VALUES(?, ?, ?, ?, ?, ?)",
-                           username, action, symbol, price, amount, t)
+                           username, action, symbol, price, shares, t)
 
                 # Save the transaction into 'stocks' table
                 shares = db.execute("SELECT amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)[0]["amount"]
