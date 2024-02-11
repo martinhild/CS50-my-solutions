@@ -39,26 +39,9 @@ def index():
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
 
-    # list of distinct symbols/stocks of user
-    symbols = db.execute("SELECT DISTINCT symbol FROM transactions WHERE username = ?", username)
-
-    # def shares(username, symbol):
-    #     db.execute("SELECT SUM(amount) FROM transactions WHERE username = ? AND symbol = ?", username, symbol)
-    # stocks = []
-    # for symbol in symbols:
-    #     stocks.append({symbol["symbol"]: shares(username, symbol["symbol"])})
-
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
-    # [
-    #     {"symbol" : "nflx"}, {"shares" : "3"}, {"Price" : "100"}, {"Total" : "300"},
-    #     {"symbol" : "nvda"}, {"shares" : "2"}, {"Price" : "20"}, {"Total" : "40"},
-    #     {"symbol" : "sbux"}, {"shares" : "3"}, {"Price" : "200"}, {"Total" : "600"}
-    # ]
-
     list = []
-
-
 
     for stock in stocks:
         price = usd(lookup(stock["symbol"])["price"])
@@ -67,7 +50,6 @@ def index():
                "price": price,
                "total": stock["amount"] * price}
         list.append(dic)
-
 
     return render_template("index.html", list=list)
 
