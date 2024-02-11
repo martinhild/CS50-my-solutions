@@ -58,8 +58,10 @@ def index():
 
     list = []
 
+    price = usd(lookup(request.form.get("symbol"))["price"])
+
     for stock in stocks:
-        list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"Price" : usd(lookup(request.form.get(stock["symbol"]))["price"])}, {"Total" : "300"})
+        list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"Price" : lookup()}, {"Total" : "300"})
 
 
     return render_template("index.html", stocks=stocks)
@@ -192,6 +194,7 @@ def quote():
             price = usd(quote["price"])
             symbol = (quote["symbol"])
             return render_template("quoted.html", symbol=symbol, price=price)
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
