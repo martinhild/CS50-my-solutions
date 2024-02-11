@@ -56,6 +56,12 @@ def index():
         {"symbol" : "sbux"}, {"shares" : "3"}, {"Price" : "200"}, {"Total" : "600"}
     ]
 
+    list = []
+
+    for stock in stocks:
+        list.append()
+
+
     return render_template("index.html", stocks=stocks)
 
 
