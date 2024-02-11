@@ -221,5 +221,7 @@ def sell():
         return render_template("sell.html", stocks=stocks)
 
     else:
-
+        symbol = request.form.get("symbol")
+        shares = request.form.get("shares")
+        price_per_share = lookup(symbol)["price"]
         return apology("TODO")
