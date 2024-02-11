@@ -58,13 +58,13 @@ def index():
 
     list = []
 
-    price = usd(lookup(request.form.get("symbol"))["price"])
+    price = usd(lookup(request.form.get(stock["symbol"]))["price"])
 
     for stock in stocks:
-        list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"Price" : lookup()}, {"Total" : "300"})
+        list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"price" : price}, {"total" : stock["amount"] * price})
 
 
-    return render_template("index.html", stocks=stocks)
+    return render_template("index.html", list=list)
 
 
 @app.route("/buy", methods=["GET", "POST"])
