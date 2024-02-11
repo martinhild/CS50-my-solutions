@@ -52,6 +52,7 @@ def index():
         whole_total += total
     cash = db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["cash"]
     whole_total = usd(cash + whole_total)
+    cash = usd(cash)
 
     return render_template("index.html", list=list, whole_total=whole_total, cash= cash)
 
