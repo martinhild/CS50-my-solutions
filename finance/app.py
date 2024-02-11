@@ -50,6 +50,8 @@ def index():
 
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
+    
+
     return render_template("index.html", stocks=stocks)
 
 
