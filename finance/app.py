@@ -50,7 +50,11 @@ def index():
 
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
 
-    
+    [
+        {"symbol" : "nflx"}, {"shares" : "3"}, {"Price" : "100"}, {"Total" : "300"}
+        {"symbol" : "nvda"}, {"shares" : "2"}, {"Price" : "20"}, {"Total" : "40"}
+        {"symbol" : "sbux"}, {"shares" : "3"}, {"Price" : "200"}, {"Total" : "600"}
+    ]
 
     return render_template("index.html", stocks=stocks)
 
