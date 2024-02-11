@@ -61,7 +61,7 @@ def index():
 
 
     for stock in stocks:
-        price = usd(lookup(request.form.get(stock["symbol"]))["price"])
+        price = usd(lookup(stock["symbol"])["price"])
         list.append({"symbol" : stock["symbol"]}, {"shares" : stock["amount"]}, {"price" : price}, {"total" : stock["amount"] * price})
 
 
