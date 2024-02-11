@@ -47,7 +47,7 @@ def index():
         price_per_share = lookup(stock["symbol"])["price"]
         dic = {"symbol": stock["symbol"],
                "shares": stock["amount"],
-               "price": price,
+               "price": price_per_share,
                "total": usd(stock["amount"] * price_per_share)}
         list.append(dic)
         total += price_per_share
