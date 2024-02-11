@@ -238,7 +238,17 @@ def sell():
         if shares_to_sell > owned:
          return apology("You don't own enough shares of this stock")
 
-        # User owns enough shares of stock to sell the wanted amount
+        # User owns enough shares. Can sell.
         else:
-            return apology("You can sell these shares")
+            # Selling
+            price_per_share = lookup(symbol)["price"]
+            total_price = shares_to_sell * price_per_share
+
+            # Save this transaction in table 'transactions'
+
+            # Sell/remove amount of shares of stock from table 'stocks'
+
+            # Add money to users 'cash' in table 'users'
+
+            return apology("Not implemented yet. You can sell these shares")
 
