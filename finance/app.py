@@ -216,8 +216,9 @@ def register():
 def sell():
     """Sell shares of stock"""
     if request.method == "GET":
-
-        return render_template("sell.html")
+        username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
+        stocks = db.execute("SELECT symbol FROM stocks WHERE  username = ?)", username)
+        return render_template("sell.html", stocks=stocks)
 
     else:
 
