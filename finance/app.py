@@ -92,7 +92,7 @@ def buy():
                 cash = cash - cost
                 db.execute("UPDATE users SET cash = ? WHERE id = ?",cash ,userid)
 
-                return render_template("index.html")
+                return redirect("/")
 
     # If request method is "GET"
     else:
