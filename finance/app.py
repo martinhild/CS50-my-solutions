@@ -225,5 +225,8 @@ def sell():
         shares = request.form.get("shares")
         price_per_share = lookup(symbol)["price"]
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)
+        if 
+
+
         if owned - shares < 0:
             return apology("You don't own enough shares")
