@@ -7,13 +7,26 @@
 {% block main %}
 
 
+<tr>
+    <td>{{ stock.symbol }}</td>
+    <td>{{ stock.amount }}</td>
+</tr>
+
     {% for stock in stocks %}
+    <table style="width:100%">
         <tr>
-            <td>{{ stock.symbol }}</td>
-            <td>{{ stock.amount }}</td>
+          <th>Company</th>
+          <th>Contact</th>
         </tr>
+        <tr>
+          <td>{{ stock.symbol }}</td>
+          <td>{{ stock.amount }}</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+        </tr>
+      </table>
     {% endfor %}
-
-
 
 {% endblock %}
