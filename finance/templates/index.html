@@ -7,18 +7,22 @@
 {% block main %}
 
 
-
-    {% for stock in stocks %}
     <table style="width:100%">
         <tr>
           <th>Symbol</th>
           <th>Shares</th>
+          <th>Price</th>
+          <th>TOTAL</th>
         </tr>
+        {% for stock in stocks %}
         <tr>
           <td>{{ stock.symbol }}</td>
           <td>{{ stock.amount }}</td>
         </tr>
-      </table>
-    {% endfor %}
-
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+         </tr>
+    </table>
 {% endblock %}
