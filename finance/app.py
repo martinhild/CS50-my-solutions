@@ -97,6 +97,7 @@ def buy():
                     shares += amount
                 else:
                     shares = amount
+                db.execute("UPDATE amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
 
                 db.execute(
                     "INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
