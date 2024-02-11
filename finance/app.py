@@ -88,11 +88,11 @@ def buy():
                 db.execute("UPDATE users SET cash = ? WHERE id = ?", cash, userid)
 
                 # Save the transaction into 'transactions' table
-                db.execute("INSERT INTO transactions(username, action, symbol, price, amount, datetime)
-                           VALUES(?, ?, ?, ?, ?, ?)", username, action, symbol, price, amount, t)
+                db.execute("INSERT INTO transactions(username, action, symbol, price, amount, datetime) VALUES(?, ?, ?, ?, ?, ?)",
+                           username, action, symbol, price, amount, t)
 
                 # Save the transaction into 'stocks' table
-                if db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
+                if db.execute("SELECT * FROM stocks WHERE username = ? AND symbol = ?", username, symbol):
 
                 db.execute(
                     "INSERT INTO stocks (username, symbol, amount) VALUES (?, ?, ?)", username, symbol, amount)
