@@ -224,15 +224,14 @@ def sell():
         symbol = request.form.get("symbol")
         if symbol == "":
             return apology("You didn't select a stock")
-
         username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)[0]["amount"]
-        shares = request.form.get("shares")
-        # return apology(owned)
-        if owned <= 500:
-            return apology("You don't own enough shares")
+        if not owned:
+            return apology("You don't own any shares of this stock")
+        else:
+            shares_to_sell = request.form.get("shares")
+            if owned < shares_to_sell:
+                return apology("You don't own enough shares")
+            else:
+                return apology("You can sell these shares")
 
-
-        price_per_share = lookup(symbol)["price"]
-        if owned - shares < 0:
-            return apology("You don't own enough shares")
