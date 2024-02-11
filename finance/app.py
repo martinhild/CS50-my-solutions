@@ -38,9 +38,7 @@ def index():
     """Show portfolio of stocks"""
     userid = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
-
     stocks = db.execute("SELECT symbol, amount FROM stocks WHERE username = ?", username)
-
     list = []
     whole_total = 0
     for stock in stocks:
@@ -52,8 +50,10 @@ def index():
                "total": usd(total)}
         list.append(dic)
         whole_total += total
+    whole_total = usd(whole_total)
+    cash = usd(db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["cash"])
 
-    return render_template("index.html", list=list, whole_total=whole_total)
+    return render_template("index.html", list=list, whole_total=whole_total, cash= cash)
 
 
 @app.route("/buy", methods=["GET", "POST"])
