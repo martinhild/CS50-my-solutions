@@ -50,9 +50,9 @@ def index():
                "price": price,
                "total": usd(stock["amount"] * price_per_share)}
         list.append(dic)
-        total += price
+        total += price_per_share
 
-    return render_template("index.html", list=list)
+    return render_template("index.html", list=list, total=total)
 
 
 @app.route("/buy", methods=["GET", "POST"])
