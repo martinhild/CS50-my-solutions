@@ -64,7 +64,9 @@ def buy():
 
     if request.method == "POST":
         # Check if inputs are valid
-        if ";" in request.form.get("symbol"):
+        if ";" in request.form.get("symbol") or "'" in request.form.get("symbol"):
+            return apology("Character not allowed")
+        if ";" in request.form.get("shares") or "'" in request.form.get("shares"):
             return apology("Character not allowed")
         if request.form.get("symbol") == "":
             return apology("Enter a symbol")
