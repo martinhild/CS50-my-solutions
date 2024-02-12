@@ -53,8 +53,8 @@ def index():
     cash = db.execute("SELECT cash FROM users WHERE id = ?", userid)[0]["cash"]
     whole_total = usd(cash + whole_total)
     cash = usd(cash)
-
-    return render_template("index.html", list=list, whole_total=whole_total, cash= cash)
+    message = "Hi " + username
+    return render_template("index.html", list=list, whole_total=whole_total, cash=cash, message=message)
 
 
 @app.route("/buy", methods=["GET", "POST"])
@@ -158,10 +158,8 @@ def login():
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
 
-        message = "Welcome " + request.form.get("username") + "!"
         # Redirect user to home page
-        # return redirect("/", message=message)
-        return redirect("index.html", message)
+        return redirect("/")
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
