@@ -64,12 +64,19 @@ def buy():
 
     if request.method == "POST":
         # Check if inputs are valid
+        if request.form.get("symbol") == "":
+            return apology("Enter a symbol")
+        if request.form.get("shares") == "":
+            return apology("Enter shares")
+        shares = int(request.form.get("shares"))
+        if shares < 1:
+            return apology("Enter a positive number of shares")
         if not request.form.get("symbol"):
             return apology("No valid symbol")
 
         # Get user inputs
         symbol = request.form.get("symbol")
-        shares = int(request.form.get("shares"))
+
         quote = lookup(symbol)
         if shares == "" or shares < 1:
             return apology("Enter a positive number of shares")
