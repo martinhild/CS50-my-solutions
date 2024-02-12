@@ -63,12 +63,15 @@ def buy():
     """Buy shares of stock"""
 
     if request.method == "POST":
+        # Check if inputs are valid
+        if not request.form.get("symbol"):
+            return apology("No valid symbol")
+
         # Get user inputs
         symbol = request.form.get("symbol")
         shares = int(request.form.get("shares"))
         quote = lookup(symbol)
 
-        # Check if inputs are valid
         if not quote:
             return apology("No valid symbol")
         elif shares == "" or shares < 1:
