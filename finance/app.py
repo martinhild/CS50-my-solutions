@@ -184,8 +184,8 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "GET":
-        message = "Search stock"
-        return render_template("quote.html")
+        message = "Search for prices of stocks"
+        return render_template("quote.html", message=message)
     else:
         if not lookup(request.form.get("symbol")):
             return apology("No valid symbol")
