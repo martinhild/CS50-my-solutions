@@ -299,6 +299,6 @@ def password():
             return apology("New password and confirmation was not the same")
 
         # set new password
-        db.execute("UPDATE users SET hash = ? WHERE username = ?", generate_password_hash(request.form.get("new_password")))
+        db.execute("UPDATE users SET hash = ? WHERE id = ?", generate_password_hash(request.form.get("new_password")), session["user_id"])
         return redirect("/")
 
