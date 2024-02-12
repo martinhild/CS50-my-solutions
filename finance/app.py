@@ -249,6 +249,10 @@ def sell():
 
     # If request method was "POST"
     else:
+        if ";" in request.form.get("symbol") or "'" in request.form.get("symbol"):
+            return apology("Character not allowed")
+        if ";" in request.form.get("shares") or "'" in request.form.get("shares"):
+            return apology("Character not allowed")
         symbol = request.form.get("symbol")
         # No symbol
         if symbol == "":
