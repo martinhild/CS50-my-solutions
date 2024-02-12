@@ -120,7 +120,7 @@ def buy():
 
                 # Save the transaction into 'stocks' table
                 current_shares = db.execute("SELECT amount FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
-                if current_shares: #If user already owns shares of this stock
+                if current_shares:  # If user already owns shares of this stock
                     new_shares = current_shares[0]["amount"] + shares
                     db.execute("UPDATE stocks SET amount = ? WHERE username = ? AND symbol = ?", new_shares, username, symbol)
                 else:
@@ -276,19 +276,18 @@ def sell():
         shares_to_sell = int(request.form.get("shares"))
         # If user wants to sell more shares of a stock than he owns
         if shares_to_sell > owned:
-         return apology("You don't own enough shares of this stock")
+            return apology("You don't own enough shares of this stock")
 
         # User owns enough shares. Can sell.
         else:
             # Selling
             price_per_share = lookup(symbol)["price"]
 
-
             # Save this transaction in table 'transactions'
             action = "sell"
             t = datetime.datetime.now()
             db.execute("INSERT INTO transactions(username, action, symbol, price, amount, datetime) VALUES(?, ?, ?, ?, ?, ?)",
-                           username, action, symbol, price_per_share, shares_to_sell, t)
+                       username, action, symbol, price_per_share, shares_to_sell, t)
 
             # Sell/remove amount of shares of stock from table 'stocks'
             if shares_to_sell < owned:
@@ -332,6 +331,6 @@ def password():
             return apology("New password and confirmation was not the same")
 
         # set new password
-        db.execute("UPDATE users SET hash = ? WHERE id = ?", generate_password_hash(request.form.get("new_password")), session["user_id"])
+        db.execute("UPDATE users SET hash = ? WHERE id = ?", generate_password_hash(
+            request.form.get("new_password")), session["user_id"])
         return redirect("/")
-
