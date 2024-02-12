@@ -158,7 +158,7 @@ def login():
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
 
-        message = ("Welcome ?",username)
+        message = "Welcome ",request.form.get("username")
         # Redirect user to home page
         # return redirect("/", message=message)
         return render_template("index.html", message=message)
