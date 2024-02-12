@@ -64,6 +64,8 @@ def buy():
 
     if request.method == "POST":
         # Check if inputs are valid
+        if request.form.get("symbol").contains("") "":
+            return apology("Enter a symbol")
         if request.form.get("symbol") == "":
             return apology("Enter a symbol")
         if request.form.get("shares") == "":
