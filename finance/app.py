@@ -203,6 +203,8 @@ def quote():
         message = "Search for prices of stocks"
         return render_template("quote.html", message=message)
     else:
+        if ";" in request.form.get("symbol") or "'" in request.form.get("symbol"):
+            return apology("Character not allowed")
         if not lookup(request.form.get("symbol")):
             return apology("No valid symbol")
         else:
