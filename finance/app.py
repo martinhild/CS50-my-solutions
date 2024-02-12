@@ -237,6 +237,8 @@ def sell():
         # No symbol
         if symbol == "":
             return apology("You didn't select a stock")
+        if request.form.get("shares") < 1
+            return apology("Select at least one.")
 
         username = db.execute("SELECT username FROM users WHERE id = ?", session["user_id"])[0]["username"]
         owned = db.execute("SELECT amount FROM stocks WHERE  username = ? AND symbol = ?", username, symbol)[0]["amount"]
