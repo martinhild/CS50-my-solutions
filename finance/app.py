@@ -78,7 +78,6 @@ def buy():
         except ValueError:
             return apology("No whole number")
 
-
         if shares < 1:
             return apology("Enter a positive number of shares")
         if not request.form.get("symbol"):
