@@ -50,7 +50,7 @@ table tr.total {
 /* The alert message box */
 .alert {
     padding: 20px;
-    background-color: light blue;
+    background-color: #46a8f5;
     color: white;
     margin-bottom: 15px;
   }
