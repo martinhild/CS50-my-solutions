@@ -6,6 +6,13 @@
 
 {% block main %}
 
+{% if message %}
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    {{ message }}
+  </div>
+{% endif %}
+
     <table style="width:100%">
         <tr>
           <th>Action</th>

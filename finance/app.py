@@ -125,7 +125,8 @@ def history():
         transaction["price"] = usd(transaction["price"])
     # reverse table so new transactions are at the top
     transactions.reverse()
-    return render_template("history.html", transactions=transactions)
+    message = "History of your transactions"
+    return render_template("history.html", transactions=transactions, message=message)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -183,6 +184,7 @@ def logout():
 def quote():
     """Get stock quote."""
     if request.method == "GET":
+        message = "Search stock"
         return render_template("quote.html")
     else:
         if not lookup(request.form.get("symbol")):
