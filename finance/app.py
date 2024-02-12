@@ -86,7 +86,6 @@ def buy():
                 action = "buy"
                 symbol = quote["symbol"]
                 price = quote["price"]
-                # amount = shares
                 t = datetime.datetime.now()
 
                 # Upate user's cash in table 'users'
@@ -117,7 +116,15 @@ def buy():
 @login_required
 def history():
     """Show history of transactions"""
-    return apology("TODO")
+    userid = session["user_id"]
+    username = db.execute("SELECT username FROM users WHERE id = ?", userid)[0]["username"]
+    transactions = db.execute("SELECT action, symbol, price, amount, datetime FROM transactions WHERE username = ?", username)
+    # format price to US Dollar
+    for transaction in transactions:
+        transaction["price"] = usd(transaction["price"])
+    # reverse table so new transactions are at the top
+    transactions.reverse()
+    return render_template("history.html", transactions=transactions)
 
 
 @app.route("/login", methods=["GET", "POST"])
@@ -242,13 +249,56 @@ def sell():
         else:
             # Selling
             price_per_share = lookup(symbol)["price"]
-            total_price = shares_to_sell * price_per_share
+
 
             # Save this transaction in table 'transactions'
+            action = "sell"
+            t = datetime.datetime.now()
+            db.execute("INSERT INTO transactions(username, action, symbol, price, amount, datetime) VALUES(?, ?, ?, ?, ?, ?)",
+                           username, action, symbol, price_per_share, shares_to_sell, t)
 
             # Sell/remove amount of shares of stock from table 'stocks'
+            if shares_to_sell < owned:
+                new_shares = owned - shares_to_sell
+                db.execute("UPDATE stocks SET amount = ? WHERE username = ? AND symbol = ?", new_shares, username, symbol)
+            else:
+                db.execute("DELETE FROM stocks WHERE username = ? AND symbol = ?", username, symbol)
 
             # Add money to users 'cash' in table 'users'
+            total_price = shares_to_sell * price_per_share
+            current_cash = db.execute("SELECT cash FROM users WHERE username = ?", username)[0]["cash"]
+            new_cash = current_cash + total_price
+            db.execute("UPDATE users SET cash = ? WHERE username = ?", new_cash, username)
+            return redirect("/")
 
-            return apology("Not implemented yet. You can sell these shares")
+
+@app.route("/password", methods=["GET", "POST"])
+@login_required
+def password():
+    """Change user's password"""
+    if request.method == "GET":
+        return render_template("password.html")
+    else:
+        # Check for missing input
+        if request.form.get("username") == "":
+            return apology("Didn't enter username")
+        if request.form.get("old_password") == "":
+            return apology("Didn't enter old password")
+        if request.form.get("new_password") == "":
+            return apology("Didn't enter new password")
+        if request.form.get("confirmation") == "":
+            return apology("Didn't confirm new password")
+
+        # Check for correct input
+        userdata = db.execute("SELECT * FROM users WHERE id = ?", session["user_id"])[0]
+        if request.form.get("username") != userdata["username"]:
+            return apology("Wrong username")
+        if not check_password_hash(userdata["hash"], request.form.get("old_password")):
+            return apology("Old password was wrong", 403)
+        if not check_password_hash(request.form.get("new_password"), request.form.get("confirmation")):
+            return apology("New password and confirmation was not the same")
+
+        # set new password
+        db.execute("UPDATE users SET hash = ? WHERE username = ?", generate_password_hash(request.form.get("new_password")))
+        return redirect("/")
 
