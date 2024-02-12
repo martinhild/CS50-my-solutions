@@ -161,7 +161,7 @@ def login():
         message = "Welcome " + request.form.get("username") + "!"
         # Redirect user to home page
         # return redirect("/", message=message)
-        return render_template("index.html", message=message)
+        return redirect("index.html", message)
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
