@@ -109,7 +109,8 @@ def buy():
 
     # If request method is "GET"
     else:
-        return render_template("buy.html")
+        message = "Buy shares"
+        return render_template("buy.html", message=message)
 
 
 @app.route("/history")
