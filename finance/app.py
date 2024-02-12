@@ -158,14 +158,14 @@ def login():
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
 
-        message = "Welcome"
+        message = "Welcome ?", username
         # Redirect user to home page
         # return redirect("/", message=message)
-        return render_template("login.html", message=message)
+        return render_template("index.html", message=message)
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
-        return render_template("index.html")
+        return render_template("login.html")
 
 
 @app.route("/logout")
