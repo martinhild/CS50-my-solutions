@@ -295,7 +295,7 @@ def password():
             return apology("Wrong username")
         if not check_password_hash(userdata["hash"], request.form.get("old_password")):
             return apology("Old password was wrong", 403)
-        if not check_password_hash(request.form.get("new_password"), request.form.get("confirmation")):
+        if not request.form.get("new_password") == request.form.get("confirmation"):
             return apology("New password and confirmation was not the same")
 
         # set new password
