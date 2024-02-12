@@ -72,6 +72,7 @@ def buy():
             return apology("Enter a symbol")
         if request.form.get("shares") == "":
             return apology("Enter shares")
+        if request.form.get("shares")
         shares = int(request.form.get("shares"))
         if shares < 1:
             return apology("Enter a positive number of shares")
