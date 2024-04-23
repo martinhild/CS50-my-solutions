@@ -18,8 +18,9 @@ Additionally, I set three goals beforehand:
 - To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
 
 Design choices:
+IDE
 
-After researching, I chose to develop the app in Android Studio and selected Java as the programming language. 
+After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
 I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
 When it came to the database, I chose SQLite. Firstly, because I was already familiar with it from the course, and secondly, because I learned that SQLite was the most common database technology associated with Android applications due to its inclusion in the Android SDK.
 
