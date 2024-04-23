@@ -46,13 +46,13 @@ Displays buttons to navigate to different activities of the app
 
 #### DriveActivity:
 
-Here, users can start a new drive. After entering the start data and pressing the Drive button, the trip begins. The STOP button ends the trip. After entering the arrival data, the trip can be saved in the SQL database with the SAVE button. There are graphical UI elements for date and time that can be accessed via buttons next to the text field.
+Here, users can start a new drive. After entering the start data and pressing the **Drive** button, the trip begins. The **STOP** button ends the trip. After entering the arrival data, the trip can be saved in the SQL database with the **SAVE** button. There are graphical UI elements for date and time that can be accessed via buttons next to the text field.
 Users can manually enter the mileage or use the camera symbol to initiate text recognition to scan the mileage.
 It saves the trips in an SQL database using the MyDatabaseHelper helper class.
 
 #### OcrActivity:
 
-The "TAKE PICTURE" button initiates text recognition via the phone's camera. A photo is taken and cropped to the desired area by the user. The scan appears in the mileage field and can be sent back to the DriveActivity via the OK button. Two libraries were imported for this:
+The **TAKE PICTURE** button initiates text recognition via the phone's camera. A photo is taken and cropped to the desired area by the user. The scan appears in the mileage field and can be sent back to the DriveActivity via the **OK** button. Two libraries were imported for this:
 Recognize text in images with ML Kit on Android:
 https://developers.google.com/ml-kit/vision/text-recognition/v2/android
 Android-Image-Cropper:
