@@ -18,21 +18,21 @@ Additionally, I set three goals beforehand:
 - To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
 
 
-Design choices:
+### Design choices:
 
-IDE:
+**IDE:**
 
 After some research, I learned that Android Studio is the official Integrated Development Environment (IDE) for Android app development.
 
-Programming Language:
+**Programming Language:**
 
 I read in several forums that Java and Kotlin seemed to be well suited for my purposes. Since I had taken a Java course years ago, I decided to go with Java.
 
-OCR:
+**OCR:**
 
 I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
 
-Database:
+**Database:**
 
 When it came to the database, I chose SQLite. Firstly, because I was already familiar with it from the course, and secondly, because I learned that SQLite was the most common database technology associated with Android applications due to its inclusion in the Android SDK.
 
@@ -61,13 +61,13 @@ Displays buttons to navigate to different activities of the app
 
 #### DriveActivity:
 
-Here, users can start a new drive. After entering the start data and pressing the **Drive** button, the trip begins. The **STOP** button ends the trip. After entering the arrival data, the trip can be saved in the SQL database with the **SAVE** button. There are graphical UI elements for date and time that can be accessed via buttons next to the text field.
+Here, users can start a new drive. After entering the start data and pressing the Drive button, the trip begins. The STOP button ends the trip. After entering the arrival data, the trip can be saved in the SQL database with the SAVE button. There are graphical UI elements for date and time that can be accessed via buttons next to the text field.
 Users can manually enter the mileage or use the camera symbol to initiate text recognition to scan the mileage.
 It saves the trips in an SQL database using the MyDatabaseHelper helper class.
 
 #### OcrActivity:
 
-The **TAKE PICTURE** button initiates text recognition via the phone's camera. A photo is taken and cropped to the desired area by the user. The scan appears in the mileage field and can be sent back to the DriveActivity via the **OK** button. Two libraries were imported for this:
+The TAKE PICTURE button initiates text recognition via the phone's camera. A photo is taken and cropped to the desired area by the user. The scan appears in the mileage field and can be sent back to the DriveActivity via the OK button. Two libraries were imported for this:
 Recognize text in images with ML Kit on Android:
 https://developers.google.com/ml-kit/vision/text-recognition/v2/android
 Android-Image-Cropper:
