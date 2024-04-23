@@ -13,8 +13,10 @@ As a final project, I decided to develop my first own app - an Android app for c
 
 Additionally, I set three goals beforehand:
 
-- Optical Character Recognition (OCR), so users wouldn't have to manually input the car's mileage but could scan it using their phone's camera.The captured data should be stored in an SQL database.
+- Optical Character Recognition (OCR), so users wouldn't have to manually input the car's mileage but could scan it using their phone's camera.
+- The captured data should be stored in an SQL database.
 - To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
+
 After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
 
 
