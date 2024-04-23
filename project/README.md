@@ -19,16 +19,17 @@ To make input more user-friendly, users could input date and time manually or th
 After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
 
 
-App Structure:
+### App Structure:
 
 In Android Studio, an Activity represents a screen with a user interface. Activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
 My app consists of six Activities with associated XML layout files:
 
-MainActivity, DriveActivity, OcrActivity, LogBookActivity, FilterActivity, OptionsActivity
-activity_main.xml, activity_drive.xml, activity_ocr.xml, activity_logbook.xml, activity_filter.xml, activity_options.xml
+- MainActivity, activity_main.xml
+DriveActivity, OcrActivity, LogBookActivity, FilterActivity, OptionsActivity
+- activity_main.xml, activity_drive.xml, activity_ocr.xml, activity_logbook.xml, activity_filter.xml, activity_options.xml
 
 And two Java Classes for logic:
-CustomAdapter, MyDatabaseHelper
+- CustomAdapter, MyDatabaseHelper
 
 
 MainActivity:
