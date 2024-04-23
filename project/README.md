@@ -19,9 +19,7 @@ Additionally, I set three goals beforehand:
 
 After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
 I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
-
-Due to its inclusion in the Android Software Development Kit (SDK), SQLite, an open-source relational database, is the most common database technology associated with Android applications.
-
+I learned that due to its inclusion in the Android SDK, **SQLite** was the most common database technology associated with Android applications.
 
 
 ### App Structure:
