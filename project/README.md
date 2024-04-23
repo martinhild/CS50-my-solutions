@@ -21,6 +21,7 @@ After researching, I chose to develop the app in Android Studio and selected Jav
 
 
 
+
 ### App Structure:
 
 In Android Studio, an Activity represents a screen with a user interface. Activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
