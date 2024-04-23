@@ -1,5 +1,5 @@
 
-# Car Sharing Android App 
+# Car Sharing Android App featuring OCR and SQLite Database
 
 
 #### Video Demo:  <URL HERE>
