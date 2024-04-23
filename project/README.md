@@ -84,7 +84,7 @@ Similar in structure and function to the LogBookActivity but modified to filter 
 
 #### OptionsActivity:
 
-Currently, only switching between English and German languages is possible here. It's worth noting that all text strings in the app are not hardcoded but exist as IDs referring to entries in the strings.xml files. Separate strings.xml files exist for different languages. Thus, by selecting the desired strings.xml, all words can be displayed in the desired language.
+Currently, only switching between English and German languages is possible here. It's worth noting that all texts appearing in the app are not hardcoded strings but exist as IDs referring to entries in strings.xml files. Separate strings.xml files exist for different languages. Thus, by selecting the desired strings.xml, all words can be displayed in the desired language.
 
 #### CustomAdapter:
 
