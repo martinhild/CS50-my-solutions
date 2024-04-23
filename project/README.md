@@ -13,9 +13,8 @@ As a final project, I decided to develop my first own app - an Android app for c
 
 Additionally, I set three goals beforehand:
 
-Optical Character Recognition (OCR), so users wouldn't have to manually input the car's mileage but could scan it using their phone's camera.
-The captured data should be stored in an SQL database.
-To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
+- Optical Character Recognition (OCR), so users wouldn't have to manually input the car's mileage but could scan it using their phone's camera.The captured data should be stored in an SQL database.
+- To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
 After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
 
 
@@ -23,7 +22,7 @@ After researching, I chose to develop the app in Android Studio and selected Jav
 
 In Android Studio, an Activity represents a screen with a user interface. Activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
 
-My app consists of six Activities with associated XML layout files:
+My app consists of **six Activities with associated XML layout files:**
 
 - MainActivity,     activity_main.xml
 - DriveActivity,    activity_drive.xml
@@ -32,7 +31,7 @@ My app consists of six Activities with associated XML layout files:
 - FilterActivity,   activity_filter.xml
 - OptionsActivity,  activity_options.xml
 
-And two Java Classes (helper classes):
+And **two Java Classes (helper classes):**
 - CustomAdapter
 - MyDatabaseHelper
 
