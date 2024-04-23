@@ -92,4 +92,4 @@ This adapter is designed to work with a RecyclerView to display the trips' data 
 
 #### MyDatabaseHelper:
 
-This class serves as a helper class to interact with the SQLite database, providing methods to manage the database. Inside are all the string queries needed to manipulate the database.
+This class serves as a helper class to interact with the SQLite database, providing methods to manage the database. Inside here are all the string queries for SQLite that are needed to manipulate the database.
