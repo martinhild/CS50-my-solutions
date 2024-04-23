@@ -21,11 +21,12 @@ After researching, I chose to develop the app in Android Studio and selected Jav
 I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
 
 
+
 ### App Structure:
 
 In Android Studio, an Activity represents a screen with a user interface. Activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
 
-My app consists of **six Activities with associated XML layout files:**
+**My app consists of six Activities with associated XML layout files:**
 
 - MainActivity,     activity_main.xml
 - DriveActivity,    activity_drive.xml
@@ -34,7 +35,7 @@ My app consists of **six Activities with associated XML layout files:**
 - FilterActivity,   activity_filter.xml
 - OptionsActivity,  activity_options.xml
 
-And **two Java Classes (helper classes):**
+**And two Java Classes (helper classes):**
 - CustomAdapter
 - MyDatabaseHelper
 
