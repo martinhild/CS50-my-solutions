@@ -68,10 +68,9 @@ It saves the trips in an SQL database using the MyDatabaseHelper helper class.
 #### OcrActivity:
 
 The TAKE PICTURE button initiates text recognition via the phone's camera. A photo is taken and cropped to the desired area by the user. The scan appears in the mileage field and can be sent back to the DriveActivity via the OK button. Two libraries were imported for this:
-Recognize text in images with ML Kit on Android:
-https://developers.google.com/ml-kit/vision/text-recognition/v2/android
-Android-Image-Cropper:
-https://github.com/ArthurHub/Android-Image-Cropper
+- Recognize text in images with [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android)
+- [Android-Image-Cropper](https://github.com/ArthurHub/Android-Image-Cropper)
+
 
 #### LogBookActivity:
 
