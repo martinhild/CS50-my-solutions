@@ -18,7 +18,7 @@ Additionally, I set three goals beforehand:
 - To make input more user-friendly, users could input date and time manually or through graphical elements (calendar and clock). By default, the current time and date are set but can be changed.
 
 After researching, I chose to develop the app in Android Studio and selected Java as the programming language.
-I discovered ML Kit and decided to use it for my OCR.
+I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
 
 
 ### App Structure:
