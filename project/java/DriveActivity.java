@@ -1,4 +1,4 @@
-package com.example.sqltest;
+package project.java;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;

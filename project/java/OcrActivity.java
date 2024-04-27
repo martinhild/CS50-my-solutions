@@ -1,4 +1,4 @@
-package com.example.sqltest;
+package project.java;
 
 import android.Manifest;
 import android.content.ClipData;

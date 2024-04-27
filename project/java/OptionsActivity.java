@@ -1,4 +1,4 @@
-package com.example.sqltest;
+package project.java;
 
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
