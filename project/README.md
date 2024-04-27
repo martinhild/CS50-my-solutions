@@ -57,7 +57,7 @@ In Android Studio, an Activity represents a screen with a user interface. Activi
 
 #### MainActivity:
 
-Displays buttons to navigate to different activities of the app
+Displays buttons to navigate to different activities of the app.
 
 #### DriveActivity:
 
