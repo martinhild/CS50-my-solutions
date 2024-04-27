@@ -1,8 +1,8 @@
 
-# Android App for Car Sharing featuring OCR and SQLite Database
+# Logbook - an Android App for Car Sharing featuring OCR and SQLite Database
 
 
-#### Video Demo:  <URL HERE>
+#### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
 
 
 
