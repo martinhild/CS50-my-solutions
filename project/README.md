@@ -14,7 +14,7 @@ from Merching, Germany
 
 ### Submitted Files
 
-
+I submitted my Java Classes / Activities and xml files in VS Code. To see the whole project please visit my [GitHub](https://github.com/martinhild/CS50-Final-Project---Logbook).
 
 ### Description:
 
