@@ -22,7 +22,7 @@ Additionally, I set three goals beforehand:
 
 **IDE:**
 
-After some research, I learned that Android Studio is the official Integrated Development Environment (IDE) for Android app development.
+After some research, I learned that Android Studio is the official Integrated Development Environment for Android app development.
 
 **Programming Language:**
 
@@ -30,11 +30,11 @@ I read in several forums that Java and Kotlin seemed to be well suited for my pu
 
 **OCR:**
 
-I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my OCR.
+I discovered [ML Kit](https://developers.google.com/ml-kit/vision/text-recognition/v2/android) and decided to use it for my Optical Character Recognition.
 
 **Database:**
 
-When it came to the database, I chose SQLite. Firstly, because I was already familiar with it from the course, and secondly, because I learned that SQLite was the most common database technology associated with Android applications due to its inclusion in the Android SDK.
+When it came to the database, I chose SQLite. Firstly, because I was already familiar with it from the CS50 course, and secondly, because I learned that SQLite was the most common database technology associated with Android applications due to its inclusion in the Android SDK.
 
 
 ### App Structure:
