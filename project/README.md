@@ -1,15 +1,15 @@
 
 # Logbook - an Android App for Car Sharing featuring OCR and SQLite Database
 
-by Martin Hild\
-GitHub: martinhild\
-edX: martinhild\
-from Merching, Germany
-
 #### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
 
 #### GitHub: [URL HERE](https://github.com/martinhild/CS50-Final-Project---Logbook)
 
+
+by Martin Hild\
+GitHub: martinhild\
+edX: martinhild\
+from Merching, Germany
 
 
 ### Description:
@@ -45,7 +45,7 @@ When it came to the database, I chose SQLite. Firstly, because I was already fam
 
 ### App Structure:
 
-In Android Studio, an Activity represents a screen with a user interface. Activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
+In Android Studio, an Activity represents a screen with a user interface. In my application activities are defined in Java classes but have additional functionality and lifecycle management specific to Android. Activities are associated with user interface layouts defined in XML files. The app also uses Java classes that are not Activities to organize the code and encapsulate logic.
 
 **My app consists of six Activities with associated XML layout files:**
 
