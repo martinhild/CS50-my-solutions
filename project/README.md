@@ -1,9 +1,9 @@
 
 # Logbook - an Android App for Car Sharing featuring OCR and SQLite Database
 
-by Martin Hild
-GitHub: martinhild
-edX: martinhild
+by Martin Hild\
+GitHub: martinhild\
+edX: martinhild\
 from Merching, Germany
 
 #### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
@@ -12,7 +12,7 @@ from Merching, Germany
 
 
 
-#### Description:
+### Description:
 
 
 As a final project, I decided to develop my first own app - an Android app for car sharing. My idea was that multiple drivers sharing a car could enter the distance, date, and time of their drive. This way, it's easy to see who drove a shared car, when, and how far. The distance traveled is calculated using the car's mileage at the start and stop.
