@@ -1,6 +1,10 @@
 
 # Logbook - an Android App for Car Sharing featuring OCR and SQLite Database
 
+by Martin Hild
+GitHub: martinhild
+edX: martinhild
+from Merching, Germany
 
 #### Video Demo:  [URL HERE](https://www.youtube.com/watch?v=IEuto3SbtQ0)
 
